@@ -1,13 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Mehrab | A passionate software learner</title>
-        <meta name="description" content="A human,who is a learner who wants to learn many new impactful things"/>
-        <meta charset="utf-8 " />
-        <meta name="Mehrab" content="@mehrabalam"/>
-    </head>
-    <body>
-        
-       
-    </body>
+
+<head>
+    <title>Mehrab! A passionate coder..</title>
+    <meta charset="UTF-8" />
+
+    <meta name="Discription" content="A HUman! a software learner who wants to build impactful software." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="twitter" content="@mehrabalam" />
+    <style>
+        body {
+            background-color: saddlebrown;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .nav-links>a {
+
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .nav-links>a:hover {
+            color: blue;
+        }
+
+        #section-home {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 15px;
+            margin: 20px;
+            height: 480px;
+
+        }
+
+        #section-home img {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            height: 480px;
+        }
+
+        #section-home h1 {
+            font-weight: bold;
+            padding: 20px;
+
+        }
+
+        #section-home p {
+            padding: 20px;
+            color: white;
+        }
+
+        #project-list {
+            display: flex;
+            justify-content: center;
+        }
+
+        .project-50 {
+            background-color: aqua;
+            border-radius: 15px;
+            margin: 20px;
+            width: 50%;
+
+        }
+
+        #project-list img {
+            height: 400px;
+        }
+
+        #project-paymento {
+            background-color: #efeefe;
+            color: darkblue;
+            padding: 20px;
+        }
+
+        #project-taskaro {
+            background-color: #343d4c;
+            color: white;
+            padding: 20px;
+        }
+
+        #project-piyu {
+            border-radius: 15px;
+            background-color: #503aa6;
+            margin: 20px;
+
+        }
+
+        #project-piyu h1 {
+            font-weight: bold;
+        }
+
+        #project-piyu h1,
+        #project-piyu p {
+            padding: 20px;
+            color: white
+        }
+
+        #piyu-img {
+            text-align: center;
+        }
+
+
+
+        #piyu-img img {
+            width: 300px;
+        }
+
+        #section-contact {
+            display: flex;
+            justify-content: space-between;
+            background-color: brown;
+            margin: 20px;
+            border-radius: 15px;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #section-contact h1,
+        #section-contact p,
+        #section-contact a,
+        #section-contact h2 {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+
+        }
+
+        .social-links {
+            border-radius: 100%;
+            background-color: white;
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            transition: all 0.8s;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-links:hover {
+            background-color: black;
+        }
+
+        @media screen and (max-width:420px) {
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 0.8rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            body {
+                max-width: 400px;
+            }
+
+            .nav-links>a {
+                text-decoration: none;
+                padding: 2px;
+                color: white;
+                font-weight: bold;
+            }
+
+            #section-home {
+                background-color: blueviolet;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 15px;
+                flex-direction: column;
+                margin: 20px;
+                height: 480px;
+            }
+
+            #section-home img {
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+                height: 100%;
+                width: 100%;
+            }
+
+            #project-list {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                width: 80%;
+            }
+
+            #project-list img {
+                height: 100%;
+                width: 100%;
+            }
+
+            #project-taskaro {
+                background-color: #343d4c;
+                color: white;
+                padding: 20px;
+                width: 100%;
+            }
+
+            #project-paymento {
+                background-color: #efeefe;
+                color: darkblue;
+                padding: 20px;
+                width: 100%;
+            }
+
+            .social-links {
+                border-radius: 100%;
+                background-color: white;
+                width: 32px;
+                height: 32px;
+                display: inline-flex;
+                transition: all 0.8s;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #section-contact a,
+            #section-contact h2 {
+                color: white;
+                text-decoration: none;
+                padding: 1px;
+                margin: 10px;
+            }
+
+            #social {
+                justify-content: right;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header  -->
+    <nav>
+        <!-- logo  -->
+        <div>
+            <a href="https://www.torqbit.com/" target="_blank"><img src="img/torqbit.png" alt="torqbit" height="32px"
+                    width="32px" /></a>
+        </div>
+        <!-- link  -->
+        <div class="nav-links">
+            <a href="section-home">Home</a>
+            <a href="section-project">Projects</a>
+            <a href="section-contact">Contact</a>
+        </div>
+
+    </nav>
+    <!-- section-home  -->
+    <section id="section-home">
+        <!-- text  -->
+        <div>
+            <h1>Hey!I'm Merhab , a software coder...</h1>
+            <p>I care a lot about crafting quality software that brings delightful experience to the customer</p>
+        </div>
+        <!-- image  -->
+        <div>
+            <img src="img/me.jpeg" alt="my image" />
+        </div>
+    </section>
+    <!-- section-project  -->
+    <section id="section-project">
+        <!-- upper  -->
+        <div id="project-list">
+            <!-- paymento  -->
+            <div id="project-paymento" class="project-50">
+                <!-- text  -->
+                <div>
+                    <h1>Paymento</h1>
+                    <p>Personal Finance mobile app</p>
+                </div>
+                <!-- image  -->
+                <div>
+                    <img src="img/payment.jpeg" alt="paymento" />
+                </div>
+            </div>
+            <!-- taskaro  -->
+            <div id="project-taskaro" class="project-50">
+                <!-- text  -->
+                <div>
+                    <h1>Taskaro</h1>
+                    <p>Task Management app</p>
+                </div>
+                <!-- image -->
+                <div>
+                    <img src="img/ongoin.jpeg" alt="taskaro" />
+                </div>
+            </div>
+        </div>
+        <!-- lower  -->
+        <div id="project-piyu">
+            <!-- text  -->
+            <div>
+                <h1>Piyuu</h1>
+                <p>Freelancing platform for individuals</p>
+            </div>
+            <!-- image  -->
+            <div id="piyu-img">
+                <img src="img/piyu.jpeg" alt="piyu" />
+            </div>
+        </div>
+    </section>
+    <!-- section-contact  -->
+    <section id="section-contact">
+        <!-- text  -->
+        <div>
+            <h1>Want to work together?</h1>
+            <p>Feel free to reach out for collaboration pr just a friendly hello.</p>
+            <a href="maileto:mehrab2000alam@gmail.com">mehrab2000alam@gmail.com</a>
+        </div>
+        <!-- links  -->
+        <div id="social">
+            <h2>Connect with me</h2>
+            <a class="social-links" href="https://twitter.com/mr_mehrab1/" target="_blank"><img src="img/twiitter.png"
+                    alt="twitter" height="25" width="auto"></a>
+            <a class="social-links" href="https://www.linkedin.com/feed/" target="_blank"><img src="img/linkedin.png"
+                    alt="linkedin" height="25" width="auto"></a>
+            <a class="social-links" href="https://www.instagram.com/mr_mehrab_6/" target="_blank"><img
+                    src="img/Instagram.png" alt="instagram" height="25" width="auto"></a>
+
+        </div>
+    </section>
+</body>
+
 </html>
