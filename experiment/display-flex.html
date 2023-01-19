@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Mehrab | A passionate software learner</title>
+        <meta name="description" content="A human,who is a learner who wants to learn many new impactful things"/>
+        <meta charset="utf-8 " />
+        <meta name="Mehrab" content="@mehrabalam"/>
+        <style>
+            #flex-row-same-height{
+                border-radius: 2px;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height25{
+                border-radius: 4px;
+                justify-content: baseline;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height30{
+                border-radius: 6px;
+                justify-content: center;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;   
+            }
+            #flex-row-different-height35{
+                border-radius: 8px;
+                justify-content: end;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;   
+            }
+            #flex-row-different-height40{
+                border-radius: 10px;
+                justify-content: first baseline;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height45{
+                border-radius: 12px;
+                justify-content: flex-end;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px; 
+            }
+            #flex-row-different-height50{
+                border-radius: 14px;
+                justify-content: flex-start;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height55{
+                border-radius: 16px;
+                justify-content: last baseline;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height60{
+                border-radius: 18px;
+                justify-content: left;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height65{
+                border-radius: 20px;
+                justify-content: right;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height70{
+                border-radius: 22px;
+                justify-content: safe;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #lex-row-different-height75{
+                border-radius: 24px;
+                justify-content: space-around;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height80{
+                border-radius: 26px;
+
+                justify-content: space-between;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height85{
+                border-radius: 28px;
+
+                justify-content: space-evenly;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height90{
+                border-radius: 30px;
+
+                justify-content: start;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height95{
+                border-radius: 32px;
+
+                justify-content: stretch;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-row-different-height100{
+                border-radius: 34px;
+
+                justify-content: unsafe;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height20{
+                border-radius: 36px;
+                flex-direction: column;
+
+                justify-content: baseline;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height25{
+                border-radius: 38px;
+                flex-direction: column;
+                justify-content: center;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px; 
+            }
+            #flex-column-different-height30{
+                border-radius: 40px;
+                flex-direction: column;
+                justify-content: end;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px; 
+            }
+            #flex-column-different-height35{
+                border-radius: 42px;
+                flex-direction: column;
+                justify-content: first baseline;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px; 
+            }
+            #flex-column-different-height40{
+                border-radius: 44px;
+                flex-direction: column;
+                justify-content: flex-end;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height45{
+                border-radius: 46px;
+                flex-direction: column;
+                justify-content: flex-start;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height50{
+                border-radius: 48px;
+                flex-direction: column;
+                justify-content: last baseline;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height55{
+                border-radius: 50px;
+                flex-direction: column;
+                justify-content: left;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height60{
+                border-radius: 52px;
+                flex-direction: column;
+                justify-content: right;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height65{
+                border-radius: 54px;
+                flex-direction: column;
+                justify-content: safe;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height70{
+                border-radius: 56px;
+                flex-direction: column;
+                justify-content: space-around;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height75{
+                border-radius: 58px;
+                flex-direction: column;
+                justify-content: space-between;
+                display: flex;
+                width: 500px;
+                border:  1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height80{
+                border-radius: 60px;
+                flex-direction: column;
+                justify-content: space-evenly;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height85{
+                border-radius: 62px;
+                flex-direction: column;
+                justify-content: start;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height90{
+                border-radius: 64px;
+                flex-direction: column;
+                justify-content: stretch;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            #flex-column-different-height95{
+                border-radius: 66px;
+                flex-direction: column;
+                justify-content:unsafe ;
+                display: flex;
+                width: 500px;
+                border: 1px solid;
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+            .pad-4 {
+                padding: 4px;
+                margin: 2px;
+            }
+            .pad-8 {
+                padding: 8px;
+                
+            }
+            .margin-2{
+                margin: 2px;
+            }
+            .margin-4{
+                margin: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ROW</h1>
+        <h3>Div with same height, and default values</h3>
+        <div id="flex-row-same-height">
+            <div class="pad-4 margin-2" style=" border:2px solid  blue; height: 20px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 20px; width: 100px;"></div>
+        </div>
+        <!-- flex row different height , justify-content all possible values -->
+        
+        <!-- flex row different height , align-items all possible values -->
+        <!-- flex column different height , justify-content all possible values -->
+        <!-- flex column different height , align-itmes all possible values -->
+        <h3>Div with different height, and justify-content as baseline</h3>
+        <div id="flex-row-different-height25">
+           
+
+            <div class="pad-4 margin-2" style="border:2px solid blue; height: 25px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 15px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as center </h3>
+        <div id="flex-row-different-height30">
+            
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 30px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 25px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as end </h3>
+        <div id="flex-row-different-height35">
+           
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 35px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 20px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as first baseline </h3>
+        <div id="flex-row-different-height40">
+          
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 40px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 35px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  flex-end </h3>
+        <div id="flex-row-different-height45">
+          
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 45px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 40px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  flex-start</h3>
+
+        <div id="flex-row-different-height50">
+           
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 50px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 45px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  last-baseline</h3>
+
+        <div id="flex-row-different-height55">
+           
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 55px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 50px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  left</h3>
+        <div id="flex-row-different-height60">
+            
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 60px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 55px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  right</h3>
+
+        <div id="flex-row-different-height65">
+            
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 65px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 60px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  safe</h3>
+        <div id="flex-row-different-height70">
+          
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 70px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 65px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  safe-around</h3>
+        <div id="flex-row-different-height75">
+           
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 75px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 70px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  safe-between</h3>
+        <div id="flex-row-different-height80">
+         
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 80px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 75px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  safe-evenly</h3>
+        <div id="flex-row-different-height85">
+           
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 85px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 80px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  start</h3>
+        <div id="flex-row-different-height90">
+          
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 90px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 85px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  stretch</h3>
+
+        <div id="flex-row-different-height95">
+            
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 95px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 90px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  unsafe</h3>
+        <div id="flex-row-different-height100">
+            
+
+            <div class="pad-4 margin-2" style="border:2px solid  blue; height: 100px; width: 100px;"></div>
+            <div class="pad-4 margin-2" style="border:2px solid  brown;height: 95px; width: 100px;"></div>
+        </div>
+
+        <h1>COLUMN</h1>
+        <!-- column  -->
+        <h3>Div with different height, and justify-content as  baseline</h3>
+        <div id="flex-column-different-height20">
+           
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 20px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 15px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  center</h3>
+        <div id="flex-column-different-height25">
+           
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 25px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 20px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  end</h3>
+        <div id="flex-column-different-height30">
+           
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 30px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 25px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  first-baseline</h3>
+        <div id="flex-column-different-height35">
+            
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 35px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 30px; width: 100px;"></div>
+        </div>
+
+        <h3>Div with different height, and justify-content as  flex-end</h3>
+        <div id="flex-column-different-height40">
+          
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 40px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 35px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  flex-start</h3>
+        <div id="flex-column-different-height45">
+           
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 45px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 40px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  last-baseline</h3>
+
+        <div id="flex-column-different-height50">
+         
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 50px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 45px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  left</h3>
+
+        <div id="flex-column-different-height55">
+          
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 55px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 50px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  right</h3>
+        <div id="flex-column-different-height60">
+           
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 60px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 55px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  safe</h3>
+        <div id="flex-column-different-height65">
+            
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 65px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 60px; width: 100px;"></div>
+        </div>
+
+        <h3>Div with different height, and justify-content as  space-around</h3>
+        <div id="flex-column-different-height70">
+            
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 70px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 65px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  space-between</h3>
+        <div id="flex-column-different-height75">
+          
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 75px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 70px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  space-evenly</h3>
+
+        <div id="flex-column-different-height80">
+            
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 80px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 75px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  start</h3>
+        <div id="flex-column-different-height85">
+          
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 85px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 80px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  stretch</h3>
+        <div id="flex-column-different-height90">
+          
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 90px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 85px; width: 100px;"></div>
+        </div>
+        <h3>Div with different height, and justify-content as  unsafe</h3>
+        <div id="flex-column-different-height95">
+           
+
+            <div class="pad-8 margin-4" style="border:2px solid  blue; height: 95px; width: 100px;"></div>
+            <div class="pad-8 margin-4" style="border:2px solid  brown;height: 90px; width: 100px;"></div>
+        </div>
+
+
+
+        
+       
+    </body>
+</html>
