@@ -8,14 +8,14 @@
     <title>Document</title>
     <style>
         body {
-            background: radial-gradient(circle, rgba(223, 65, 112, 1) 7%, rgba(34, 30, 93, 1) 77%);
+            background: radial-gradient(circle, rgba(223, 65, 112, 1) 0%, rgba(34, 30, 93, 1) 100%);
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         #nav {
-            opacity: .4;
+            background-color: rgb(77 38 97 /74%);
             border: 1px solid;
             height: 100px;
             width: 1000px;
@@ -36,10 +36,13 @@
             width: 60px;
             border: 1px solid;
             border-radius: 12px;
+            transform: all .8s;
+            transform: scale(1);
         }
 
-        #nav:hover {
-            opacity: 1;
+        #nav div:hover {
+            cursor: pointer;
+            transform: scale(1.1);
         }
 
 
@@ -96,7 +99,7 @@
 
         #skill>div {
             transition: all 0.8s;
-            border: 1px solid;
+
             border-radius: 10px;
             margin: 5px;
             padding: 10px;
@@ -113,6 +116,7 @@
                 width: 200px;
                 border: 8px solid white;
                 border-radius: 100%;
+                text-align: center;
             }
 
             #profile img {
@@ -134,14 +138,14 @@
 
             #skill {
 
-                padding: 10px;
+                margin: 0.5rem auto;
             }
 
             #skill>div {
-                margin: 2px;
-                padding: 5px;
+
+                padding: 2px 5px;
                 margin-top: 5px auto;
-                justify-content: right;
+
 
 
             }
