@@ -2,212 +2,195 @@
 <html lang="en">
 
 <head>
-    <title>Mehrab! A passionate coder..</title>
-    <meta charset="UTF-8" />
-
-    <meta name="Discription" content="A HUman! a software learner who wants to build impactful software." />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="twitter" content="@mehrabalam" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-        h1 {
-            font-size: 2rem;
-            color: white;
-        }
-
-        p,
-        a {
-            color: white;
-            font-size: 1.3rem;
-        }
-
-        b {
-            font-size: bold;
-        }
-
         body {
-
             background: radial-gradient(circle, rgba(223, 65, 112, 1) 7%, rgba(34, 30, 93, 1) 77%);
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
         }
 
-        #profile {
-            box-shadow: 5px 5px 3px grey;
-            margin: 20px auto;
-            border: 8px solid white;
-            height: 320px;
-            width: 320px;
-            border-radius: 100%;
-        }
-
-        #profile div:nth-child(2) {
-            text-align: center;
-        }
-
-        #image {
-            height: 320px;
-            width: 320px;
-            border-top-left-radius: 100%;
-            border-top-right-radius: 100%;
-            border-bottom-left-radius: 100%;
-            border-bottom-right-radius: 100%;
-
-        }
-
-        #navigation {
-            margin: 20px auto;
-            background-color: #A682D4;
-            display: grid;
-            row-gap: 10px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            place-items: center;
-            column-gap: 20px;
-            height: 60px;
+        #nav {
+            opacity: .4;
+            border: 1px solid;
+            height: 100px;
             width: 1000px;
-            border: 1px solid #371F7B;
             border-radius: 4px;
-            padding: 20px;
-            opacity: 0.4;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            row-gap: 10px;
+            column-gap: 20px;
+            place-items: center;
             position: absolute;
             bottom: 20px;
-
-
-
-
         }
 
-        #navigation>div {
-            background-color: white;
-
-            border-radius: 12px;
+        #nav>div {
+            transition: all 0.8s;
+            background-color: grey;
             height: 60px;
             width: 60px;
             border: 1px solid;
-            transition: all 0.8s;
+            border-radius: 12px;
         }
 
-        #navigation:hover {
+        #nav:hover {
             opacity: 1;
         }
 
-        #link {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+
+
+        #profile {
+            margin-top: 2rem;
+            height: 320px;
+            width: 320px;
+            border: 8px solid white;
+            border-radius: 100%;
         }
 
-        #link div:nth-child(2) {
-            display: flex;
-
+        #profile img {
+            height: 320px;
+            width: 320px;
+            border-top-left-radius: 100%;
+            border-bottom-left-radius: 100%;
+            border-top-right-radius: 100%;
+            border-bottom-right-radius: 100%;
         }
 
-        #course p {
-            background-color: #913368;
-            border-radius: 8px;
-            /* height: 22px;
-            width: 58px; */
-            border: 1px solid #913368;
-            margin: 5px;
-            padding: 5px;
+        .title {
+            margin: 20px auto;
             text-align: center;
+            font-size: 33px;
+            color: white;
+        }
 
+        #profile p {
+            font-size: 20px;
+            color: white;
+        }
+
+        #para {
+            text-align: center;
+        }
+
+        #head {
+            color: white;
+            font-size: 20px;
+        }
+
+        #skill {
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        #head {
+            font-weight: 20px;
+            margin: 0.5rem auto;
+        }
+
+        #skill>div {
+            transition: all 0.8s;
+            border: 1px solid;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            background-color: black;
+            opacity: .4;
         }
 
         @media screen and (max-width:420px) {
-
-            p,
-            a {
-                color: white;
-                font-size: 0.6rem;
-            }
-
             #profile {
-                box-shadow: 5px 5px 3px grey;
-                margin: 20px auto;
+                margin-top: 2rem;
+                height: 200px;
+                width: 200px;
                 border: 8px solid white;
-                height: 100px;
-                width: 100px;
                 border-radius: 100%;
             }
 
-            #image {
-                height: 100px;
-                width: 100px;
-                border-top-left-radius: 100%;
-                border-top-right-radius: 100%;
-                border-bottom-left-radius: 100%;
-                border-bottom-right-radius: 100%;
+            #profile img {
+                height: 200px;
+                width: 200px;
             }
 
-            h1 {
-                font-size: 0.9rem;
-                color: white;
+            .title {
+
+                font-size: 25px;
+
             }
 
-            p,
-            a {
-                color: white;
-                font-size: 0.4rem;
+            #profile p {
+                font-size: 0.8rem;
+
             }
 
-            #navigation {
 
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                margin: 0px auto;
+
+
+            #skill>div {
+                margin: 5px;
+                padding: 5px;
+                justify-items: center;
+
+            }
+
+            #nav {
+                padding: 10px;
+                row-gap: 5px;
+                column-gap: 10px;
                 height: 60px;
-                width: 380px;
-                padding: 8px;
+                width: 360px;
+                grid-template-columns: repeat(5, 1fr);
             }
 
-            #navigation div:nth-child(6) {
+            #nav>div:nth-child(6) {
                 display: none;
             }
 
-            #navigation div:nth-child(7) {
+            #nav>div:nth-child(7) {
                 display: none;
             }
 
-            #navigation div:nth-child(8) {
+            #nav>div:nth-child(8) {
                 display: none;
             }
 
-            #navigation div:nth-child(9) {
+            #nav>div:nth-child(9) {
                 display: none;
             }
 
-            #navigation div:nth-child(10) {
+            #nav>div:nth-child(10) {
                 display: none;
             }
+
         }
     </style>
 </head>
 
 <body>
-    <div id="profile">
-        <div>
-            <img id="image" src="img/coding.JPG" alt="mehrabalam">
 
-        </div>
-        <div>
-            <h1>Mehrab Alam</h1>
-            <p>senior Software Engineer at <b> Apple </b></p>
-            <p>lives in <b> New York</b></p>
-        </div>
-        <div id="link">
-            <div>
-                <h1> Skilled in </h1>
-            </div>
-            <div id="course">
-                <p>Java</p>
-                <p>HTML</p>
-                <p>Javascript</p>
-                <p>ReactJS</p>
-            </div>
+    <div id="profile">
+        <img src="img/me.jpeg" alt="">
+        <div class="title">Mehrab Alam</div>
+        <p>Senior software Engineer at <B>APPLE</B></p>
+        <p id="para">lives in <b>NewYork</b> </p>
+        <b id="head">Skilled in</b>
+        <div id="skill">
+            <div>Java</div>
+            <div>Javascript</div>
+            <div>HTML</div>
+            <div>ReactJS</div>
         </div>
     </div>
 
-    <div id="navigation">
+    <div id="nav">
         <div style="background-color: orangered;"><img src="img/Pinterest.svg" alt="Pinterest"></div>
         <div style="background-color: red;"><img src="img/Reddit.svg" alt="Reddit"></div>
         <div style="background-color: white;"><img src="img/Gmail.svg" alt="gmail"></div>
@@ -220,7 +203,6 @@
         <div style="background-color: blue;"><img src="img/Twitter.svg" alt=""></div>
 
     </div>
-
 </body>
 
 </html>
