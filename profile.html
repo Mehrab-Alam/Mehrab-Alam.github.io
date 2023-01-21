@@ -8,115 +8,105 @@
     <title>Document</title>
     <style>
         body {
-            background: radial-gradient(circle, rgba(223, 65, 112, 1) 0%, rgba(34, 30, 93, 1) 100%);
+            background-color: aqua;
             display: flex;
             justify-content: center;
             align-items: center;
+            background: url("img/wal2.webp") top center;
+            background-size: cover;
+
+
         }
 
-        #nav {
-            background-color: rgb(77 38 97 /74%);
-            border: 1px solid;
-            height: 100px;
-            width: 1000px;
-            border-radius: 4px;
-            display: grid;
-            grid-template-columns: repeat(10, 1fr);
-            row-gap: 10px;
-            column-gap: 20px;
-            place-items: center;
-            position: absolute;
-            bottom: 20px;
+        p {
+            font-size: 1.3rem;
+            color: white;
+            margin: 5px;
+            text-align: center;
         }
 
-        #nav>div {
-            transition: all 0.8s;
-            background-color: grey;
-            height: 60px;
-            width: 60px;
-            border: 1px solid;
-            border-radius: 12px;
-            transform: all .8s;
-            transform: scale(1);
-        }
-
-        #nav div:hover {
-            cursor: pointer;
-            transform: scale(1.1);
-        }
-
-
-
+        /* profile */
         #profile {
-            margin-top: 2rem;
-            height: 320px;
-            width: 320px;
             border: 8px solid white;
             border-radius: 100%;
+            height: 320px;
+            width: 320px;
+            margin-top: 2rem;
+            box-shadow: 3px 3px 12px 0px gray;
+
+
         }
 
         #profile img {
             height: 320px;
             width: 320px;
             border-top-left-radius: 100%;
-            border-bottom-left-radius: 100%;
             border-top-right-radius: 100%;
+            border-bottom-left-radius: 100%;
             border-bottom-right-radius: 100%;
+
         }
 
-        .title {
-            margin: 20px auto;
-            text-align: center;
-            font-size: 33px;
+        /* title */
+        #title {
+            margin: 20px 0px;
+            font-size: 2rem;
             color: white;
-        }
-
-        #profile p {
-            font-size: 20px;
-            color: white;
-        }
-
-        #para {
             text-align: center;
         }
 
-        #head {
-            color: white;
-            font-size: 20px;
-        }
-
+        /* skill */
         #skill {
             display: flex;
-            justify-content: space-around;
-
-
-        }
-
-        #head {
-            font-weight: 20px;
-            margin: 0.5rem auto;
+            flex-wrap: wrap;
+            max-width: 350px;
         }
 
         #skill>div {
-            transition: all 0.8s;
-
-            border-radius: 10px;
-            margin: 5px;
+            border: 1px;
+            margin: 10px;
             padding: 10px;
-            text-align: center;
+            border-radius: 4px;
             color: white;
             background-color: black;
-            opacity: .4;
+        }
+
+        /* navigation */
+        nav {
+            background: rgba(15, 9, 18, 0.74);
+            border: 1px solid;
+            height: 100px;
+            width: 1000px;
+            border-radius: 4px;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            place-items: center;
+            row-gap: 10px;
+            column-gap: 20px;
+            position: absolute;
+            bottom: 20px;
+        }
+
+        nav>div {
+            height: 60px;
+            width: 60px;
+            border: 1px solid;
+            border-radius: 12px;
+            background-color: black;
+            transform: scale(1);
+            transition: all .8s;
+
+        }
+
+        nav>div:hover {
+            cursor: pointer;
+            transform: scale(1.1);
         }
 
         @media screen and (max-width:420px) {
             #profile {
-                margin-top: 2rem;
                 height: 200px;
                 width: 200px;
-                border: 8px solid white;
-                border-radius: 100%;
-                text-align: center;
             }
 
             #profile img {
@@ -124,58 +114,51 @@
                 width: 200px;
             }
 
-            .title {
-
-                font-size: 25px;
-
+            #title {
+                font-size: 1.2rem;
             }
 
-            #profile p {
-                font-size: 0.8rem;
-
-            }
-
-
-            #skill {
-
-                margin: 0.5rem auto;
+            p {
+                font-size: 0.6rem;
             }
 
             #skill>div {
-
-                padding: 2px 5px;
-                margin-top: 5px auto;
-
-
-
+                font-size: 0.6rem;
+                margin: 5px;
             }
 
-            #nav {
-                padding: 10px;
-                row-gap: 5px;
+            #skill {
+                max-width: 220px;
+            }
+
+            nav {
+                height: 80px;
+                width: 380px;
+                row-gap: 10px;
                 column-gap: 10px;
-                height: 60px;
-                width: 360px;
+                place-items: center;
                 grid-template-columns: repeat(5, 1fr);
             }
 
-            #nav>div:nth-child(6) {
+
+
+            nav div:nth-child(6) {
                 display: none;
             }
 
-            #nav>div:nth-child(7) {
+            nav div:nth-child(7) {
                 display: none;
             }
 
-            #nav>div:nth-child(8) {
+            nav div:nth-child(8) {
                 display: none;
             }
 
-            #nav>div:nth-child(9) {
+            nav div:nth-child(9) {
                 display: none;
             }
 
-            #nav>div:nth-child(10) {
+            nav div:nth-child(10) {
                 display: none;
             }
 
@@ -184,34 +167,40 @@
 </head>
 
 <body>
-
-    <div id="profile">
-        <img src="img/me.jpeg" alt="">
-        <div class="title">Mehrab Alam</div>
-        <p>Senior software Engineer at <B>APPLE</B></p>
-        <p id="para">lives in <b>New York</b> </p>
-        <b id="head">Skilled in</b>
+    <div>
+        <div id="profile">
+            <img src="img/me.jpeg" alt="/">
+        </div>
+        <div id="title">MD Mehrab Alam</div>
+        <p>
+            Senior Software Engineer at <b>Apple</b>
+        </p>
+        <p>lives in <b>New York</b></p>
+        <p style="text-align: left;margin-top: 20px;"><b>Skilled in</b></p>
         <div id="skill">
             <div>Java</div>
             <div>Javascript</div>
             <div>HTML</div>
+            <div>CSS</div>
             <div>ReactJS</div>
+            <div>Python</div>
+            <div>NodesJS</div> -->
         </div>
-    </div>
-
-    <div id="nav">
-        <div style="background-color: orangered;"><img src="img/Pinterest.svg" alt="Pinterest"></div>
-        <div style="background-color: red;"><img src="img/Reddit.svg" alt="Reddit"></div>
-        <div style="background-color: white;"><img src="img/Gmail.svg" alt="gmail"></div>
-        <div style="background-color: orange;"><img src="img/Stack Overflow.svg" alt=""></div>
-        <div style="background-color: white;"><img src="img/Youtube.svg" alt=""></div>
-        <div style="background-color:black;"><img src="img/Instagram.svg" alt=""></div>
-        <div style="background-color: blue;"><img src="img/Linkedin.svg" alt=""></div>
-        <div style="background-color:blue ;"><img src="img/Facebook.svg" alt=""></div>
-        <div style="background-color: green;"><img src="img/Whatsapp.svg" alt=""></div>
-        <div style="background-color: blue;"><img src="img/Twitter.svg" alt=""></div>
 
     </div>
+    <nav>
+        <div><img src="img/Facebook.svg" alt="Facebook"></div>
+        <div><img src="img/Gmail.svg" alt="gmail"></div>
+        <div><img src="img/Instagram.svg" alt="instagram"></div>
+        <div><img src="img/Reddit.svg" alt="Raddit"></div>
+        <div><img src="img/Pinterest.svg" alt="Pinterest"></div>
+        <div><img src="img/Whatsapp.svg" alt="Whatsapp"></div>
+        <div><img src="img/Youtube.svg" alt="Youtube"></div>
+        <div><img src="img/Twitter.svg" alt="twitter"></div>
+        <div><img src="img/Stack Overflow.svg" alt="Stack-overflow"></div>
+        <div><img src="img/Linkedin.svg" alt="linkedin"></div>
+
+    </nav>
 </body>
 
 </html>
