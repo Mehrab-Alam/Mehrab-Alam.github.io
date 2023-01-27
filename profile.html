@@ -8,18 +8,15 @@
     <title>Document</title>
     <style>
         body {
-            background-color: aqua;
             display: flex;
             justify-content: center;
             align-items: center;
             background: url("img/wal2.webp") top center;
             background-size: cover;
-
-
         }
 
         p {
-            font-size: 1.3rem;
+            font-size: 24px;
             color: white;
             margin: 5px;
             text-align: center;
@@ -50,8 +47,16 @@
         /* title */
         #title {
             margin: 20px 0px;
-            font-size: 2rem;
+            font-size: 32px;
             color: white;
+            text-align: center;
+        }
+
+        #para p {
+            margin-bottom: 40px;
+            font-size: 24px;
+            color: white;
+            margin: 5px;
             text-align: center;
         }
 
@@ -60,6 +65,7 @@
             display: flex;
             flex-wrap: wrap;
             max-width: 350px;
+            margin-left: 20px;
         }
 
         #skill>div {
@@ -69,6 +75,8 @@
             border-radius: 4px;
             color: white;
             background-color: black;
+            font-size: 15px;
+            text-align: center;
         }
 
         /* navigation */
@@ -80,6 +88,7 @@
             border-radius: 4px;
             display: grid;
             grid-template-columns: repeat(10, 1fr);
+            /* or you can use  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  */
             place-items: center;
             row-gap: 10px;
             column-gap: 20px;
@@ -173,18 +182,20 @@
             <img src="img/me.jpeg" alt="/">
         </div>
         <div id="title">MD Mehrab Alam</div>
-        <p>
-            Senior Software Engineer at <b>Apple</b>
-        </p>
-        <p>lives in <b>New York</b></p>
-        <p style="text-align: left;margin-top: 15px;"><b>Skilled in</b></p>
+        <div id="para">
+            <p>
+                Senior Software Engineer at <b>Apple</b>
+            </p>
+            <p>lives in <b>New York</b></p>
+        </div>
+        <p style="text-align: left;margin-top: 15px;font-size: 24px;"><b>Skilled in</b></p>
         <div id="skill">
             <div>Java</div>
             <div>Javascript</div>
             <div>HTML</div>
             <div>CSS</div>
-            <!-- <div id="react">ReactJS.</div> -->
-
+            <div id="react">ReactJS.</div>
+            <div>Nodes.JS</div>
         </div>
 
     </div>
