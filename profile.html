@@ -11,89 +11,107 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url("img/wal2.webp") top center;
+            background: url("img/background6.jpg") top center;
             background-size: cover;
-        }
-
-        p {
-            font-size: 24px;
-            color: white;
-            margin: 5px;
-            text-align: center;
         }
 
         /* profile */
         #profile {
             border: 8px solid white;
             border-radius: 100%;
-            height: 320px;
-            width: 320px;
+            height: 300px;
+            width: 300px;
             margin-top: 2rem;
             box-shadow: 3px 3px 12px 0px gray;
+            flex-wrap: wrap;
+            max-width: 400px;
+            margin-left: 110px;
 
 
         }
 
         #profile img {
-            height: 320px;
-            width: 320px;
+            object-fit: cover;
+            height: 300px;
+            width: 300px;
             border-top-left-radius: 100%;
             border-top-right-radius: 100%;
             border-bottom-left-radius: 100%;
             border-bottom-right-radius: 100%;
+            flex-wrap: wrap;
+            max-width: 400px;
+
+
 
         }
 
-        /* title */
         #title {
+            font-weight: normal;
             margin: 20px 0px;
-            font-size: 32px;
+            font-size: 40px;
             color: white;
             text-align: center;
         }
 
-        #para p {
+        #about-para {
+            font-size: 28px;
+        }
+
+        #para {
             margin-bottom: 40px;
-            font-size: 24px;
+            margin-right: 10px;
+            font-size: 30px;
             color: white;
             margin: 5px;
             text-align: center;
         }
 
-        /* skill */
+        #skilled-in {
+            text-align: center;
+            margin-top: 24px;
+            margin-bottom: 5px;
+            font-size: 32px;
+            color: white;
+        }
+
+
         #skill {
             display: flex;
             flex-wrap: wrap;
-            max-width: 350px;
+            max-width: 500px;
             margin-left: 20px;
+            color: white;
         }
 
         #skill>div {
             border: 1px;
-            margin: 2px;
-            padding: 10px;
+            margin: 5px;
+            padding: 5px 10px;
             border-radius: 4px;
             color: white;
             background-color: black;
-            font-size: 15px;
+            font-size: 24px;
             text-align: center;
         }
 
-        /* navigation */
+        #skill div:nth-child(6) {
+            margin-left: 38.5%;
+        }
+
         nav {
-            background: rgba(15, 9, 18, 0.74);
-            border: 1px solid;
+            background-color: rgba(15, 9, 18, 0.74);
             height: 100px;
             width: 1000px;
+            border: 2px solid;
             border-radius: 4px;
+            position: absolute;
+            bottom: 20px;
             display: grid;
             grid-template-columns: repeat(10, 1fr);
             /* or you can use  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  */
             place-items: center;
             row-gap: 10px;
-            column-gap: 20px;
-            position: absolute;
-            bottom: 20px;
+            column-gap: 10px;
         }
 
         nav>div {
@@ -103,19 +121,23 @@
             border-radius: 12px;
             background-color: black;
             transform: scale(1);
+            /* this is use to set the scale of the icons */
             transition: all .8s;
-
+            /*it is use to give transitional effect*/
         }
 
         nav>div:hover {
             cursor: pointer;
-            transform: scale(1.1);
+            transform: scale(1.2);
         }
 
         @media screen and (max-width:420px) {
+
+
             #profile {
                 height: 200px;
                 width: 200px;
+                margin-right: 100px;
             }
 
             #profile img {
@@ -124,21 +146,40 @@
             }
 
             #title {
-                font-size: 1.4rem;
+                font-size: 2.4rem;
+            }
+
+            #about-para {
+                font-size: 18px;
             }
 
             p {
                 font-size: 0.9rem;
             }
 
+            #skilled-in {
+                margin-top: 20px;
+                font-size: 15px;
+                text-align: center;
+            }
+
             #skill>div {
+
                 font-size: 0.6rem;
                 margin: 2px;
+
+
             }
 
             #skill {
-                max-width: 400px;
+                max-width: 300px;
                 padding: 5px;
+                margin-left: 110px;
+
+            }
+
+            #skill div:nth-child(6) {
+                display: none;
             }
 
             nav {
@@ -148,29 +189,32 @@
                 column-gap: 10px;
                 place-items: center;
                 grid-template-columns: repeat(5, 1fr);
+                margin-left: 15px;
+                margin-bottom: -25px;
             }
+        }
 
 
 
-            nav div:nth-child(6) {
-                display: none;
-            }
+        nav div:nth-child(6) {
+            display: none;
+        }
 
-            nav div:nth-child(7) {
-                display: none;
-            }
+        nav div:nth-child(7) {
+            display: none;
+        }
 
-            nav div:nth-child(8) {
-                display: none;
-            }
+        nav div:nth-child(8) {
+            display: none;
+        }
 
-            nav div:nth-child(9) {
-                display: none;
-            }
+        nav div:nth-child(9) {
+            display: none;
+        }
 
-            nav div:nth-child(10) {
-                display: none;
-            }
+        nav div:nth-child(10) {
+            display: none;
+        }
 
         }
     </style>
@@ -183,12 +227,12 @@
         </div>
         <div id="title">MD Mehrab Alam</div>
         <div id="para">
-            <p>
-                Senior Software Engineer at <b>Apple</b>
+            <p id="about-para">
+                Learnig fullstack web development at <b>Torqbit</b>
             </p>
-            <p>lives in <b>New York</b></p>
+            <p>lives in <b>Dhanbad</b></p>
         </div>
-        <p style="text-align: left;margin-top: 15px;font-size: 24px;"><b>Skilled in</b></p>
+        <p id="skilled-in"><b>Skilled in</b></p>
         <div id="skill">
             <div>Java</div>
             <div>Javascript</div>
