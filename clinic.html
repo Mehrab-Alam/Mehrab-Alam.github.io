@@ -10,6 +10,7 @@
         body {
             margin: 0;
             font-family: sans-serif;
+            overflow-x: hidden;
         }
 
         #hero-section {
@@ -169,6 +170,7 @@
         }
 
         #lower div:nth-child(2) {
+
             font-weight: bold;
             color: black;
             border-radius: 8px;
@@ -222,13 +224,22 @@
         }
 
         #about-more>div {
-            width: 100px;
+            width: 150px;
             border-radius: 15px;
             background-color: black;
             color: white;
             padding: 5px 10px;
             font-size: 18px;
 
+        }
+
+        .learn {
+            width: 150px;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            padding: 2px 5px;
+            font-size: 15px;
         }
 
         #my-image {
@@ -302,6 +313,10 @@
             color: grey
         }
 
+        #left-hr hr {
+            max-width: 78%;
+        }
+
         hr {
             max-width: 100%;
         }
@@ -351,16 +366,16 @@
             max-width: 600px;
         }
 
-        #about {
+        #about-us {
             font-weight: bold;
             font-size: 12px;
             display: flex;
             flex-wrap: wrap;
-            max-width: 500px;
+            max-width: 300px;
             margin-top: 20px;
         }
 
-        #about>div {
+        #about-us>div {
 
             text-align: center;
             border: 1px solid grey;
@@ -376,8 +391,8 @@
         }
 
         #right-gallery>div {
-            height: 40px;
-            width: 40px;
+            height: 70px;
+            width: 70px;
             border: 2px solid;
             border-radius: 50%;
             padding: 5px;
@@ -408,6 +423,12 @@
             border: 1px solid;
             border-radius: 4px;
             margin-left: 25%;
+        }
+
+        #therapy-border img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
 
         #therapy-about {
@@ -454,6 +475,12 @@
             background-color: rgba(128, 128, 128, 0.327);
             margin-left: -18%;
 
+        }
+
+        #equip-border img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
 
         #equip-about {
@@ -586,8 +613,8 @@
 
         #lowerleft--serv div:nth-child(2) {
             margin-right: 25px;
-            height: 40px;
-            width: 40px;
+            height: 50px;
+            width: 50px;
             border: 1px solid;
             border-radius: 50%;
         }
@@ -599,6 +626,15 @@
 
             object-fit: cover;
         }
+
+        #lowerleft--serv button {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+
+            object-fit: cover;
+        }
+
 
         #right-serv {
             display: flex;
@@ -788,7 +824,7 @@
         /* form  */
         #section-form {
             padding: 70px;
-            background-color: violet;
+            background-color: blueviolet;
         }
 
         #header-form {
@@ -833,7 +869,8 @@
         }
 
         .input-field input {
-            height: 90%;
+            padding: 0px 5px;
+            height: 93%;
             width: 70%;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
@@ -843,12 +880,15 @@
         }
 
         .input-field span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            padding-left: 10px;
-            width: 100px;
+            /* padding-left: 10px; */
+            width: 90px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
-            font-size: 42px;
+            font-size: 32px;
             background-color: blue;
 
         }
@@ -863,8 +903,8 @@
         }
 
         .input-low-field input {
-
-            height: 90%;
+            padding: 0px 5px;
+            height: 93%;
             width: 80%;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
@@ -893,6 +933,8 @@
             font-size: 40px;
             height: 100%;
             width: 115%;
+            border: none;
+
         }
 
         .input-low-field span {
@@ -912,7 +954,7 @@
             width: 100px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
-            font-size: 20px;
+            font-size: 16px;
             background-color: blue;
         }
 
@@ -921,19 +963,22 @@
             height: 50px;
             border: none;
             display: flex;
-            /* justify-content: space-between; */
+            /* justify-content: center; */
             margin: 30px;
             margin-left: 100px;
+            border: none;
+
         }
 
         .date-input input {
-            height: 90%;
-            width: 75%;
+            height: 93%;
+            width: 32%;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             background-color: blue;
             font-size: 19px;
             color: white;
+            border: none;
         }
 
         .submit-button {
@@ -946,6 +991,7 @@
             font-size: 24px;
             color: white;
             text-align: center;
+            border: none;
         }
 
         /* question  */
@@ -993,8 +1039,14 @@
         }
 
         #up-partner {
+            /* font-size: 16px; */
             font-weight: bold;
             display: flex;
+            /* justify-content: center; */
+        }
+
+        #up-partner div:nth-child(1) {
+            font-size: 22px;
         }
 
         #section-partner h1 {
@@ -1119,85 +1171,115 @@
             background-color: blueviolet;
         }
 
+        #contact-form {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
 
-
-
-        #contact-detail {
-            flex-wrap: wrap;
-            margin: 100px;
-            column-gap: px;
-            row-gap: 10px;
+        #contact-form-detail {
+            column-gap: 150px;
+            row-gap: 45px;
+            text-align: center;
+            place-items: center;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
         }
 
-        .contact-details input {
-            margin-left: -80px;
+        .input-detail {
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            height: 50px;
+            width: 350px;
+            background-color: blue;
+
         }
 
-        .contact-details span {
-            padding: 3px 0px;
+        .input-select {
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            height: 50px;
+            width: 350px;
+            background-color: blue;
+
+        }
+
+        .input-select input {
+            height: 45px;
+            width: 88%;
+            background-color: blue;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            font-size: 20px;
+            padding: 0 10px;
+            border: none;
+            color: white;
+
+        }
+
+        .input-detail input {
+            height: 45px;
+            width: 88%;
+            background-color: blue;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-size: 24px;
+            padding: 0 10px;
+            border: none;
+            color: white;
+        }
+
+        .input-detail img {
+            padding: 5px 8px;
+            height: 50px;
+            width: 50px;
+        }
+
+        .plus {
+            font-weight: bold;
             font-size: 32px;
+            padding: 5px 15px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        #number {
+            font-size: 24px;
+            padding: 5px 15px;
+            color: white;
+        }
+
+        #contact-submit {
+            border-radius: 15px;
+            height: 45px;
+            width: 200px;
+            background-color: blue;
+            font-size: 32px;
+            color: white;
             text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #heading {
+            font-size: 32px;
+            color: white;
+            margin: 40px;
+            margin-bottom: 40px;
             margin-left: 40px;
         }
 
-        .contact-details img {
-            height: 50px;
-            width: 90px;
-            border-top-left-radius: 15px;
-            border-bottom-left-radius: 15px;
-            background-color: blue;
-        }
 
-        .last-input {
-            margin-left: 16%;
-        }
-
-        .last-inputs {
-
-
-            margin-right: 25%;
-        }
-
-        .last-inputs input {
-            padding-right: 0px;
-            width: 100%;
-        }
-
-        .last-inputs span {
-
-            width: 250px
-        }
-
-        .contact-form {
-
-            margin-left: 150px;
-            margin-top: 40px;
-        }
-
-        #contact-form h2 {
-            font-size: 32px;
-            color: white;
-            margin-top: 40px;
-            margin-left: 100px;
-        }
-
-        #Contact-submit {
-            color: white;
-            font-size: 22px;
-            width: 250px;
-            border: 1px solid;
-            border-radius: 20px;
-            background-color: blue;
-            padding: 5px 10px;
-            margin-left: 23%;
-            margin-bottom: 10%;
-        }
 
         #contact-site {
-            margin-top: -10%;
+            margin-top: %;
             padding: 10%;
             display: flex;
             justify-content: space-between;
@@ -1211,23 +1293,29 @@
         }
 
         #contact-site p {
-            font-size: 18px;
+            font-size: 22px;
             margin-top: 10%;
         }
 
         #all-site {
-            font-size: 15px;
+            font-size: 20px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, 1fr);
-            row-gap: 5px;
-            column-gap: 15px;
+            row-gap: 10px;
+            column-gap: 25px;
+        }
+
+        #all-site a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
         }
 
         .lower-site {
             display: flex;
             justify-content: space-between;
-
+            margin-top: 40px;
 
         }
 
@@ -1244,10 +1332,12 @@
         }
 
         .lower-site img {
+            display: flex;
+            align-items: center;
             text-align: center;
             border-radius: 50%;
             object-fit: cover;
-            padding: 5px;
+            padding: 5px 5px;
         }
 
         /* form  */
@@ -1282,6 +1372,14 @@
             margin-left: 75px;
             margin-bottom: 50px;
         }
+
+        button {
+            cursor: pointer;
+        }
+
+        a {
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -1312,7 +1410,7 @@
                     aids and speach therapy
                     services.</h3>
                 <!-- bottom -->
-                <div>
+                <div id="left-hr">
                     <h3>Facts</h3>
                     <p>Premium equipment that meets state-of-the-art in the hearing industry</p>
                     <hr />
@@ -1342,7 +1440,8 @@
                     <!-- lower -->
                     <div id="lower">
                         <div style="font-size: 24px;">20%</div>
-                        <div><button style="border: none; font-weight: bold;">Make an appointment</button> </div>
+                        <div><button style="border: none; font-weight: bold; font-size: 10px;">Make an
+                                appointment</button> </div>
                     </div>
                 </div>
             </div>
@@ -1371,7 +1470,7 @@
                         aid and
                         speech therapy clinic in
                         Dhanbad.</p>
-                    <div>Learn More</div>
+                    <div><button class="learn">Learn More</button></div>
                 </div>
                 <!-- right  -->
                 <div id="my-image"><img src="img/me.jpeg" alt=""></div>
@@ -1447,7 +1546,7 @@
             <!-- middle  -->
             <div>
                 <div id="mid-gallery"><b>Check out our clinic great gallery</b></div>
-                <div id="about">
+                <div id="about-us">
                     <div>#Clinic</div>
                     <div>#Audiology</div>
                     <div>#Therapy</div>
@@ -1469,7 +1568,7 @@
         <div class="lower">
             <!-- left  -->
             <div id="therapy">
-                <div id="therapy-border"></div>
+                <div id="therapy-border"><img src="img/collection.jpg" alt=""></div>
                 <div id="therapy-about"><span>01 /
                         <strong>Collection of therapy</strong> </span>
                     <p>The boy got a 50% discount</p>
@@ -1481,7 +1580,7 @@
             </div>
             <!-- right  -->
             <div id="equip">
-                <div id="equip-border"></div>
+                <div id="equip-border"><img src="img/therapy.jpg" alt=""></div>
                 <div id="equip-about">
                     <span>02 / <strong>Therapy equipment</strong> </span>
                     <p>Best equipment for therapy</p>
@@ -1594,11 +1693,11 @@
                 <div>Take a discount for a child under 5 years of age, for the first examination</div>
                 <div id="lowerleft--serv">
                     <div>50%</div>
-                    <div><img src="img/phone.jpg" alt=""></div>
+                    <div><button><img src="img/phone.jpg" alt=""></button> </div>
                 </div>
             </div>
             <div id="right-serv">
-                <div><img src="img/doc1.png" alt=""></div>
+                <div> <img src="img/doc1.png" alt=""></div>
                 <div id="low-right-serv">
                     <div>"</div>
                     <div>
@@ -1940,31 +2039,31 @@
         <!-- middle  -->
 
 
+        <h1 id="heading">We'll call you back</h1>
         <div id="contact-form">
-            <h2>We'll call you back</h2>
 
-            <form action="" id="contact-detail">
-                <div class="input-field contact-details">
+
+            <form action="" id="contact-form-detail">
+                <div class="input-detail">
                     <span><img src="img/pro-image.svg" alt=""></span>
-                    <input type="text" placeholder="Enter your name">
+                    <input type="text" placeholder="Enter the name">
                 </div>
-                <div class="input-low-field">
+                <div class="input-select">
                     <input type="text" placeholder="What do you want to be called">
-                    <span>+</span>
+                    <span><button class="plus">+</button></span>
 
                 </div>
-                <div class="input-low-field last-input">
+                <div class="input-select">
 
                     <input type="text" placeholder="Cover the topic of the article">
-                    <span>+</span>
+                    <span><button class="plus">+</button></span>
                 </div>
-                <div class=" input-field contact-details last-inputs">
-                    <span style="font-size: 32px; padding-right: 50px;">+91</span>
-                    <input type="text" placeholder="Enter your number">
+                <div class="input-detail">
+                    <span id="number">+91</span>
+                    <input type="number" placeholder="Enter the number">
                 </div>
 
-                <button type="submit" class="submit-button">Submit</button>
-
+                <button type="submit" id="contact-submit">Submit</button>
             </form>
 
 
@@ -1972,22 +2071,20 @@
 
         </div>
 
-
-
         <!-- lower  -->
 
         <div id="contact-site">
             <div id="left-site">
                 <h1>Site Map</h1>
                 <div id="all-site">
-                    <div>Home</div>
-                    <div>Services</div>
-                    <div>Contact</div>
-                    <div>Gallery</div>
-                    <div>About us</div>
-                    <div>Doctors</div>
-                    <div>Blog</div>
-                    <div>Partners</div>
+                    <div><a href="hero-section">Home</a> </div>
+                    <div><a href="section-services">Services</a></div>
+                    <div><a href="section-contact">Contact</a></div>
+                    <div><a href="section-gallery">Gallery</a></div>
+                    <div><a href="section-about">About us</a></div>
+                    <div><a href="section-doctor">Doctors</a></div>
+                    <div><a href="section-blog">Blog</a></div>
+                    <div><a href="section-partner">Partners</a></div>
 
 
                 </div>
