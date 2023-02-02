@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+    function metro_city(city) {
+        if (city == "Kolkata" || city == "Mumbai" || city == "Delhi" || city == "Chennai") {
+            console.log(city + " is a metro city")
+        }
+        else { console.log(city + " is not a metro city") }
+    }
+    metro_city("Dhanbad")
+
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            margin: 0;
+            font-family: sans-serif;
+            overflow-x: hidden;
+        }
+
+        #hero-section {
+            background-color: rgba(58, 10, 10, .6);
+            height: 100vh;
+            overflow: hidden;
+
+
+        }
+
+        #background-image {
+
+            height: 100vh;
+            width: 110vw;
+            position: absolute;
+            object-fit: cover;
+            z-index: -10;
+        }
+
+        nav {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        nav div:nth-child(1) {
+
+            font-size: 50px;
+            margin-left: 64px;
+            margin-bottom: 0;
+        }
+
+
+        #links a {
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 32px;
+            margin: 20px;
+        }
+
+        #home {
+            border-radius: 8px;
+            background-color: rgba(234, 223, 223, 0.39);
+            padding: 5px 15px;
+        }
+
+        #contact {
+            border-radius: 8px;
+            background-color: #E02350;
+            padding: 5px 20px;
+            box-shadow: 0 3px 0 3px rgba(0, 0, 0, 25%);
+        }
+
+        .main-content {
+            display: flex;
+
+
+        }
+
+        .left-content {
+            color: white;
+            flex-basis: 50%;
+            padding: 35px 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-bottom: 60px;
+
+        }
+
+        .left-content h3 {
+            max-width: 600px;
+            font-size: 52px;
+            font-weight: normal;
+
+
+        }
+
+        #title {
+            margin-bottom: 40px;
+        }
+
+        hr {
+            max-width: 78%;
+            /* width: 370px; */
+            margin: 40px 0;
+            /* float: left; */
+        }
+
+        .left-content p {
+            font-size: 26px;
+            max-width: 600px;
+        }
+
+        #user-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: absolute;
+            bottom: 40px;
+            right: 20px;
+            border: 2px;
+            border-radius: 8px;
+            height: 450px;
+            width: 380px;
+            background-color: rgba(46, 34, 38, 80%);
+            margin-bottom: 80px;
+        }
+
+        #right-content {
+            position: relative;
+            flex-basis: 50%;
+        }
+
+        #upper {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        #upper p {
+            margin-top: 10px;
+            font-size: 22px;
+
+        }
+
+        #upper h2 {
+            margin-bottom: 0;
+            font-size: 32px;
+        }
+
+        #image {
+            display: flex;
+
+        }
+
+        #upper img {
+            height: 60px;
+            width: 60px;
+            border-radius: 100%;
+            border: 2px solid white;
+        }
+
+        .old-img {
+            margin-left: -15px;
+        }
+
+        #middle {
+            color: white;
+            margin: 20px;
+            font-size: 22px;
+
+        }
+
+        #lower {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            margin: 15px;
+
+        }
+
+        #lower div:nth-child(2) {
+
+            font-weight: bold;
+            color: black;
+            border-radius: 8px;
+            background-color: white;
+            padding: 8px 10px;
+            text-align: center;
+        }
+
+        /* about  */
+        .about-main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 20px;
+
+
+
+        }
+
+        #upper-part {
+            display: flex;
+            justify-content: center;
+            /* justify-content: center; */
+            align-items: top;
+            padding: 0px 0px;
+            /* margin: 20px px; */
+            margin-left: 0 0px;
+
+        }
+
+        #about {
+            width: 300px;
+            font-weight: bold;
+            font-size: 40px;
+
+            margin-top: 38px;
+            margin-right: -40px;
+            text-align: right;
+
+        }
+
+        #about-more {
+            margin-top: 0;
+            margin-left: 80px;
+            flex-wrap: wrap;
+            max-width: 800px;
+            font-size: 50px;
+            padding-top: 0px;
+            padding-left: 80px;
+            margin: 0 80px;
+
+
+        }
+
+        #about-more>div {
+            width: 250px;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            padding: 12px 15px;
+            font-size: 22px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #about-more p {
+            flex-wrap: wrap;
+            max-width: 600px;
+
+            color: grey;
+        }
+
+        .learn {
+            width: 150px;
+            border-radius: 15px;
+            background-color: black;
+            color: white;
+            padding: 2px 5px;
+            font-size: 15px;
+        }
+
+        #my-image {
+
+            border: 2px solid;
+            height: 350px;
+            width: 1000px;
+            margin-top: 50px;
+            margin-right: 80px;
+
+
+        }
+
+        #my-image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+
+        }
+
+        #lower-part {
+            display: flex;
+            /* justify-content: end; */
+            justify-content: space-between;
+            align-items: flex-end;
+
+        }
+
+        #lower-part h1 {
+            font-weight: normal;
+            font-size: 50px;
+        }
+
+        #lower-part h3 {
+            font-weight: normal;
+            flex-wrap: wrap;
+            width: 605px;
+            font-weight: bold;
+            font-size: 46px;
+            margin-right: 50px;
+        }
+
+        #left {
+            margin-bottom: 35px;
+            margin-right: 70px;
+            width: 400px;
+            border: 2px solid;
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+            padding: 5px;
+
+        }
+
+        #left img {
+            border-radius: 100%;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        #right {
+            margin-left: 20px;
+            padding: 5px -100px;
+        }
+
+        #right p {
+            margin-right: 30px;
+            flex-wrap: wrap;
+            width: 100px;
+            margin-bottom: 30px;
+            font-size: 32px;
+            width: 300px;
+            color: grey
+        }
+
+        #left-hr hr {
+            max-width: 78%;
+        }
+
+        hr {
+            max-width: 100%;
+        }
+
+
+
+        #up {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #mid {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #low {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Gallery  */
+
+        .gallery {
+            display: flex;
+
+            justify-content: space-between;
+            align-items: top;
+            margin: 100px 20px;
+        }
+
+        #left-gallery {
+            margin-right: 40px;
+            margin-top: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            margin-left: 10%;
+
+        }
+
+        #mid-gallery {
+            margin-top: 10px;
+            margin-right: 20%;
+            font-weight: bold;
+            font-size: 60px;
+            max-width: 800px;
+        }
+
+        #about-us {
+            font-weight: bold;
+            font-size: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 700px;
+            margin-top: 40px;
+
+        }
+
+        #about-us>div {
+            text-align: center;
+            border: 1px solid grey;
+            border-radius: 15px;
+            padding: 5px 20px;
+            margin: 10px;
+        }
+
+        #right-gallery {
+            display: flex;
+            justify-content: center;
+            margin-right: 20px;
+        }
+
+        #right-gallery>div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid;
+            border-radius: 50%;
+            padding: 5px;
+            margin: 5px;
+            text-align: center;
+
+        }
+
+        #right-gallery img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        /* lower  */
+        .lower {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+        }
+
+        #therapy-border {
+            background-color: rgba(128, 128, 128, 0.327);
+            height: 800px;
+            width: 580px;
+            border: 1px solid;
+            border-radius: 4px;
+            margin-left: 25%;
+        }
+
+        #therapy-border img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #therapy-about {
+            margin-top: 20px;
+            margin-left: 35%;
+
+
+        }
+
+        span {
+            font-size: 30px;
+        }
+
+        #therapy-about p {
+            font-size: 28px;
+            color: grey;
+        }
+
+        #drag {
+            border: 2px solid;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 20px;
+            background-color: black;
+            margin-bottom: 10%;
+            margin-left: 20px;
+        }
+
+        #drag h1 {
+            font-weight: bold;
+            font-size: 38px;
+            color: white;
+        }
+
+        #equip-border {
+            height: 650px;
+            width: 450px;
+            border: 1px solid;
+            border-radius: 4px;
+            text-align: top;
+            margin-top: -30%;
+            background-color: rgba(128, 128, 128, 0.327);
+            margin-left: -18%;
+
+        }
+
+        #equip-border img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #equip-about {
+            font-size: 55px;
+            margin-top: 15px;
+            margin-right: 5px;
+        }
+
+        #equip-about p {
+            font-size: 32px;
+            padding-right: 15px;
+
+            color: grey;
+        }
+
+        /* service */
+
+        #section-services {
+            padding: 20px;
+        }
+
+        #upper-service {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            margin-left: 5%;
+            padding-bottom: 100px;
+
+        }
+
+        #signs {
+            margin-left: 10%;
+            font-size: 24px;
+            max-width: 400px;
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            text-align: center;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #serv {
+            margin-bottom: 15%;
+            margin-right: 40px;
+            font-size: 44px;
+            padding: 10px;
+        }
+
+        #about-service {
+            flex-wrap: wrap;
+            max-width: 750px;
+            font-size: 80px;
+            font-weight: bold;
+            margin-left: 0px;
+        }
+
+        .service-option {
+            display: flex;
+            font-size: 28px;
+            margin-left: -2%;
+            margin-top: 5%;
+
+        }
+
+        .option {
+            font-weight: bold;
+            border: 1px solid;
+            border-radius: 15px;
+            padding: 5px 15px;
+            margin: 5px;
+        }
+
+        .all {
+            background-color: black;
+            color: white;
+            padding: 5px 45px;
+
+        }
+
+        #mid-service {
+            margin-left: 17%;
+            font-weight: bold;
+            font-size: 42px;
+        }
+
+        .therapies {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sign {
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            font-weight: normal;
+            font-size: 35px;
+            border: 1px solid grey;
+            color: rgba(128, 128, 128, 0.719);
+            border-radius: 50%;
+
+        }
+
+        #lower-service {
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        #left-serv {
+            color: white;
+            background-color: rgba(21, 20, 20, 0.845);
+            height: 350px;
+            width: 800px;
+            border: 2px solid;
+            padding: 20px;
+            font-size: 42px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        #lowerleft--serv {
+            font-weight: normal;
+            font-size: 52px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #lowerleft--serv div:nth-child(2) {
+            margin-right: 25px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+
+        #lowerleft--serv img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+
+            object-fit: cover;
+        }
+
+        #lowerleft--serv button {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+
+            object-fit: cover;
+        }
+
+
+        #right-serv {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            height: 350px;
+            width: 700px;
+            border: 1px;
+            padding: 20px;
+            font-size: 35px;
+        }
+
+        #right-serv img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        #low-right-serv {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 30px;
+        }
+
+        #low-right-serv p {
+            color: grey;
+            font-size: 53px;
+        }
+
+
+        #low-right-serv div:nth-child(1) {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 12px;
+            margin-right: 12px;
+            height: 10px;
+            width: 10px;
+            border: 1px solid;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        /* doctors  */
+        #section-doctor {
+            margin: 20px;
+        }
+
+        #up-doc {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #up-doc div:nth-child(1) {
+            font-size: 44px;
+            font-weight: bold;
+            margin-top: 80px;
+        }
+
+        #up-doc div:nth-child(2) {
+            font-size: 52px;
+            flex-wrap: wrap;
+            max-width: 800px;
+        }
+
+        #up-doc div:nth-child(3) {
+            margin-top: 40px;
+            font-size: 34px;
+            max-width: 400px;
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            text-align: center;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #doctor {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .upper-doc {
+            display: flex;
+            justify-content: center;
+        }
+
+        .doc-about {
+            text-align: center;
+        }
+
+        #doctor img {
+            margin: 15px;
+            border: 1px;
+            background-color: wheat;
+        }
+
+        #doctor h1 {
+            font-size: 40px;
+        }
+
+        #doctor p {
+            font-size: 32px;
+        }
+
+        .skill {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 500px;
+        }
+
+        .skill>div {
+            border: 1px solid;
+            border-radius: 10px;
+            margin: 10px;
+            font-size: 24px;
+            padding: 5px 10px;
+        }
+
+        /* reviews */
+
+        #section-review {
+            padding: 40px;
+        }
+
+        #up-review {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #up-review div:nth-child(1) {
+            font-size: 44px;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        #up-review div:nth-child(2) {
+            font-size: 54px;
+            flex-wrap: wrap;
+            max-width: 800px;
+        }
+
+        #up-review div:nth-child(3) {
+            font-size: 38px;
+            max-width: 400px;
+            height: 300px;
+            width: 300px;
+            border: 1px solid;
+            text-align: bottom;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+
+        }
+
+        #up-review p {
+            color: gray;
+            font-size: 42px;
+        }
+
+        #low-review {
+            padding: 10% 20%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #review-image {
+            border: 1px solid;
+            border-radius: 50%;
+            height: 300px;
+            width: 300px;
+            margin-right: 15%;
+        }
+
+        #review-image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        #coma {
+            font-size: 40px;
+            height: 25px;
+            width: 25px;
+            border: 1px solid;
+            border-radius: 50%;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        #review-about div:nth-child(2) {
+            font-style: italic;
+            padding: 5px 10px;
+            margin-right: -60%;
+            font-size: 40px;
+            font-weight: normal;
+            flex-wrap: wrap;
+            max-width: 700px;
+        }
+
+        #review-about h1 {
+
+            padding: 10px;
+            margin-top: 40px;
+            font-size: 42px;
+        }
+
+        #review-about p {
+            font-size: 35px;
+            color: gray;
+            margin-left: 20px;
+        }
+
+        /* form  */
+        #section-form {
+            padding: 70px;
+            background-color: blueviolet;
+        }
+
+        #header-form {
+            display: flex;
+            align-items: center;
+        }
+
+        #section-form h2 {
+            font-size: 52px;
+            color: white;
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+
+        #header-form h1 {
+            margin-left: 70px;
+            font-size: 72px;
+            flex-wrap: wrap;
+            max-width: 850px;
+        }
+
+        .upper-form {
+            margin-left: 60px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #left-upper-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+
+
+
+        .input-field {
+            border-radius: 15px;
+            width: 550px;
+            height: 50px;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            margin: 40px;
+        }
+
+        .input-field input {
+            padding: 0px 5px;
+            height: 150%;
+            width: 83%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: blue;
+            font-size: 19px;
+            color: white;
+        }
+
+        .input-field span {
+            display: flex;
+            height: 155%;
+
+            align-items: center;
+            justify-content: center;
+            color: white;
+            /* padding-left: 10px; */
+            width: 90px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            font-size: 32px;
+            background-color: blue;
+
+        }
+
+        .input-field img {
+
+            height: 50px;
+            width: 90px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            background-color: blue;
+        }
+
+        .input-low-field input {
+            padding: 0px 5px;
+            height: 150%;
+            width: 350%;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            background-color: blue;
+            font-size: 19px;
+            color: white;
+        }
+
+        .input-low-field {
+            width: 550px;
+            border-radius: 15px;
+            height: 50px;
+            border: none;
+            display: flex;
+            justify-content: space-between;
+            margin: 40px;
+            /* margin-left: 40px; */
+            padding-left: 0;
+        }
+
+        .input-low-field button {
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            margin-left: -9px;
+            color: white;
+            background-color: blue;
+            font-size: 48px;
+            height: 150%;
+            width: 190%;
+            border: none;
+
+        }
+
+        .input-low-field span {
+            height: 50px;
+            color: white;
+            padding-left: 10px;
+            width: 100px;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-size: 42px;
+
+
+            /* background-color: blue; */
+        }
+
+        .date-input span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            text-align: center;
+            color: white;
+            padding: 10px 10px;
+            width: 150px;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            font-size: 28px;
+            background-color: blue;
+        }
+
+        .date-input {
+            border-radius: 15px;
+            height: 50px;
+            border: none;
+            display: flex;
+            /* justify-content: center; */
+            margin: 30px;
+            margin-left: 190px;
+            border: none;
+
+        }
+
+        .date-input input {
+            height: 150%;
+            width: 31%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            background-color: blue;
+            font-size: 29px;
+            color: white;
+
+        }
+
+        .submit-button {
+            margin-top: 40px;
+            margin-left: 100px;
+            height: 70px;
+            width: 20%;
+            border-radius: 15px;
+            background-color: blue;
+            font-size: 24px;
+            color: white;
+            text-align: center;
+            border: none;
+            margin-left: 200px;
+        }
+
+        /* question  */
+        #section-question {
+            padding: 100px;
+        }
+
+        #up-question {
+            font-weight: bold;
+            font-size: 46px;
+            display: flex;
+        }
+
+        #up-question h1 {
+            font-size: 75px;
+            flex-wrap: wrap;
+            max-width: 650px;
+            padding-left: 80px;
+        }
+
+
+        #section-question hr {
+            max-width: 90%;
+            margin-left: 10%;
+
+        }
+
+
+        .question {
+            margin-left: 10%;
+            margin-top: 40px;
+            font-size: 38px;
+            flex-wrap: wrap;
+        }
+
+        .question div:nth-child(1) {
+            font-weight: bold;
+            flex-wrap: wrap;
+            max-width: 1000px;
+        }
+
+        /* partner */
+        #section-partner {
+            font-size: 16px;
+            padding: 100px;
+        }
+
+        #up-partner {
+            font-size: 56px;
+            font-weight: bold;
+            display: flex;
+            /* justify-content: center; */
+        }
+
+        #up-partner div:nth-child(1) {
+            font-size: 52px;
+        }
+
+        #section-partner h1 {
+            font-size: 70px;
+            flex-wrap: wrap;
+            max-width: 700px;
+            margin-left: 20%;
+        }
+
+        #partner-image {
+            margin-top: 20%;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            /* margin-left: -5%; */
+
+        }
+
+        #partner-image>div {
+            /* text-align: center; */
+            margin: 20px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            border-radius: 50%;
+            /* padding: 50px; */
+        }
+
+        #partner-image img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            /* border-radius: 50%; */
+        }
+
+        /* blog  */
+        #section-blog {
+            padding: 100px;
+        }
+
+        #up-blog {
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #up-blog h1 {
+            font-size: 70px;
+            flex-wrap: wrap;
+            max-width: 800px;
+            /* margin-right: 30%; */
+            /* margin-bottom: 20%;   */
+        }
+
+        #blog {
+            font-size: 28px;
+            margin-left: 10%;
+        }
+
+        .blog-arrow {
+            font-size: 50px;
+            border: 1px solid;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #blog-sign {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #blog-image {
+            font-size: 18px;
+            margin-left: 30%;
+            margin-top: 30px;
+            display: flex;
+            justify-content: right;
+        }
+
+        #blog-image img {
+
+            margin: 15px;
+            border: 1px;
+            background-color: wheat;
+        }
+
+        /* contact  */
+        #section-contact {
+            padding: 100px;
+
+            background-color: blueviolet;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #nav-logo {
+            margin: 10px;
+            padding-left: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        nav #nav-left {
+            font-size: 30px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 40px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: blueviolet;
+        }
+
+        #contact-form {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        #contact-form-detail {
+            column-gap: 150px;
+            row-gap: 45px;
+            text-align: center;
+            place-items: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .input-detail {
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            height: 70px;
+            width: 550px;
+            background-color: blue;
+
+        }
+
+        .input-select {
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            height: 70px;
+            width: 550px;
+            background-color: blue;
+
+        }
+
+        .input-select input {
+            height: 45px;
+            width: 88%;
+            background-color: blue;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            font-size: 20px;
+            padding: 0 15px;
+            border: none;
+            color: white;
+
+        }
+
+        .input-detail input {
+            height: 45px;
+            width: 88%;
+            background-color: blue;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-size: 24px;
+            padding: 0 10px;
+            border: none;
+            color: white;
+        }
+
+        .input-detail img {
+            padding: 5px 8px;
+            height: 50px;
+            width: 50px;
+        }
+
+        .plus {
+            font-weight: bold;
+            font-size: 42px;
+            padding: 5px 15px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        #number {
+            font-size: 24px;
+            padding: 5px 15px;
+            color: white;
+        }
+
+        #contact-submit {
+            border-radius: 15px;
+            height: 50px;
+            width: 200px;
+            background-color: blue;
+            font-size: 32px;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #heading {
+            font-size: 32px;
+            color: white;
+            margin: 40px;
+            margin-bottom: 40px;
+            margin-left: 40px;
+        }
+
+
+
+        #contact-site {
+            /* margin-top: %; */
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            margin-bottom: 0;
+        }
+
+        #contact-site h1 {
+            font-size: 40px;
+        }
+
+        #contact-site p {
+            font-size: 32px;
+            margin-top: 20%;
+        }
+
+        #all-site {
+            font-size: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            row-gap: 10px;
+            column-gap: 25px;
+        }
+
+        #all-site a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .lower-site {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+
+        }
+
+
+        .lower-site>div {
+            margin: 5px;
+            border: 1px solid;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        .site-links {
+            margin-left: 47%;
+        }
+
+        .lower-site img {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 5px 5px;
+        }
+
+        /* form  */
+        .input input {
+            margin: 20px;
+            border-radius: 12px;
+            width: 500px;
+            height: 40px;
+            border: none;
+            background-color: blue;
+            padding: 10px;
+        }
+
+        ::placeholder {
+
+            color: white;
+            background-color: blue;
+            font-size: 21px;
+            align-items: center;
+
+        }
+
+        .submit {
+            font-size: 21px;
+            color: white;
+            margin-left: -88px;
+        }
+
+        .sub-submit {
+            font-size: 21px;
+            color: white;
+            margin-left: 75px;
+            margin-bottom: 50px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        a {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="hero-section">
+        <img id="background-image" src="img/hearnic-background.jpeg" alt="">
+        <nav>
+            <div>
+
+                <div> HEARNIC</div>
+            </div>
+            <div id="links">
+                <a href="" id="home" style="color: black;">Home</a>
+                <a href="">About us</a>
+                <a href="">Specialists</a>
+                <a href="">Doctors</a>
+                <a href="">Contact</a>
+                <a href="" id="contact">+91-9090090090</a>
+            </div>
+        </nav>
+        <!-- main container -->
+        <div class="main-content">
+            <!-- left  -->
+            <div class="left-content">
+                <!-- top  -->
+                <h3 id="title">Over past decade,
+                    we have provided hundreds of hearing
+                    aids and speach therapy
+                    services.</h3>
+                <!-- bottom -->
+                <div id="left-hr">
+                    <h3>Facts</h3>
+                    <p>Premium equipment that meets state-of-the-art in the hearing industry</p>
+                    <hr />
+                    <p>Professionals in their field,who can be trusted and get the best results</p>
+                </div>
+            </div>
+            <!-- right -->
+            <div id="right-content">
+                <div id="user-card">
+                    <!-- upper  -->
+                    <div id="upper">
+                        <div id="image">
+                            <div><img src="img/old-man-1.jpeg" alt=""></div>
+                            <div class="old-img"><img src="img/old-man-2.jpeg" alt=""></div>
+                            <div class="old-img"><img src="img/old-man-3.jpeg" alt=""></div>
+                            <div class="old-img"><img src="img/old-man-4.jpeg" alt=""></div>
+                        </div>
+                        <h2>1000+</h2>
+                        <p>Satisfied patients</p>
+
+                    </div>
+                    <!-- middle -->
+                    <div id="middle">
+                        <div>Take the discount for the first</div>
+                        <div> visit of an audiologist</div>
+                    </div>
+                    <!-- lower -->
+                    <div id="lower">
+                        <div style="font-size: 44px;">20%</div>
+                        <div><button style="border: none; font-weight: bold; font-size: 16px; padding: 6px 10px;">Make
+                                an
+                                appointment</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+    <!-- about-section  -->
+
+
+
+    <section id="section-about">
+        <!-- about-left  -->
+        <div class="about-main">
+            <!-- upper  -->
+            <div id="upper-part">
+                <!-- left  -->
+                <div id="about">About Us</div>
+                <!-- middle  -->
+                <div id="about-more">
+                    <h1>Audiologist Hearnic clinic Dhanbad</h1>
+                    <p style="font-size: 32px;">The Modern Hearnic Clinic is one of the best modern hearing
+                        aid and
+                        speech therapy clinic in
+                        Dhanbad.</p>
+                    <div><button class="learn">Learn More</button></div>
+                </div>
+                <!-- right  -->
+                <div id="my-image"><img src="img/me.jpeg" alt=""></div>
+            </div>
+            <!-- lower  -->
+            <div id="lower-part">
+                <!-- left  -->
+                <div id="left"> <img src="img/arrow.png" alt=""></div>
+                <!-- middle  -->
+                <div>
+                    <h3>Hearing problem resolving of an complexity at a fixed price</h3>
+                </div>
+                <!-- right -->
+                <div>
+                    <div id="right">
+                        <!-- up  -->
+                        <div id="up">
+                            <div class="horiz">
+                                <h1>01</h1>
+                                <hr />
+                                <p>We use modern equipments</p>
+                            </div>
+                            <div>
+                                <h1>02</h1>
+
+                                <hr />
+                                <p>The result meets all expectations</p>
+                            </div>
+                        </div>
+                        <!-- mid  -->
+                        <div id="mid">
+                            <div class="horiz">
+                                <h1>03</h1>
+
+                                <hr />
+                                <p>We have the best Professionals working</p>
+                            </div>
+                            <div>
+                                <h1>04</h1>
+
+                                <hr />
+                                <p>We train our own specialists</p>
+                            </div>
+                        </div>
+                        <!-- low  -->
+                        <div id="low">
+                            <div class="horiz">
+                                <h1>05</h1>
+
+                                <hr />
+                                <p>Individuals contract with the client</p>
+                            </div>
+                            <div>
+                                <h1>06</h1>
+
+                                <hr />
+                                <p>We have Indian certifications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- gallery -->
+
+    <section id="section-gallery">
+        <div class="gallery">
+            <!-- left  -->
+            <div id="left-gallery">Gallery</div>
+            <!-- middle  -->
+            <div>
+                <div id="mid-gallery"><b>Check out our clinic great gallery</b></div>
+                <div id="about-us">
+                    <div>#Clinic</div>
+                    <div>#Audiology</div>
+                    <div>#Therapy</div>
+                    <div>#Truthfulness</div>
+                    <div>#Trust</div>
+
+                </div>
+            </div>
+            <!-- right  -->
+            <div id="right-gallery">
+                <div><img src="img/tele.png" alt=""></div>
+                <div><img src="img/twiitter.png" alt=""></div>
+                <div><img src="img/facebook.png" alt=""></div>
+                <div><img src="img/whats.png" alt=""></div>
+
+            </div>
+        </div>
+        <!-- lower  -->
+        <div class="lower">
+            <!-- left  -->
+            <div id="therapy">
+                <div id="therapy-border"><img src="img/collection.jpg" alt=""></div>
+                <div id="therapy-about"><span>01 /
+                        <strong>Collection of therapy</strong> </span>
+                    <p>The boy got a 50% discount</p>
+                </div>
+            </div>
+            <!-- mid  -->
+            <div id="drag">
+                <h1>Drag</h1>
+            </div>
+            <!-- right  -->
+            <div id="equip">
+                <div id="equip-border"><img src="img/therapy.jpg" alt=""></div>
+                <div id="equip-about">
+                    <span>02 / <strong>Therapy equipment</strong> </span>
+                    <p>Best equipment for therapy</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services  -->
+
+    <section id="section-services">
+        <!-- upper -->
+        <div id="upper-service">
+            <div id="serv"><b>Service</b></div>
+            <div id="about-service">
+                <div>Excellent services of our clinic</div>
+                <div class="service-option">
+                    <div class="option all">All</div>
+                    <div class="option">For adults</div>
+                    <div class="option">For children</div>
+
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <!-- mid  -->
+        <div id="mid-service">
+            <div class="therapies">
+                <div>Diagonistic examination with consultation of an audiologist</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+            <div class="therapies">
+                <div>children's audiologist</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>consultation with a specialized therapist</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>consultation with a audiologist specialist</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>Therapy for speech and hearing problem</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>Hearing problem resolution</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>Treatment of Presbyterians</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>Therapy Treatment of dysarthia</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>Therapy treatment of high level Amyotrophic lateral sclerosis</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>Treatment for sensorineual</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>Outpatient course of conservation treatment</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>Hardware treatment(stuttering, apraxia, ANSD, sensorineual)</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies">
+                <div>Therapy and Aid</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+
+        </div>
+        <!-- lower -->
+        <div id="lower-service">
+            <div id="left-serv">
+                <div>Take a discount for a child under 5 years of age, for the first examination</div>
+                <div id="lowerleft--serv">
+                    <div>50%</div>
+                    <div><button><img src="img/phone.jpg" alt=""></button> </div>
+                </div>
+            </div>
+            <div id="right-serv">
+                <div> <img src="img/doc1.png" alt=""></div>
+                <div id="low-right-serv">
+                    <div>"</div>
+                    <div>
+                        <h1>"Stand up to the sick you world have them stand up to you in the hour of illness.</h1>
+                        <p>Dr. Arti Sukhla</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- doctors  -->
+    <section id="section-doctor">
+        <!-- upper  -->
+        <div id="up-doc">
+            <!-- left  -->
+            <div>Doctors</div>
+            <!-- mid  -->
+            <div>
+                <h1>Aid specialists and Audiologists</h1>
+                <p style="font-size: 36px;">Our clinic employs only Professionals specialist and audiologist.We select
+                    the best doctors on a
+                    regular basis.</p>
+            </div>
+            <!-- right  -->
+            <div>All Doctors &rarr;</div>
+        </div>
+        <!-- lower  -->
+
+        <!-- up -->
+        <div id="doctor">
+            <!-- left  -->
+            <div>
+                <div class="upper-doc"><img src="img/doc2.jpg" alt=""></div>
+                <div class="doc-about">
+                    <h1>Dr. Shyam Khurana</h1>
+                    <p>Work Experience- 8 Years</p>
+                    <div class="skill">
+                        <div>Therapist</div>
+                        <div>Ankyologist</div>
+                        <div>Head of the Department</div>
+                    </div>
+                </div>
+            </div>
+            <!-- right -->
+            <div>
+                <div class="upper-doc"><img src="img/doc1.png" alt="" height="235px" width="200"></div>
+                <div class="doc-about">
+                    <h1>Dr. Arti Shukhla</h1>
+                    <p>Work Experience- 14 Years</p>
+                    <div class="skill">
+                        <div>Therapist</div>
+                        <div>Otolaryngologist</div>
+                        <div>Chief Doctor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mid  -->
+
+        <div id="doctor">
+            <!-- left  -->
+            <div>
+                <div class="upper-doc"><img src="img/doc3.jpg" alt=""></div>
+                <div class="doc-about">
+                    <h1>Dr. Nikhil Nanda</h1>
+                    <p>Work Experience- 10 Years</p>
+                    <div class="skill">
+                        <div>Therapist</div>
+                        <div>Ankyologist</div>
+                        <div>Head of the Department</div>
+                    </div>
+                </div>
+            </div>
+            <!-- right -->
+            <div>
+                <div class="upper-doc"><img src="img/doc4.jpg" alt=""></div>
+                <div class="doc-about">
+                    <h1>Dr. Rani Kohli</h1>
+                    <p>Work Experience- 2 Years</p>
+                    <div class="skill">
+                        <div>Therapist</div>
+                        <div>Otolaryngologist</div>
+                        <div>Chief Doctor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- low  -->
+
+        <div id="doctor">
+            <!-- left  -->
+            <div>
+                <div class="upper-doc"><img src="img/doc5.jpg" alt=""></div>
+                <div class="doc-about">
+                    <h1>Dr. Radhika Sharma</h1>
+                    <p>Work Experience- 3 Years</p>
+                    <div class="skill">
+                        <div>Therapist</div>
+                        <div>Ankyologist</div>
+                        <div>Head of the Department</div>
+                    </div>
+                </div>
+            </div>
+            <!-- right -->
+            <div>
+                <div class="upper-doc"><img src="img/doc6.jpg" alt=""></div>
+                <div class="doc-about">
+                    <h1>Dr. Rashmi Thakur</h1>
+                    <p>Work Experience- 3 Years</p>
+                    <div class="skill">
+                        <div>Therapist</div>
+                        <div>Otolaryngologist</div>
+                        <div>Chief Doctor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- review  -->
+    <section id="section-review">
+        <!-- up -->
+        <div id="up-review">
+            <!-- left  -->
+            <div>Reviews </div>
+            <!-- mid  -->
+            <div>
+                <h1>Feedback from our favourite customers</h1>
+                <p>We treat our customer better than any other clinic.Thnak you for being with us!</p>
+            </div>
+            <!-- right  -->
+            <div>All reviews &rarr;</div>
+        </div>
+        <!-- low  -->
+        <div id="low-review">
+            <!-- right  -->
+            <div id="review-image"><img src="img/doc1.png" alt="" height="100px" width="100px"></div>
+            <!-- left -->
+            <div id="review-about">
+                <div id="coma">"</div>
+                <div>"I had the therapy consultation on october 24th and was pleasantly surprised that I did not have
+                    astigmatism,which had been diagnosed for 8 years by luxuary opticians.I really enjoyed the attitude
+                    of the clients, everyone is smiling,the staff is young and humorous,they are helpful,drunk and
+                    reassuring."</div>
+                <h1>Tannu Jha</h1>
+                <p>5 days old</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- form  -->
+    <section id="section-form">
+        <section id="section-form">
+            <div id="header-form">
+                <div>
+                    <img src="img/logo.webp" alt="" height="100px" width="100px">
+
+                </div>
+                <div>
+                    <h1 style="color: white;">Make an Appointment with a doctor</h1>
+
+                </div>
+            </div>
+
+            <!-- form  -->
+            <form action="">
+                <!-- upper-form  -->
+                <h2>About yourself</h2>
+
+                <div class="upper-form">
+                    <!-- left  -->
+                    <div class="input-field">
+                        <span><img src="img/pro-image.svg" alt=""></span>
+                        <input type="text" placeholder="Enter you name">
+                    </div>
+                    <!-- right -->
+                    <div id="left-upper-form">
+                        <div class="input-field">
+                            <span>+91</span>
+                            <input type="number" placeholder="Enter your number">
+                        </div>
+                        <div class="input-field">
+                            <span><img src="img/gmail-icon.svg" alt=""></span>
+                            <input type="email" placeholder="Enter your email">
+                        </div>
+
+                    </div>
+                </div>
+                <h2>Admission Date</h2>
+                <!-- lower-form -->
+                <div class="lower-form">
+                    <div class="upper-form">
+                        <div class="input-low-field">
+
+                            <input type="email" placeholder="Over view of specialization">
+                            <span><button>+</button></span>
+                        </div>
+                        <div class="input-low-field">
+
+                            <input type="email" placeholder="Check out the expert">
+                            <span><button>+</button></span>
+                        </div>
+                    </div>
+                    <!-- down -->
+                    <div class="date-input">
+                        <span id="date">Date-Time</span>
+                        <input type="datetime-local" placeholder="">
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </section>
+    </section>
+
+    <!-- question  -->
+    <section id="section-question">
+        <!-- upper  -->
+        <div id="up-question">
+            <div>FAQ</div>
+            <div>
+                <h1>Questions from our clients</h1>
+            </div>
+        </div>
+        <!-- mid  -->
+        <div id="mid-question">
+            <div class="therapies question">
+                <div class="para-ques">It is possible to pay for clinic services at the expense of the organization
+                </div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+            <div class="therapies question">
+                <div class="para-ques">Where can I find the information about the licenses of the clinic</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies question">
+                <div class="para-ques">Are there any discounts available?</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+            <div class="therapies question">
+                <div class="para-ques">Does "Hearnic" clinic provide treatment on credit</div>
+                <div class="sign"><button class="sign">+</button></div>
+            </div>
+            <hr />
+
+        </div>
+    </section>
+    <!-- partners  -->
+    <section id="section-partner">
+        <div id="up-partner">
+            <div>Partner</div>
+            <div>
+                <h1>We work with these partners</h1>
+            </div>
+        </div>
+
+        <!-- low  -->
+        <div id="partner-image">
+            <div><img src="img/sunpharma.png" alt=""></div>
+            <div><img src="img/reddy.jpg" alt=""></div>
+            <div><img src="img/alkem.jpg" alt=""></div>
+            <div><img src="img/cipla2.png" alt=""></div>
+            <div><img src="img/biocon.png" alt=""></div>
+
+        </div>
+    </section>
+    <!-- blog  -->
+    <section id="section-blog">
+        <div id="up-blog">
+            <!-- left  -->
+            <div id="blog">Blog</div>
+            <!-- mif  -->
+            <div>
+                <h1>You may be interested to know</h1>
+            </div>
+            <!-- right  -->
+            <div id="blog-sign">
+                <div class="blog-arrow">&rarr;</div>
+                <div class="blog-arrow">&larr;</div>
+
+            </div>
+        </div>
+
+        <!-- mid  -->
+
+
+        <div id="blog-image">
+            <!-- left  -->
+            <div>
+                <div><img src="img/earimg.jpg" alt="" height="200px"></div>
+                <div>
+
+                    <div class="skill">
+                        <div>Therapist</div>
+                        <div>Audiologist</div>
+                        <div>Hearing aid</div>
+                    </div>
+                    <h1>The modern benchmark for therapy in 2023</h1>
+
+                </div>
+            </div>
+            <!-- right -->
+            <div>
+                <div><img src="img/lab.jpg" alt="" height="200px" width="400"></div>
+
+
+                <div class="skill">
+                    <div>Equipment</div>
+                    <div>Speach therapy</div>
+                    <div>What is ANSD?</div>
+                </div>
+                <h1>What is better to choose in the opinion of a practitioner: Audio therapy?</h1>
+
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <section id="section-contact">
+        <nav>
+            <div id="nav-logo">
+                <div><img src="img/ear2.png" alt="" height="100px" width="100px"></div>
+                <div style="margin-left: 30px;">
+                    <h1>Hearnic</h1>
+                    <p>Medical clinic</p>
+                </div>
+            </div>
+            <div id="nav-left"> &uarr;</div>
+        </nav>
+
+        <!-- middle  -->
+
+
+        <h1 id="heading">We'll call you back</h1>
+        <div id="contact-form">
+
+
+            <form action="" id="contact-form-detail">
+                <div class="input-detail">
+                    <span><img src="img/pro-image.svg" alt=""></span>
+                    <input type="text" placeholder="Enter the name">
+                </div>
+                <div class="input-select">
+                    <input type="text" placeholder="What do you want to be called">
+                    <span><button class="plus">+</button></span>
+
+                </div>
+                <div class="input-select">
+
+                    <input type="text" placeholder="Cover the topic of the article">
+                    <span><button class="plus">+</button></span>
+                </div>
+                <div class="input-detail">
+                    <span id="number">+91</span>
+                    <input type="number" placeholder="Enter the number">
+                </div>
+
+                <button type="submit" id="contact-submit">Submit</button>
+            </form>
+
+
+
+
+        </div>
+
+        <!-- lower  -->
+
+        <div id="contact-site">
+            <div id="left-site">
+                <h1>Site Map</h1>
+                <div id="all-site">
+                    <div><a href="hero-section">Home</a> </div>
+                    <div><a href="section-services">Services</a></div>
+                    <div><a href="section-contact">Contact</a></div>
+                    <div><a href="section-gallery">Gallery</a></div>
+                    <div><a href="section-about">About us</a></div>
+                    <div><a href="section-doctor">Doctors</a></div>
+                    <div><a href="section-blog">Blog</a></div>
+                    <div><a href="section-partner">Partners</a></div>
+
+
+                </div>
+
+                <p>&copy; Hearnic: ALl rights reserved</p>
+
+            </div>
+            <div id="right-site">
+                <h1>We are on social media</h1>
+                <div class="lower-site site-links">
+                    <div><a href="/"><img src="img/telegram.png" alt="" height="40px" width="40px"></a></div>
+                    <div><a href="https://twitter.com/mr_mehrab1/"> <img src="img/twiitter.png" alt="" height="40px"
+                                width="40px"></a></div>
+                    <div><a href="https://www.facebook.com/mehrab.alam.568/"> <img src="img/facebook.png" alt=""
+                                height="40px" width="40px"></a></div>
+                    <div><a href="/"><img src="img/whatsapp.png" alt="" height="40px" width="40px"></a></div>
+
+                </div>
+                <div class="lower-site">
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
