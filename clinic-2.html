@@ -66,7 +66,7 @@
             align-items: center;
             color: white;
             text-decoration: none;
-            font-size: 2rem;
+            font-size: 1.5rem;
             margin: 20px;
         }
 
@@ -112,9 +112,6 @@
 
         }
 
-        #title {
-            margin-bottom: -20px;
-        }
 
 
 
@@ -145,7 +142,7 @@
         }
 
         #left-hr h1 {
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             margin-left: 80px;
 
 
@@ -160,7 +157,7 @@
             margin: 20px;
             border: 2px;
             border-radius: 8px;
-            height: 520px;
+            height: auto;
             width: 450px;
             background-color: rgba(46, 34, 38, 80%);
 
@@ -183,13 +180,13 @@
         #upper p {
 
 
-            font-size: 1.8rem;
+            font-size: 1.5rem;
 
         }
 
         #upper h2 {
             margin-bottom: 0;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
         #image {
@@ -212,7 +209,7 @@
             color: white;
             padding: 35px 20px;
             margin-top: 0;
-            font-size: 2.2rem;
+            font-size: 2rem;
             color: hsl(0deg 0% 83%);
 
 
@@ -241,192 +238,102 @@
 
 
         /* about  */
+
         #section-about {
-            display: flex;
-            justify-content: center;
-            margin: 40px;
-        }
 
-
-        .about-main {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 2rem;
-
-
-
-        }
-
-        #upper-part {
+            margin: 80px;
             display: flex;
             justify-content: space-between;
-            /* padding: 2rem; */
+        }
+
+        .about-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         #about {
-            margin: 20px;
+            font-size: 2rem;
             font-weight: bold;
-            font-size: 1.8rem;
-            min-width: 150px;
         }
 
-        #about-more {
-            margin-top: 0;
+        #about-arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 2px solid;
+            margin-bottom: 40px;
+        }
 
-            flex-wrap: wrap;
+        #about-more div:nth-child(1) {
+            font-size: 4rem;
+            font-weight: bold;
             max-width: 800px;
-            font-size: 2.2rem;
-            padding-top: 0px;
-            padding-left: 80px;
 
-
-
-        }
-
-        #about-more>div {
-            width: 250px;
-            border-radius: 25px;
-            background-color: black;
-            color: white;
-            padding: 12px 15px;
-            font-size: 22px;
-            text-align: center;
-            font-weight: bold;
         }
 
         #about-more p {
-            flex-wrap: wrap;
-            max-width: 600px;
-
-            color: grey;
+            font-size: 2rem;
+            color: gray;
+            max-width: 500px;
         }
 
         .learn {
+            font-size: 1rem;
+            height: 40px;
             width: 150px;
-            border-radius: 15px;
+            border-radius: 25px;
             background-color: black;
             color: white;
-            padding: 2px 5px;
-            font-size: 15px;
+        }
+
+        #section-about h3 {
+            font-size: 2.5rem;
+            max-width: 850px;
         }
 
         #my-image {
-
-            border: 2px solid;
             height: 350px;
-            width: 650px;
-
-
-
-
+            width: 550px;
         }
 
         #my-image img {
             height: 100%;
             width: 100%;
             object-fit: cover;
-
-        }
-
-        #lower-part {
-            display: flex;
-            /* justify-content: end; */
-            justify-content: space-between;
-            align-items: flex-end;
-
-        }
-
-        #lower-part h1 {
-            font-weight: normal;
-            font-size: 2rem;
-        }
-
-        #lower-part h3 {
-            font-weight: normal;
-            flex-wrap: wrap;
-            max-width: 650px;
-            font-weight: bold;
-            font-size: 1.9rem;
-            /* padding: 20px; */
-            /* margin-right: 50px; */
-        }
-
-        #left {
-
-            width: 400px;
-            border: 2px solid;
-            border-radius: 50%;
-            height: 150px;
-            width: 150px;
-            padding: 5px;
-
-        }
-
-        #left img {
-            border-radius: 100%;
-            height: 100%;
-            width: 100%;
-
-        }
-
-        #right {
-            margin-left: 20px;
-            padding: 5px -100px;
         }
 
         #right h1 {
+            font-size: 2rem;
             font-weight: bold;
-
         }
 
         #right p {
-            margin-right: 30px;
-            flex-wrap: wrap;
-            width: 100px;
-            margin-bottom: 30px;
-            font-size: 32px;
-            width: 300px;
-            color: grey
-        }
-
-        #left-hr hr {
-            max-width: 78%;
-        }
-
-        hr {
-            max-width: 100%;
+            max-width: 200px;
+            font-size: 1.5rem;
+            color: gray;
         }
 
 
-
-        #up {
-            margin-top: 80px;
-            display: flex;
+        .up {
             justify-content: space-between;
-        }
-
-        #mid {
             display: flex;
-            justify-content: space-between;
         }
-
-        #low {
-            display: flex;
-            justify-content: space-between;
-        }
-
 
         /* gallery */
 
         #section-gallery {
-            margin: 80px 40px;
+            margin: 80px 20px;
 
         }
 
         .gallery {
             display: flex;
-            margin: 30px;
+            padding: 20px;
             justify-content: space-between;
             align-items: top;
 
@@ -434,27 +341,27 @@
 
         #left-gallery {
             text-align: center;
-            min-width: 200px;
-            font-size: 3rem;
+            min-width: 150px;
+            font-size: 2rem;
             font-weight: bold;
-
+            /* justify-self: left; */
         }
 
         #mid-gallery {
 
-            margin-right: 130px;
+            margin-right: 370px;
             font-weight: bold;
-            font-size: 4rem;
-            max-width: 700px;
+            font-size: 3.5rem;
+            max-width: 600px;
         }
 
         #about-us {
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1rem;
             display: flex;
             flex-wrap: wrap;
-            max-width: 700px;
-            margin-top: 40px;
+            max-width: 600px;
+            margin-top: 20px;
 
         }
 
@@ -467,14 +374,15 @@
         }
 
         #right-gallery {
+
             display: flex;
             justify-content: center;
             margin-right: 20px;
         }
 
         #right-gallery>div {
-            height: 100px;
-            width: 100px;
+            height: 70px;
+            width: 70px;
             border: 2px solid;
             border-radius: 50%;
             padding: 5px;
@@ -495,13 +403,13 @@
             display: flex;
             justify-content: space-between;
 
-            /* margin: 20px; */
+            margin: 20px;
         }
 
         #therapy-border {
             background-color: rgba(128, 128, 128, 0.327);
-            height: 1000px;
-            width: 650px;
+            height: 750px;
+            width: 550px;
             border: 1px solid;
             border-radius: 4px;
             margin: 40px;
@@ -519,11 +427,11 @@
         }
 
         span {
-            font-size: 3rem;
+            font-size: 2rem;
         }
 
         #therapy-about p {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             color: grey;
         }
 
@@ -531,8 +439,8 @@
 
         #drag {
             border: 2px solid;
-            height: 150px;
-            width: 150px;
+            height: 100px;
+            width: 100px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -545,7 +453,7 @@
 
         #drag h1 {
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 2rem;
             color: white;
         }
 
@@ -554,8 +462,8 @@
 
 
         #equip-border {
-            height: 800px;
-            width: 650px;
+            height: 600px;
+            width: 550px;
             border: 1px solid;
             border-radius: 4px;
             align-self: flex-start;
@@ -572,14 +480,14 @@
         }
 
         #equip-about {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-top: 15px;
             text-align: center;
 
         }
 
         #equip-about p {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             padding-right: 15px;
             color: grey;
         }
@@ -587,195 +495,173 @@
 
         /* services */
 
-        #section-services {
+        #section-service {
             margin: 40px;
         }
 
-        #upper-service {
+        #main-service {
             display: flex;
-            align-items: center;
+            /* justify-content: space-between; */
             margin: 40px;
-
-
         }
 
-        #signs {
-            margin-left: 10%;
-            font-size: 24px;
-            max-width: 400px;
-            height: 200px;
-            width: 200px;
-            border: 1px solid;
-            text-align: center;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        #main-serv {
+            min-width: 90%;
+            justify-self: right;
+            margin: 0 80px;
         }
 
-        #serv {
-            align-self: start;
-
-            font-size: 2.5rem;
-
-        }
-
-        #about-service {
-            flex-wrap: wrap;
-            max-width: 850px;
-            font-size: 5rem;
+        #service-head {
+            font-size: 2rem;
+            justify-self: center;
             font-weight: bold;
-            margin-left: 110px;
+        }
 
+        #excellent {
+
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 40px 20px;
+            max-width: 450px;
+        }
+
+
+        .service-option div:nth-child(1) {
+            height: 30px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            max-width: 450px;
         }
 
         .service-option {
             display: flex;
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         .option {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
             font-weight: bold;
             border: 1px solid;
             border-radius: 15px;
-            padding: 5px 15px;
-            margin: 20px;
+            margin: 15px;
+            padding: 10px 10px;
+
         }
 
-        .all {
+        /* .all {
+            height: 40px;
+            font-size: 0.8rem;
             width: 150px;
             background-color: black;
             color: white;
-            padding: 5px 10px;
+         
             text-align: center;
 
-        }
-
-        #mid-service {
-            margin: 40px;
-            padding-left: 240px;
-            font-weight: bold;
-            font-size: 2.5rem;
+        } */
+        #mid-service hr {
+            max-width: 95%;
         }
 
         .therapies {
-            padding: 15px;
             display: flex;
             justify-content: space-between;
+            padding: 30px 30px;
+        }
+
+        .therapies div:nth-child(1) {
+            font-size: 2.2rem;
+
+            font-weight: bold;
         }
 
         .sign {
+            color: gray;
+            font-size: 3rem;
             height: 80px;
             width: 80px;
-            text-align: center;
-            font-weight: normal;
-            font-size: 35px;
-            border: 1px solid grey;
-            color: rgba(128, 128, 128, 0.719);
+            border: 1px solid;
             border-radius: 50%;
-
         }
 
-        #lower-service {
-            padding: 40px;
+        #low-service {
+            margin: 10px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-
+            justify-content: center;
         }
 
-        #left-serv {
+        #low-service button {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        #low-service button>img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #left-serv div:nth-child(1) {
+            font-size: 2rem;
             color: white;
-            background-color: rgba(21, 20, 20, 0.845);
-            height: 350px;
-            width: 800px;
-            border: 2px solid;
-            padding: 20px;
+            padding: 10px;
+        }
+
+
+        #lowerleft-serv {
+
             font-size: 2.5rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        #left-low-service {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            margin-right: 20px;
+            height: 320px;
+            width: 720px;
+            background-color: blueviolet;
         }
 
-        #lowerleft--serv {
-            font-weight: normal;
-            font-size: 52px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #lowerleft--serv div:nth-child(2) {
-            margin-right: 25px;
-            height: 100px;
-            width: 100px;
-            border: 1px solid;
-            border-radius: 50%;
-            align-self: flex-start;
-        }
-
-        #lowerleft--serv img {
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        #lowerleft--serv button {
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-
-        #right-serv {
-            border: 2px solid black;
-            display: flex;
-            justify-content: space-between;
-            background-color: rgba(215, 210, 210, 0.719);
-            height: 350px;
-            width: 800px;
-            border: 1px;
-            padding: 20px;
-            font-size: 35px;
-        }
-
-        #right-serv h1 {
-            font-size: 2rem;
-            text-align: start;
+        #low-right-service {
+            font-size: 1.5rem;
+            margin-left: 20px;
             padding: 0 10px;
-        }
-
-        #right-serv img {
-            height: 100%;
-            width: 200px;
-            object-fit: cover;
+            height: 320px;
+            width: 900px;
+            background-color: aqua;
         }
 
         #low-right-serv {
-            display: flex;
-            justify-content: space-between;
-            margin-left: 30px;
+            padding-left: 10px;
         }
-
-        #low-right-serv p {
-            color: grey;
-            text-align: start;
-            font-size: 2.5rem;
-        }
-
 
         #low-right-serv div:nth-child(1) {
-            margin: 20px;
-            font-size: 2rem;
-            font-weight: bold;
-            padding: 20px 20px;
-            height: 15px;
-            width: 15px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 40px;
+            width: 40px;
             border: 1px solid;
             border-radius: 50%;
-            text-align: center;
+        }
+
+        #right-serv {
+            display: flex;
+            justify-content: space-between;
         }
 
         /* doctor  */
@@ -787,35 +673,34 @@
         }
 
         #up-doc {
-            margin: 40px;
+            margin: 80px 40px;
             display: flex;
             justify-content: space-between;
         }
 
         #up-doc p {
-            font-size: 2rem;
+            font-size: 1.5rem;
             max-width: 600px;
             color: gray;
         }
 
         #up-doc div:nth-child(1) {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: bold;
-            margin-top: 80px;
         }
 
         #up-doc div:nth-child(2) {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             flex-wrap: wrap;
             max-width: 800px;
         }
 
         #up-doc div:nth-child(3) {
             margin-top: 40px;
-            font-size: 2rem;
+            font-size: 1rem;
 
-            height: 250px;
-            width: 250px;
+            height: 150px;
+            width: 150px;
             border: 1px solid;
             text-align: center;
             border-radius: 50%;
@@ -827,7 +712,7 @@
 
         #main-doc {
             display: flex;
-            justify-content: right;
+            justify-content: center;
         }
 
         .doctor {
@@ -840,8 +725,8 @@
         .upper-doc {
             border: 1px;
             margin: 30px;
-            height: 600px;
-            width: 620px;
+            height: 400px;
+            width: 420px;
             display: flex;
             justify-content: center;
             background-color: rgba(215, 210, 210, 0.719);
@@ -860,30 +745,33 @@
 
 
         .doctor h1 {
-            font-size: 2.5rem;
+
+            font-size: 2rem;
             margin-left: 40px;
         }
 
         .doctor p {
-            font-size: 2.3rem;
+
+            font-size: 1.5rem;
             margin-left: 40px;
 
         }
 
         .skill {
 
-            margin-left: 40px;
-
+            text-align: center;
+            justify-content: center;
             display: flex;
             flex-wrap: wrap;
-            max-width: 500px;
+            max-width: 400px;
         }
 
         .skill>div {
+            text-align: center;
             border: 1px solid;
             border-radius: 25px;
             margin: 10px;
-            font-size: 2rem;
+            font-size: 1rem;
             padding: 5px 15px;
         }
 
@@ -900,22 +788,22 @@
         }
 
         #up-review div:nth-child(1) {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: bold;
             margin-top: 40px;
         }
 
         #up-review div:nth-child(2) {
-            font-size: 3rem;
+            font-size: 2.5rem;
             flex-wrap: wrap;
             max-width: 800px;
         }
 
         #up-review div:nth-child(3) {
-            font-size: 38px;
+            font-size: 1.5rem;
             max-width: 400px;
-            height: 300px;
-            width: 300px;
+            height: 200px;
+            width: 200px;
             border: 1px solid;
             text-align: bottom;
             border-radius: 50%;
@@ -923,7 +811,7 @@
             align-items: center;
             justify-content: center;
             margin-top: 50px;
-
+            font-weight: bold;
         }
 
         #up-review p {
@@ -942,8 +830,8 @@
         #review-image {
             border: 1px;
             border-radius: 50%;
-            height: 200px;
-            width: 200px;
+            height: 100px;
+            width: 100px;
             margin: 0 150px;
         }
 
@@ -959,9 +847,9 @@
             justify-content: center;
             text-align: center;
             align-items: center;
-            font-size: 4rem;
-            height: 100px;
-            width: 100px;
+
+            height: 50px;
+            width: 50px;
             border: 1px solid;
             border-radius: 50%;
         }
@@ -975,7 +863,7 @@
         #review-about div:nth-child(2) {
             padding-top: 45px;
             font-style: italic;
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: normal;
             flex-wrap: wrap;
             max-width: 1000px;
@@ -989,11 +877,11 @@
 
             padding: 10px;
             margin-top: 40px;
-            font-size: 2.5rem;
+            font-size: 2rem;
         }
 
         #review-about p {
-            font-size: 35px;
+            font-size: 1.5rem;
             color: gray;
             margin-left: 20px;
         }
@@ -1021,7 +909,7 @@
         }
 
         #section-form h2 {
-            font-size: 3.5rem;
+            font-size: 2rem;
             color: white;
             padding: 20px;
 
@@ -1030,9 +918,9 @@
 
         #header-form h1 {
             margin-bottom: 40px;
-            font-size: 4rem;
+            font-size: 3rem;
             flex-wrap: wrap;
-            max-width: 850px;
+            max-width: 550px;
             padding: 20px;
 
         }
@@ -1053,8 +941,8 @@
 
         .input-field {
             border-radius: 15px;
-            width: 700px;
-            height: 100px;
+            width: 550px;
+            height: 80px;
             border: none;
             display: flex;
             justify-content: space-between;
@@ -1077,8 +965,8 @@
             align-items: center;
             justify-content: center;
             color: white;
-            /* padding-left: 10px; */
-            width: 195px;
+            height: 78px;
+            width: 155px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
             font-size: 32px;
@@ -1099,8 +987,8 @@
 
         .input-low-field input {
             padding: 0px 5px;
-            height: 100px;
-            width: 700px;
+            height: 80px;
+            width: 500px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
             background-color: hsl(245deg 72% 20%);
@@ -1110,10 +998,10 @@
         }
 
         .input-low-field {
-            width: 700px;
-            height: 100px;
+            width: 550px;
+            height: 80px;
             border-radius: 15px;
-            height: 50px;
+
             border: none;
             display: flex;
             justify-content: space-between;
@@ -1128,8 +1016,8 @@
             background-color: hsl(245deg 72% 20%);
 
             font-size: 40px;
-            height: 100px;
-            width: 40px;
+            height: 80px;
+            width: 70px;
 
             border: none;
 
@@ -1152,6 +1040,7 @@
             text-align: center;
             color: white;
             padding: 10px;
+            height: 65px;
             width: 150px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
@@ -1174,8 +1063,8 @@
         }
 
         .date-input input {
-            height: 100px;
-            width: 500px;
+            height: 80px;
+            width: 970px;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             background-color: hsl(245deg 72% 20%);
@@ -1188,7 +1077,7 @@
         .submit-button {
             margin: 40px 25px;
 
-            height: 100px;
+            height: 70px;
             width: 400px;
             border-radius: 15px;
             background-color: hsl(245deg 72% 20%);
@@ -1202,14 +1091,14 @@
         /* question  */
 
         #section-question {
-            margin: 20px 80px;
+            margin: 0px 80px;
             display: flex;
             justify-content: space-between;
         }
 
         #faq {
             margin-top: 80px;
-            font-size: 3rem;
+            font-size: 2rem;
 
         }
 
@@ -1218,60 +1107,59 @@
             flex-direction: column;
             justify-content: space-evenly;
             font-weight: bold;
-            font-size: 3rem;
+
 
         }
 
         #up-question h1 {
-            font-size: 4rem;
+            font-size: 2.5rem;
             flex-wrap: wrap;
             max-width: 500px;
 
         }
 
         .para-ques {
-            font-size: 2.4rem;
+            font-size: 2rem;
         }
 
         /* partner  */
 
         #section-partner {
-            margin: 40px;
+            margin: 80px 40px;
         }
 
         #up-partner {
             margin: 40px;
 
-            font-size: 3rem;
+
             font-weight: bold;
             display: flex;
             /* justify-content: center; */
         }
 
         #up-partner div:nth-child(1) {
-            font-size: 52px;
+            font-size: 2rem;
         }
 
         #section-partner h1 {
-            font-size: 70px;
+            font-size: 3rem;
             flex-wrap: wrap;
             max-width: 700px;
             margin-left: 20%;
         }
 
         #partner-image {
-            margin-top: 20%;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
+            display: flex;
+            justify-content: center;
             /* margin-left: -5%; */
 
         }
 
         #partner-image>div {
             /* text-align: center; */
-            margin: 20px;
-            height: 300px;
-            width: 300px;
+            margin: 0 40px;
+            height: 250px;
+            width: 250px;
             border: 1px solid black;
             border-radius: 50%;
             padding: 10px;
@@ -1290,20 +1178,20 @@
 
 
         #section-blog {
-            margin: 80px 40px;
+            margin: 150px 40px;
         }
 
         #up-blog {
-            font-size: 16px;
+            font-size: 2rem;
             font-weight: bold;
             display: flex;
             justify-content: space-between;
         }
 
-        #up-blog h1 {
-            font-size: 4rem;
+        #blog-header h1 {
+            font-size: 3rem;
             flex-wrap: wrap;
-            max-width: 900px;
+            max-width: 550px;
             /* margin-right: 30%; */
             /* margin-bottom: 20%;   */
         }
@@ -1332,18 +1220,244 @@
         }
 
         #blog-image {
-            font-size: 1.5rem;
 
+            margin: 20px;
             margin-top: 30px;
             display: flex;
             justify-content: right;
         }
 
-        #blog-image img {
+        .blog-option {
+
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 500px;
+
+        }
+
+        .blog-option>div {
 
             margin: 15px;
+            padding: 5px 15px;
+            font-size: 1.5rem;
+            text-align: center;
+            border: 1px solid;
+            border-radius: 20px;
+
+        }
+
+        #blog-image h1 {
+            font-size: 1.5rem;
+            max-width: 400px;
+        }
+
+        #blog-image img {
+
+
             border: 1px;
             background-color: wheat;
+        }
+
+        /* contact  */
+
+        #section-contact {
+            padding: 40px;
+            background-color: hsl(227deg 36% 35%);
+
+        }
+
+        #nav-logo {
+            margin: 40px;
+            align-items: center;
+            display: flex;
+        }
+
+        #nav-left {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: black;
+            height: 150px;
+            width: 150px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+
+        #heading {
+
+            margin-left: 80px;
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        #contact-form {
+            margin: 80px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #contact-form-detail {
+
+            column-gap: 150px;
+            row-gap: 45px;
+            text-align: center;
+            place-items: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .input-detail {
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            height: 70px;
+            width: 550px;
+            background-color: hsl(245deg 72% 20%);
+
+
+        }
+
+        .input-select {
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            height: 70px;
+            width: 550px;
+            background-color: hsl(245deg 72% 20%);
+
+
+        }
+
+        .input-select input {
+            height: 45px;
+            width: 88%;
+            background-color: hsl(245deg 72% 20%);
+
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            font-size: 20px;
+            padding: 0 15px;
+            border: none;
+            color: white;
+
+        }
+
+        .input-detail input {
+            height: 45px;
+            width: 88%;
+            background-color: hsl(245deg 72% 20%);
+
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            font-size: 24px;
+            padding: 0 10px;
+            border: none;
+            color: white;
+        }
+
+        .input-detail img {
+            padding: 5px 8px;
+            height: 50px;
+            width: 50px;
+        }
+
+        .plus {
+            font-weight: bold;
+            font-size: 42px;
+            padding: 5px 15px;
+            color: white;
+            background-color: hsl(245deg 72% 20%);
+
+            border: none;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        #number {
+            font-size: 24px;
+            padding: 5px 15px;
+            color: white;
+        }
+
+        #contact-submit {
+            border-radius: 15px;
+            height: 60px;
+            width: 300px;
+            background-color: hsl(245deg 72% 20%);
+
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+
+        #contact-site {
+            margin-left: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+
+        }
+
+        #contact-site h1 {
+            font-size: 3rem;
+        }
+
+        #contact-site p {
+            font-size: 1.5rem;
+
+        }
+
+        #all-site {
+            font-size: 2rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            row-gap: 10px;
+            column-gap: 25px;
+        }
+
+        #all-site a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .lower-site {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+
+        }
+
+
+        .lower-site>div {
+            height: 120px;
+            width: 120px;
+
+            margin: 5px;
+            border: 1px solid;
+            border-radius: 50%;
+
+        }
+
+
+
+        .lower-site img {
+            padding: 10px;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            border-radius: 50%;
+            object-fit: cover;
+            padding: 5px 5px;
         }
     </style>
 </head>
@@ -1424,78 +1538,75 @@
     <!-- about-us  -->
 
     <section id="section-about">
-        <!-- about-left  -->
-        <div class="about-main">
-            <!-- upper  -->
-            <div id="upper-part">
-                <!-- left  -->
-                <div id="about">About Us</div>
-                <!-- middle  -->
-                <div id="about-more">
-                    <h1>Audiologist Hearnic clinic Dhanbad</h1>
-                    <p style="font-size: 32px;">The Modern Hearnic Clinic is one of the best modern hearing
-                        aid and
-                        speech therapy clinic in
-                        Dhanbad.</p>
-                    <div><button class="learn">Learn More</button></div>
-                </div>
-                <!-- right  -->
-                <div id="my-image"><img src="img/me.jpeg" alt=""></div>
+        <!-- up -->
+        <div class="about-right">
+            <div id="about">About Us</div>
+            <div id="about-arrow">&rarr;</div>
+        </div>
+        <!-- mid  -->
+        <div class="about-right">
+            <!-- mid-up -->
+            <div id="about-more">
+                <div> Audiologist Hearnic clinic Dhanbad</div>
+                <p style="font-size: 1.5rem;">The Modern Hearnic Clinic is one of the best modern hearing
+                    aid and
+                    speech therapy clinic in
+                    Dhanbad.</p>
+                <div><button class="learn">Learn More</button></div>
             </div>
-            <!-- lower  -->
-            <div id="lower-part">
-                <!-- left  -->
-                <div id="left"> <img src="img/arrow.png" alt=""></div>
-                <!-- middle  -->
-                <div>
-                    <h3>Hearing problem resolving of an complexity at a fixed price</h3>
-                </div>
-                <!-- right -->
-                <div>
-                    <div id="right">
-                        <!-- up  -->
-                        <div id="up">
-                            <div class="horiz">
-                                <h1>01</h1>
-                                <hr />
-                                <p>We use modern equipments</p>
-                            </div>
-                            <div>
-                                <h1>02</h1>
-
-                                <hr />
-                                <p>The result meets all expectations</p>
-                            </div>
+            <!-- mid-low -->
+            <div>
+                <h3>Hearing problem resolving of an complexity at a fixed price</h3>
+            </div>
+        </div>
+        <!-- low  -->
+        <div class="about-right">
+            <div id="my-image"><img src="img/me.jpeg" alt=""></div>
+            <!-- low  -->
+            <div>
+                <div id="right">
+                    <!-- up  -->
+                    <div class="up">
+                        <div class="horiz">
+                            <h1>01</h1>
+                            <hr style="width: 200%;" />
+                            <p>We use modern equipments</p>
                         </div>
-                        <!-- mid  -->
-                        <div id="mid">
-                            <div class="horiz">
-                                <h1>03</h1>
+                        <div>
+                            <h1>02</h1>
 
-                                <hr />
-                                <p>We have the best Professionals working</p>
-                            </div>
-                            <div>
-                                <h1>04</h1>
-
-                                <hr />
-                                <p>We train our own specialists</p>
-                            </div>
+                            <hr />
+                            <p>The result meets all expectations</p>
                         </div>
-                        <!-- low  -->
-                        <div id="low">
-                            <div class="horiz">
-                                <h1>05</h1>
+                    </div>
+                    <!-- mid  -->
+                    <div class="up">
+                        <div class="horiz">
+                            <h1>03</h1>
 
-                                <hr />
-                                <p>Individuals contract with the client</p>
-                            </div>
-                            <div>
-                                <h1>06</h1>
+                            <hr style="width: 200%;" />
+                            <p>We have the best Professionals working</p>
+                        </div>
+                        <div>
+                            <h1>04</h1>
 
-                                <hr />
-                                <p>We have Indian certifications</p>
-                            </div>
+                            <hr />
+                            <p>We train our own specialists</p>
+                        </div>
+                    </div>
+                    <!-- low  -->
+                    <div class="up">
+                        <div class="horiz">
+                            <h1>05</h1>
+
+                            <hr style="width: 200%;" />
+                            <p>Individuals contract with the client</p>
+                        </div>
+                        <div>
+                            <h1>06</h1>
+
+                            <hr />
+                            <p>We have Indian certifications</p>
                         </div>
                     </div>
                 </div>
@@ -1562,122 +1673,144 @@
     <!-- service  -->
 
 
-    <section id="section-services">
-        <!-- upper -->
-        <div id="upper-service">
-            <div id="serv"><b>Service</b></div>
-            <div id="about-service">
-                <div>Excellent services of our clinic</div>
-                <div class="service-option">
-                    <div class="option all">All</div>
-                    <div class="option">For adults</div>
-                    <div class="option">For children</div>
+    <section id="section-service">
+
+        <div id="main-service">
+            <div id="service-head">Service</div>
+            <div id="main-serv">
+
+                <div id="about-service">
+                    <div id="excellent">Excellent services of our clinic</div>
+                    <div class="service-option">
+                        <div class="option">All</div>
+                        <div class="option">For adults</div>
+                        <div class="option">For children</div>
+
+                    </div>
+                </div>
+
+
+                <!-- therapy  -->
+
+
+                <div id="mid-service">
+                    <div class="therapies">
+                        <div>Diagonistic examination with consultation of an audiologist</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+                    <div class="therapies">
+                        <div>children's audiologist</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>consultation with a specialized therapist</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>consultation with a audiologist specialist</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Therapy for speech and hearing problem</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Hearing problem resolution</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Treatment of Presbyterians</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Therapy Treatment of dysarthia</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Therapy treatment of high level Amyotrophic lateral sclerosis</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Treatment for sensorineual</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Outpatient course of conservation treatment</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Hardware treatment(stuttering, apraxia, ANSD, sensorineual)</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Therapy and Aid</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
 
                 </div>
-            </div>
-            <div></div>
-        </div>
-        <!-- mid  -->
-        <div id="mid-service">
-            <div class="therapies">
-                <div>Diagonistic examination with consultation of an audiologist</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-            <div class="therapies">
-                <div>children's audiologist</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
 
-            <div class="therapies">
-                <div>consultation with a specialized therapist</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
 
-            <div class="therapies">
-                <div>consultation with a audiologist specialist</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
 
-            <div class="therapies">
-                <div>Therapy for speech and hearing problem</div>
-                <div class="sign"><button class="sign">+</button></div>
             </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Hearing problem resolution</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Treatment of Presbyterians</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Therapy Treatment of dysarthia</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Therapy treatment of high level Amyotrophic lateral sclerosis</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Treatment for sensorineual</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Outpatient course of conservation treatment</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Hardware treatment(stuttering, apraxia, ANSD, sensorineual)</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Therapy and Aid</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
 
         </div>
-        <!-- lower -->
-        <div id="lower-service">
-            <div id="left-serv">
-                <div>Take a discount for a child under 5 years of age, for the first examination</div>
-                <div id="lowerleft--serv">
-                    <div>50%</div>
-                    <div><button><img src="img/phone.jpg" alt=""></button> </div>
-                </div>
-            </div>
-            <div id="right-serv">
-                <div> <img src="img/doc-arti.png" alt=""></div>
-                <div id="low-right-serv">
-                    <div>"</div>
-                    <div>
-                        <h1>"Stand up to the sick you world have them stand up to you in the hour of illness.</h1>
-                        <p>Dr. Arti Sukhla</p>
+
+
+        <!-- lower  -->
+
+        <div id="low-service">
+            <!-- left  -->
+            <div id="left-low-service">
+                <div id="left-serv">
+                    <div>Take a discount for a child under 5 years of age, for the first examination</div>
+                    <div id="lowerleft-serv">
+                        <div>50%</div>
+                        <div><button><img src="img/phone.jpg" alt=""></button> </div>
                     </div>
                 </div>
             </div>
+
+            <!-- right  -->
+            <div id="low-right-service">
+                <div id="right-serv">
+                    <div> <img src="img/doc-arti.png" alt="" height="300px"></div>
+                    <div id="low-right-serv">
+                        <div>"</div>
+                        <div>
+                            <h1>"Stand up to the sick you world have them stand up to you in the hour of illness.</h1>
+                            <p>Dr. Arti Sukhla</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
     </section>
 
 
@@ -1964,7 +2097,7 @@
             <!-- left  -->
             <div id="blog">Blog</div>
             <!-- mif  -->
-            <div>
+            <div id="blog-header">
                 <h1>You may be interested to know</h1>
             </div>
             <!-- right  -->
@@ -1981,10 +2114,10 @@
         <div id="blog-image">
             <!-- left  -->
             <div>
-                <div><img src="img/earimg.jpg" alt="" height="200px"></div>
+                <div><img src="img/earimg.jpg" alt="" height="300px" width="500px" style="margin-right: 20px;"></div>
                 <div>
 
-                    <div class="skill">
+                    <div class="blog-option">
                         <div>Therapist</div>
                         <div>Audiologist</div>
                         <div>Hearing aid</div>
@@ -1995,10 +2128,10 @@
             </div>
             <!-- right -->
             <div>
-                <div><img src="img/lab.jpg" alt="" height="200px" width="400"></div>
+                <div><img src="img/lab.jpg" alt="" height="300px" width="650"></div>
 
 
-                <div class="skill">
+                <div class="blog-option">
                     <div>Equipment</div>
                     <div>Speach therapy</div>
                     <div>What is ANSD?</div>
@@ -2013,6 +2146,92 @@
         </div>
     </section>
 
+
+    <!-- contact  -->
+
+    <section id="section-contact">
+        <nav>
+            <div id="nav-logo">
+                <div><img src="img/earlogo.jpg" alt="" height="150px" width="150px"></div>
+                <div>
+                    <h1>Hearnic</h1>
+                    <p>Medical clinic</p>
+                </div>
+            </div>
+            <div id="nav-left"> &uarr;</div>
+        </nav>
+
+        <!-- middle  -->
+
+
+        <h1 id="heading">We'll call you back</h1>
+        <div id="contact-form">
+
+
+            <form action="" id="contact-form-detail">
+                <div class="input-detail">
+                    <span><img src="img/pro-image.svg" alt=""></span>
+                    <input type="text" placeholder="Enter the name">
+                </div>
+                <div class="input-select">
+                    <input type="text" placeholder="What do you want to be called">
+                    <span><button class="plus">+</button></span>
+
+                </div>
+                <div class="input-select">
+
+                    <input type="text" placeholder="Cover the topic of the article">
+                    <span><button class="plus">+</button></span>
+                </div>
+                <div class="input-detail">
+                    <span id="number">+91</span>
+                    <input type="number" placeholder="Enter the number">
+                </div>
+
+                <button type="submit" id="contact-submit">Submit</button>
+            </form>
+        </div>
+
+        <div id="contact-site">
+            <div id="left-site">
+                <h1>Site Map</h1>
+                <div id="all-site">
+                    <div><a href="hero-section">Home</a> </div>
+                    <div><a href="section-services">Services</a></div>
+                    <div><a href="section-contact">Contact</a></div>
+                    <div><a href="section-gallery">Gallery</a></div>
+                    <div><a href="section-about">About us</a></div>
+                    <div><a href="section-doctor">Doctors</a></div>
+                    <div><a href="section-blog">Blog</a></div>
+                    <div><a href="section-partner">Partners</a></div>
+
+
+                </div>
+
+                <p><span style="color: black; font-size: 2.2rem;">&copy;</span> Hearnic: ALl rights reserved</p>
+
+            </div>
+
+            <div id="right-site">
+                <h1>We are on social media</h1>
+                <div class="lower-site site-links">
+                    <div><a href="/"><img src="img/telegram.png" alt=""></a></div>
+                    <div><a href="https://twitter.com/mr_mehrab1/"> <img src="img/twiitter.png" alt=""></a></div>
+                    <div><a href="https://www.facebook.com/mehrab.alam.568/"> <img src="img/facebook.png" alt=""></a>
+                    </div>
+                    <div><a href="/"><img src="img/whatsapp.png" alt=""></a></div>
+
+                </div>
+                <div class="lower-site">
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
 </body>
 
 </html>
