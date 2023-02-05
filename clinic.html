@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+    function metro_city(city) {
+        if (city == "Kolkata" || city == "Mumbai" || city == "Delhi" || city == "Chennai") {
+            console.log(city + " is a metro city")
+        }
+        else { console.log(city + " is not a metro city") }
+    }
+    metro_city("Dhanbad")
+
+</script>
 
 <head>
     <meta charset="UTF-8">
@@ -8,6 +18,7 @@
     <title>Document</title>
     <style>
         body {
+
             margin: 0;
             font-family: sans-serif;
             overflow-x: hidden;
@@ -17,6 +28,7 @@
             background-color: rgba(58, 10, 10, .6);
             height: 100vh;
             overflow: hidden;
+
 
         }
 
@@ -34,22 +46,27 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 10px;
+        }
+
+        #ear-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
 
         nav div:nth-child(1) {
+            margin-top: 0;
+            font-size: 2rem;
+            margin-left: 15px;
 
-            font-size: 24px;
-            margin-left: 40px;
-            margin-bottom: 0;
         }
-
 
         #links a {
             align-items: center;
             color: white;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 1.5rem;
             margin: 20px;
         }
 
@@ -68,7 +85,8 @@
 
         .main-content {
             display: flex;
-
+            flex-direction: column;
+            justify-content: center;
 
         }
 
@@ -79,65 +97,96 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            height: 100%;
+            /* height: 100%; */
+            /* margin: 40px; */
+            /* margin-left: 40px; */
+            /* margin-bottom: 60px; */
+
         }
 
         .left-content h3 {
-            max-width: 442px;
-            font-size: 32px;
+            max-width: 900px;
+            font-size: 3rem;
             font-weight: normal;
 
 
         }
 
-        #title {
-            margin-bottom: 40px;
-        }
 
-        hr {
-            max-width: 78%;
-            /* width: 370px; */
-            margin: 40px 0;
-            /* float: left; */
-        }
+
 
         .left-content p {
-            font-size: 16px;
-            max-width: 410px;
+            color: white;
+            font-size: 26px;
+            max-width: 400px;
+        }
+
+
+
+        #left-hr {
+            display: flex;
+            flex-direction: column;
+            color: white;
+
+            justify-content: flex-start;
+        }
+
+
+
+        #left-hr p {
+            font-size: 1.8rem;
+            color: hsl(0deg 0% 83%);
+            /* margin: 40px; */
+            margin-left: 80px;
+            max-width: 650px;
+        }
+
+        #left-hr h1 {
+            font-size: 2.5rem;
+            margin-left: 80px;
+
+
         }
 
         #user-card {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            position: absolute;
-            bottom: 40px;
-            right: 20px;
+            justify-content: flex-start;
+
+
+            margin: 20px;
             border: 2px;
             border-radius: 8px;
-            height: 300px;
-            width: 280px;
+            height: auto;
+            width: 450px;
             background-color: rgba(46, 34, 38, 80%);
+
         }
 
         #right-content {
-            position: relative;
-            flex-basis: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         #upper {
-            color: white;
+            color: hsl(0deg 0% 83%);
+
             display: flex;
             flex-direction: column;
-            padding: 20px;
+            margin: 20px;
         }
 
         #upper p {
-            margin-top: 0;
+
+
+            font-size: 1.5rem;
+
         }
 
         #upper h2 {
             margin-bottom: 0;
+            font-size: 1.8rem;
         }
 
         #image {
@@ -146,245 +195,186 @@
         }
 
         #upper img {
-            height: 40px;
-            width: 40px;
+            height: 60px;
+            width: 60px;
             border-radius: 100%;
             border: 2px solid white;
         }
 
         .old-img {
-            margin-left: -10px;
+            margin-left: -15px;
         }
 
         #middle {
             color: white;
-            margin: 20px;
+            padding: 35px 20px;
+            margin-top: 0;
+            font-size: 2rem;
+            color: hsl(0deg 0% 83%);
+
+
         }
 
         #lower {
-            color: white;
+            color: hsl(0deg 0% 83%);
+
             display: flex;
             justify-content: space-between;
-            margin: 15px;
+            padding: 10px 20px;
 
         }
 
-        #lower div:nth-child(2) {
-
+        #lower button {
+            font-size: 1.2rem;
             font-weight: bold;
             color: black;
             border-radius: 8px;
             background-color: white;
-            padding: 8px 10px;
+            padding: 8px 20px;
+            margin-bottom: 0;
             text-align: center;
         }
 
+
+
         /* about  */
-        .about-main {
+
+        #section-about {
+
+            margin: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .about-right {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            margin: 20px;
-
-
-
-        }
-
-        #upper-part {
-            display: flex;
-            justify-content: space-between;
-            /* justify-content: center; */
-            align-items: top;
-            padding: 0px 0px;
-            /* margin: 20px px; */
-            margin-left: 0 0px;
-
         }
 
         #about {
-            width: 300px;
+            font-size: 2rem;
             font-weight: bold;
-            font-size: 20px;
-
-            margin-top: 38px;
-            margin-right: -40px;
-            text-align: right;
-
         }
 
-        #about-more {
-            margin-top: 0;
-            flex-wrap: wrap;
+        #about-arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            border: 2px solid;
+            margin-bottom: 40px;
+        }
+
+        #about-more div:nth-child(1) {
+            font-size: 4rem;
+            font-weight: bold;
             max-width: 800px;
-            font-size: 24px;
-            padding-top: 0px;
-            margin: 0 80px;
-
 
         }
 
-        #about-more>div {
-            width: 150px;
-            border-radius: 15px;
-            background-color: black;
-            color: white;
-            padding: 5px 10px;
-            font-size: 18px;
-
+        #about-more p {
+            font-size: 2rem;
+            color: gray;
+            max-width: 500px;
         }
 
         .learn {
+            font-size: 1rem;
+            height: 40px;
             width: 150px;
-            border-radius: 15px;
+            border-radius: 25px;
             background-color: black;
             color: white;
-            padding: 2px 5px;
-            font-size: 15px;
+        }
+
+        #section-about h3 {
+            font-size: 2.5rem;
+            max-width: 850px;
         }
 
         #my-image {
-
-            border: 2px solid;
-            height: 250px;
-            width: 1250px;
-            margin-top: 20px;
-
-
+            height: 350px;
+            width: 550px;
         }
 
         #my-image img {
             height: 100%;
             width: 100%;
             object-fit: cover;
-
         }
 
-        #lower-part {
-            display: flex;
-            justify-content: end;
-            align-items: flex-end;
-
-        }
-
-        #lower-part h1 {
-            font-weight: normal;
-            font-size: 32px;
-        }
-
-        #lower-part h3 {
-            font-weight: normal;
-            flex-wrap: wrap;
-            width: 400px;
-            font-size: 32px;
-            margin-right: 50px;
-        }
-
-        #left {
-            margin-bottom: 35px;
-            margin-right: 70px;
-            width: 400px;
-            border: 2px solid;
-            border-radius: 100%;
-            height: 80px;
-            width: 80px;
-            padding: 5px;
-
-        }
-
-        #left img {
-            border-radius: 100%;
-            height: 100%;
-            width: 100%;
-
-        }
-
-        #right {
-            margin-left: 20px;
-            padding: 5px -100px;
+        #right h1 {
+            font-size: 2rem;
+            font-weight: bold;
         }
 
         #right p {
-            margin-right: 30px;
-            flex-wrap: wrap;
-            width: 100px;
-            margin-bottom: 30px;
-            font-size: 24px;
-            width: 200px;
-            color: grey
-        }
-
-        #left-hr hr {
-            max-width: 78%;
-        }
-
-        hr {
-            max-width: 100%;
+            max-width: 200px;
+            font-size: 1.5rem;
+            color: gray;
         }
 
 
-
-        #up {
-            margin-top: 80px;
-            display: flex;
+        .up {
             justify-content: space-between;
-        }
-
-        #mid {
             display: flex;
-            justify-content: space-between;
         }
 
-        #low {
-            display: flex;
-            justify-content: space-between;
-        }
+        /* gallery */
 
-        /* Gallery  */
+        #section-gallery {
+            margin: 80px 40px;
+
+        }
 
         .gallery {
             display: flex;
-
+            padding: 20px;
             justify-content: space-between;
             align-items: top;
-            margin: 100px 20px;
+
         }
 
         #left-gallery {
-            margin-right: 40px;
-            margin-top: 20px;
-            font-size: 24px;
+            text-align: center;
+            min-width: 150px;
+            font-size: 2rem;
             font-weight: bold;
-            margin-left: 10%;
-
+            /* justify-self: left; */
         }
 
         #mid-gallery {
-            margin-top: 10px;
-            margin-right: 20%;
+
+            margin-right: 370px;
             font-weight: bold;
-            font-size: 40px;
+            font-size: 3.5rem;
             max-width: 600px;
         }
 
         #about-us {
             font-weight: bold;
-            font-size: 12px;
+            font-size: 1rem;
             display: flex;
             flex-wrap: wrap;
-            max-width: 300px;
+            max-width: 600px;
             margin-top: 20px;
+
         }
 
         #about-us>div {
-
             text-align: center;
             border: 1px solid grey;
             border-radius: 15px;
-            padding: 5px 10px;
-            margin: 8px;
+            padding: 5px 20px;
+            margin: 20px;
         }
 
         #right-gallery {
+
             display: flex;
             justify-content: center;
             margin-right: 20px;
@@ -412,17 +402,17 @@
         .lower {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+
             margin: 20px;
         }
 
         #therapy-border {
             background-color: rgba(128, 128, 128, 0.327);
-            height: 500px;
-            width: 380px;
+            height: 750px;
+            width: 550px;
             border: 1px solid;
             border-radius: 4px;
-            margin-left: 25%;
+            margin: 40px;
         }
 
         #therapy-border img {
@@ -433,47 +423,53 @@
 
         #therapy-about {
             margin-top: 20px;
-            margin-left: 35%;
             text-align: center;
-
         }
 
         span {
-            font-size: 20px;
+            font-size: 2rem;
         }
 
         #therapy-about p {
-            font-size: 18px;
+            font-size: 1.5rem;
             color: grey;
         }
 
+        /* mid */
+
         #drag {
             border: 2px solid;
-            height: 80px;
-            width: 80px;
+            height: 100px;
+            width: 100px;
             border-radius: 50%;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             padding: 20px 20px;
             background-color: black;
-            margin-bottom: 10%;
-            margin-left: 20px;
+            margin-bottom: 40px;
+            align-self: center;
         }
 
         #drag h1 {
             font-weight: bold;
-            font-size: 28px;
+            font-size: 2rem;
             color: white;
         }
 
+
+        /* right  */
+
+
         #equip-border {
-            height: 400px;
-            width: 350px;
+            height: 600px;
+            width: 550px;
             border: 1px solid;
             border-radius: 4px;
-            text-align: top;
-            margin-top: -30%;
+            align-self: flex-start;
+
             background-color: rgba(128, 128, 128, 0.327);
-            margin-left: -18%;
+            margin: 40px;
 
         }
 
@@ -484,388 +480,481 @@
         }
 
         #equip-about {
-            font-size: 25px;
+            font-size: 2rem;
             margin-top: 15px;
-            margin-right: 0;
+            text-align: center;
+
         }
 
         #equip-about p {
-            font-size: 18px;
-
+            font-size: 1.5rem;
+            padding-right: 15px;
             color: grey;
         }
 
-        /* service */
 
-        #section-services {
-            padding: 10%;
+        /* services */
+
+        #section-service {
+            margin: 40px;
         }
 
-        #upper-service {
+        #main-service {
             display: flex;
-            align-items: center;
-            margin-left: 5%;
-            padding-bottom: 100px;
-
+            /* justify-content: space-between; */
+            margin: 40px;
         }
 
-        #signs {
-            margin-left: 10%;
-            font-size: 24px;
-            max-width: 400px;
-            height: 200px;
-            width: 200px;
-            border: 1px solid;
-            text-align: center;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        #main-serv {
+            min-width: 90%;
+            justify-self: right;
+            margin: 0 80px;
         }
 
-        #serv {
-            margin-bottom: 15%;
-            font-size: 24px;
-        }
-
-        #about-service {
-            flex-wrap: wrap;
-            max-width: 450px;
-            font-size: 50px;
+        #service-head {
+            font-size: 2rem;
+            justify-self: center;
             font-weight: bold;
-            margin-left: 40px;
+        }
+
+        #excellent {
+
+            font-size: 3rem;
+            font-weight: bold;
+            margin: 40px 20px;
+            max-width: 450px;
+        }
+
+
+        .service-option div:nth-child(1) {
+            height: 30px;
+            width: 100px;
+            background-color: black;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            max-width: 450px;
         }
 
         .service-option {
             display: flex;
-            font-size: 12px;
-            margin-left: -2%;
-            margin-top: 5%;
-
+            font-size: 1.5rem;
         }
 
         .option {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
             font-weight: bold;
             border: 1px solid;
             border-radius: 15px;
-            padding: 5px 15px;
-            margin: 5px;
+            margin: 15px;
+            padding: 10px 10px;
+
         }
 
-        .all {
+        /* .all {
+            height: 40px;
+            font-size: 0.8rem;
+            width: 150px;
             background-color: black;
             color: white;
-            padding: 5px 15px;
+         
+            text-align: center;
 
-        }
-
-        #mid-service {
-            margin-left: 18%;
-            font-weight: bold;
-            font-size: 24px;
+        } */
+        #mid-service hr {
+            max-width: 95%;
         }
 
         .therapies {
             display: flex;
             justify-content: space-between;
+            padding: 30px 30px;
+        }
+
+        .therapies div:nth-child(1) {
+            font-size: 2.2rem;
+
+            font-weight: bold;
         }
 
         .sign {
-            height: 40px;
-            width: 40px;
-            text-align: center;
-            font-weight: normal;
-            font-size: 35px;
-            border: 1px solid grey;
-            color: rgba(128, 128, 128, 0.719);
+            color: gray;
+            font-size: 3rem;
+            height: 80px;
+            width: 80px;
+            border: 1px solid;
             border-radius: 50%;
-
         }
 
-        #lower-service {
+        #low-service {
+            margin: 10px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            margin-left: 18%;
+        }
+
+        #low-service button {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+
+        #low-service button>img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #left-serv div:nth-child(1) {
+            font-size: 2rem;
+            color: white;
+            padding: 10px;
+        }
+
+
+        #lowerleft-serv {
+
+            font-size: 2.5rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 30px;
         }
 
         #left-serv {
-            color: white;
-            background-color: rgba(21, 20, 20, 0.845);
-            height: 150px;
-            width: 400px;
-            border: 2px solid;
-            padding: 20px;
-            font-size: 18px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
 
-        #lowerleft--serv {
-            font-weight: normal;
-            font-size: 32px;
+        #left-low-service {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 20px;
+            height: 320px;
+            width: 750px;
+            background-color: #594e51;
+        }
+
+        #low-right-service {
+            font-size: 1.5rem;
+            margin-left: 20px;
+            padding: 0 10px;
+            height: 320px;
+            width: 900px;
+            background-color: #f8f8f8;
+        }
+
+        #low-right-serv {
+            padding-left: 10px;
+        }
+
+        #low-right-serv div:nth-child(1) {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 40px;
+            width: 40px;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+
+        #right-serv {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* doctor  */
+
+
+        #section-doctor {
+            margin: 60px;
+
+        }
+
+        #up-doc {
+            margin: 80px 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #up-doc p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            color: gray;
+        }
+
+        #up-doc div:nth-child(1) {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 60px;
+        }
+
+        #up-doc div:nth-child(2) {
+            font-size: 2.5rem;
+            flex-wrap: wrap;
+            max-width: 800px;
+        }
+
+        #up-doc div:nth-child(3) {
+            margin-top: 40px;
+            font-size: 2rem;
+            font-weight: bold;
+            height: 250px;
+            width: 250px;
+            border: 1px solid;
+            text-align: center;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #main-doc {
+            display: flex;
+            justify-content: center;
+        }
+
+        .doctor {
 
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            margin: 40px;
         }
 
-        #lowerleft--serv div:nth-child(2) {
-            margin-right: 25px;
+        .upper-doc {
+            border: 1px;
+            margin: 30px;
+            height: 400px;
+            width: 420px;
+            display: flex;
+            justify-content: center;
+            background-color: rgba(215, 210, 210, 0.719);
+        }
+
+
+
+
+
+        .doctor img {
+
+            border: 1px;
+
+        }
+
+
+
+        .doctor h1 {
+
+            font-size: 2rem;
+            margin-left: 40px;
+        }
+
+        .doctor p {
+
+            font-size: 1.5rem;
+            margin-left: 40px;
+
+        }
+
+        .skill {
+
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 400px;
+        }
+
+        .skill>div {
+            text-align: center;
+            border: 1px solid;
+            border-radius: 25px;
+            margin: 10px;
+            font-size: 1rem;
+            padding: 5px 15px;
+        }
+
+        /* reviews  */
+
+        #section-review {
+            margin: 40px;
+        }
+
+        #up-review {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px;
+        }
+
+        #up-review div:nth-child(1) {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-top: 40px;
+        }
+
+        #up-review div:nth-child(2) {
+            font-size: 2.5rem;
+            flex-wrap: wrap;
+            max-width: 800px;
+        }
+
+        #up-review div:nth-child(3) {
+            font-size: 1.5rem;
+            max-width: 400px;
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            text-align: bottom;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        #up-review p {
+            max-width: 700px;
+            color: gray;
+            font-size: 2rem;
+        }
+
+
+        #low-review {
+            margin: 80px 40px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #review-image {
+            border: 1px;
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            margin: 0 150px;
+        }
+
+        #review-image img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #bdb9b9;
+
+        }
+
+        #coma {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
             height: 50px;
             width: 50px;
             border: 1px solid;
             border-radius: 50%;
         }
 
-        #lowerleft--serv img {
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
-
+        #coma img {
+            height: 70%;
+            width: 70%;
             object-fit: cover;
-        }
-
-        #lowerleft--serv button {
-            height: 100%;
-            width: 100%;
-            border-radius: 50%;
-
-            object-fit: cover;
-        }
-
-
-        #right-serv {
-            display: flex;
-            justify-content: space-between;
-            background-color: white;
-            height: 200px;
-            width: 400px;
-            border: 1px;
-            padding: 20px;
-            font-size: 10px;
-        }
-
-        #right-serv img {
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        #low-right-serv {
-            display: flex;
-            justify-content: space-between;
-            margin-left: 30px;
-        }
-
-        #low-right-serv p {
-            color: grey;
-            font-size: 13px;
-        }
-
-
-        #low-right-serv div:nth-child(1) {
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 12px;
-            margin-right: 12px;
-            height: 10px;
-            width: 10px;
-            border: 1px solid;
-            border-radius: 50%;
-            padding: 10px;
-        }
-
-        /* doctors  */
-        #section-doctor {
-            padding: 8%;
-        }
-
-        #up-doc {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #up-doc div:nth-child(1) {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        #up-doc div:nth-child(2) {
-            font-size: 24px;
-            flex-wrap: wrap;
-            max-width: 500px;
-        }
-
-        #up-doc div:nth-child(3) {
-            font-size: 24px;
-            max-width: 400px;
-            height: 200px;
-            width: 200px;
-            border: 1px solid;
-            text-align: center;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        #doctor {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-        }
-
-        #doctor img {
-            margin: 15px;
-            border: 1px;
-            background-color: wheat;
-        }
-
-        .skill {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 300px;
-        }
-
-        .skill>div {
-            border: 1px solid;
-            border-radius: 10px;
-            margin: 10px;
-            font-size: 16px;
-            padding: 5px 10px;
-        }
-
-        /* reviews */
-
-        #section-review {
-            padding: 10%;
-        }
-
-        #up-review {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        #up-review div:nth-child(1) {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        #up-review div:nth-child(2) {
-            font-size: 24px;
-            flex-wrap: wrap;
-            max-width: 500px;
-        }
-
-        #up-review div:nth-child(3) {
-            font-size: 24px;
-            max-width: 400px;
-            height: 200px;
-            width: 200px;
-            border: 1px solid;
-            text-align: center;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        #low-review {
-            padding: 10% 20%;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        #review-image {
-            border: 1px solid;
-            border-radius: 50%;
-            height: 100px;
-            width: 100px;
-            margin-right: 15%;
-        }
-
-        #review-image img {
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        #coma {
-            font-size: 32px;
-            height: 15px;
-            width: 15px;
-            border: 1px solid;
-            border-radius: 50%;
-            padding: 20px;
-            margin-bottom: 10px;
         }
 
         #review-about div:nth-child(2) {
-            margin-right: -60%;
-            font-size: 40px;
+            padding-top: 45px;
+            font-style: italic;
+            font-size: 3rem;
             font-weight: normal;
+            flex-wrap: wrap;
+            max-width: 1000px;
+        }
+
+        #review-about {
+            margin-top: 40px;
         }
 
         #review-about h1 {
+
+            padding: 10px;
             margin-top: 40px;
-            font-size: 32px;
+            font-size: 2rem;
         }
 
         #review-about p {
-            font-size: 25px;
+            font-size: 1.5rem;
             color: gray;
+            margin-left: 20px;
         }
 
         /* form  */
+
         #section-form {
-            padding: 70px;
-            background-color: blueviolet;
+
+            padding: 80px;
+            background-color: hsl(227deg 36% 35%);
+            display: flex;
+            align-items: center;
+
+        }
+
+        #logo-img {
+            align-self: flex-start;
+            margin-top: 50px;
         }
 
         #header-form {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            margin: 0 50px;
+            justify-content: right;
         }
 
         #section-form h2 {
-            font-size: 32px;
+            font-size: 2rem;
             color: white;
-            margin-top: 40px;
-            margin-left: 100px;
+            padding: 20px;
+
+
         }
 
         #header-form h1 {
-            margin-left: 70px;
-            font-size: 42px;
+            margin-bottom: 40px;
+            font-size: 3rem;
             flex-wrap: wrap;
-            max-width: 450px;
+            max-width: 550px;
+            padding: 20px;
+
         }
 
         .upper-form {
-            margin-left: 60px;
+
             display: flex;
         }
+
 
         #left-upper-form {
             display: flex;
             flex-direction: column;
-            max-width: 100%;
+
         }
 
 
 
         .input-field {
             border-radius: 15px;
-            height: 50px;
+            width: 550px;
+            height: 80px;
             border: none;
             display: flex;
             justify-content: space-between;
-            margin: 40px;
+            padding: 20px;
         }
 
         .input-field input {
@@ -874,8 +963,8 @@
             width: 70%;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
-            background-color: blue;
-            font-size: 19px;
+            background-color: hsl(245deg 72% 20%);
+            font-size: 2rem;
             color: white;
         }
 
@@ -884,12 +973,13 @@
             align-items: center;
             justify-content: center;
             color: white;
-            /* padding-left: 10px; */
-            width: 90px;
+            height: 78px;
+            width: 155px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
             font-size: 32px;
-            background-color: blue;
+            background-color: hsl(245deg 72% 20%);
+
 
         }
 
@@ -899,29 +989,31 @@
             width: 90px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
-            background-color: blue;
+            background-color: hsl(245deg 72% 20%);
+
         }
 
         .input-low-field input {
             padding: 0px 5px;
-            height: 93%;
-            width: 80%;
+            height: 80px;
+            width: 500px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
-            background-color: blue;
-            font-size: 19px;
+            background-color: hsl(245deg 72% 20%);
+
+            font-size: 2rem;
             color: white;
         }
 
         .input-low-field {
-            width: 350px;
+            width: 550px;
+            height: 80px;
             border-radius: 15px;
-            height: 50px;
+
             border: none;
             display: flex;
             justify-content: space-between;
-            margin: 40px;
-            margin-left: 40px;
+            padding: 20px;
         }
 
         .input-low-field button {
@@ -929,10 +1021,12 @@
             border-bottom-right-radius: 15px;
             margin-left: -9px;
             color: white;
-            background-color: blue;
+            background-color: hsl(245deg 72% 20%);
+
             font-size: 40px;
-            height: 100%;
-            width: 115%;
+            height: 80px;
+            width: 70px;
+
             border: none;
 
         }
@@ -944,173 +1038,184 @@
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             font-size: 42px;
-            background-color: blue;
+
+
         }
 
         .date-input span {
+            display: flex;
+            align-items: center;
             text-align: center;
             color: white;
-            padding-top: 13px;
-            width: 100px;
+            padding: 10px;
+            height: 65px;
+            width: 150px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
-            font-size: 16px;
-            background-color: blue;
+            font-size: 2rem;
+            background-color: hsl(245deg 72% 20%);
+
         }
 
         .date-input {
             border-radius: 15px;
-            height: 50px;
+            height: 100px;
+
+            padding: 20px;
             border: none;
             display: flex;
             /* justify-content: center; */
-            margin: 30px;
-            margin-left: 100px;
+            margin-top: 100px;
             border: none;
 
         }
 
         .date-input input {
-            height: 93%;
-            width: 32%;
+            height: 80px;
+            width: 970px;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
-            background-color: blue;
-            font-size: 19px;
+            background-color: hsl(245deg 72% 20%);
+
+            font-size: 2rem;
             color: white;
-            border: none;
+
         }
 
         .submit-button {
-            margin-top: 40px;
-            margin-left: 100px;
-            height: 50px;
-            width: 30%;
+            margin: 40px 25px;
+
+            height: 70px;
+            width: 400px;
             border-radius: 15px;
-            background-color: blue;
-            font-size: 24px;
+            background-color: hsl(245deg 72% 20%);
+
+            font-size: 2rem;
             color: white;
             text-align: center;
             border: none;
         }
 
         /* question  */
+
         #section-question {
-            padding: 10%;
+            margin: 40px 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #faq {
+            margin-top: 20px;
+            font-size: 2rem;
+
         }
 
         #up-question {
-            font-weight: bold;
-            font-size: 16px;
             display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-weight: bold;
+
+
         }
 
         #up-question h1 {
-            font-size: 40px;
+            font-size: 3rem;
             flex-wrap: wrap;
             max-width: 500px;
-            margin-left: 40px;
-        }
-
-
-        #section-question hr {
-            max-width: 90%;
-            margin-left: 10%;
+            margin-left: 20px;
 
         }
 
-
-        .question {
-            margin-left: 10%;
-            margin-top: 40px;
-            font-size: 28px;
-            flex-wrap: wrap;
+        .para-ques {
+            font-size: 2rem;
         }
 
-        .question div:nth-child(1) {
-            flex-wrap: wrap;
-            max-width: 800px;
-        }
+        /* partner  */
 
-        /* partner */
         #section-partner {
-            font-size: 16px;
-            padding: 10%;
+            margin: 80px 40px;
         }
 
         #up-partner {
-            /* font-size: 16px; */
+            margin: 40px;
+
+
             font-weight: bold;
             display: flex;
             /* justify-content: center; */
         }
 
         #up-partner div:nth-child(1) {
-            font-size: 22px;
+            font-size: 2rem;
         }
 
         #section-partner h1 {
-            font-size: 40px;
+            font-size: 3rem;
             flex-wrap: wrap;
-            max-width: 500px;
+            max-width: 700px;
             margin-left: 20%;
         }
 
         #partner-image {
-            margin-top: 20%;
             display: flex;
-            margin-left: -5%;
+            justify-content: center;
+            /* margin-left: -5%; */
 
         }
 
         #partner-image>div {
-            text-align: center;
-            margin: 10px;
-            height: 100px;
-            width: 100px;
+            /* text-align: center; */
+            margin: 0 40px;
+            height: 250px;
+            width: 250px;
             border: 1px solid black;
             border-radius: 50%;
-            padding: 50px;
+            padding: 10px;
         }
 
         #partner-image img {
-            height: 100px;
-            width: 100px;
+            border-radius: 50%;
+            height: 100%;
+            width: 100%;
             object-fit: cover;
             /* border-radius: 50%; */
         }
 
-        /* blog  */
+        /* blog */
+
+
+
         #section-blog {
-            padding: 10%;
+            margin: 150px 40px;
         }
 
         #up-blog {
-            font-size: 16px;
+            font-size: 2rem;
             font-weight: bold;
             display: flex;
             justify-content: space-between;
         }
 
-        #up-blog h1 {
-            font-size: 40px;
+        #blog-header h1 {
+            font-size: 3rem;
             flex-wrap: wrap;
-            max-width: 600px;
-            margin-right: 30%;
-            margin-bottom: 20%;
+            max-width: 550px;
+            /* margin-right: 30%; */
+            /* margin-bottom: 20%;   */
         }
 
         #blog {
-            font-size: 28px;
-            margin-left: 10%;
+            font-size: 2rem;
+            margin: 40px;
         }
 
         .blog-arrow {
-            font-size: 30px;
+            font-size: 50px;
             border: 1px solid;
             border-radius: 50%;
-            height: 50px;
-            width: 50px;
+            height: 100px;
+            width: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1124,62 +1229,86 @@
         }
 
         #blog-image {
-            font-size: 18px;
-            margin-left: 30%;
+
+            margin: 20px;
             margin-top: 30px;
             display: flex;
             justify-content: right;
         }
 
-        #blog-image img {
+        .blog-option {
+
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 500px;
+
+        }
+
+        .blog-option>div {
 
             margin: 15px;
+            padding: 5px 15px;
+            font-size: 1.5rem;
+            text-align: center;
+            border: 1px solid;
+            border-radius: 20px;
+
+        }
+
+        #blog-image h1 {
+            font-size: 1.5rem;
+            max-width: 400px;
+        }
+
+        #blog-image img {
+
+
             border: 1px;
             background-color: wheat;
         }
 
         /* contact  */
+
         #section-contact {
+            padding: 40px;
+            background-color: hsl(227deg 36% 35%);
 
-            background-color: blueviolet;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
         #nav-logo {
-            margin: 10px;
-            padding-left: 10px;
-            display: flex;
+            margin: 40px;
             align-items: center;
+            display: flex;
         }
 
         #nav-left {
-            font-size: 30px;
-            color: black;
             display: flex;
-            justify-content: center;
             align-items: center;
-            margin-right: 40px;
-            height: 50px;
-            width: 50px;
+            justify-content: center;
+            font-size: 5rem;
+            color: black;
+            height: 100px;
+            width: 100px;
             border: 1px solid;
             border-radius: 50%;
-            background-color: blueviolet;
+        }
+
+        #heading {
+
+            margin-left: 80px;
+            font-size: 2.5rem;
+            color: white;
         }
 
         #contact-form {
-            background-color: blueviolet;
+            margin: 80px 0;
             display: flex;
             justify-content: center;
-            align-items: center;
-            margin-top: 100px;
         }
 
         #contact-form-detail {
+
             column-gap: 150px;
             row-gap: 45px;
             text-align: center;
@@ -1193,9 +1322,10 @@
             display: flex;
             align-items: center;
             border-radius: 15px;
-            height: 50px;
-            width: 350px;
-            background-color: blue;
+            height: 70px;
+            width: 550px;
+            background-color: hsl(245deg 72% 20%);
+
 
         }
 
@@ -1203,20 +1333,22 @@
             display: flex;
             align-items: center;
             border-radius: 15px;
-            height: 50px;
-            width: 350px;
-            background-color: blue;
+            height: 70px;
+            width: 550px;
+            background-color: hsl(245deg 72% 20%);
+
 
         }
 
         .input-select input {
             height: 45px;
             width: 88%;
-            background-color: blue;
+            background-color: hsl(245deg 72% 20%);
+
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
             font-size: 20px;
-            padding: 0 10px;
+            padding: 0 15px;
             border: none;
             color: white;
 
@@ -1225,7 +1357,8 @@
         .input-detail input {
             height: 45px;
             width: 88%;
-            background-color: blue;
+            background-color: hsl(245deg 72% 20%);
+
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             font-size: 24px;
@@ -1242,10 +1375,11 @@
 
         .plus {
             font-weight: bold;
-            font-size: 32px;
+            font-size: 42px;
             padding: 5px 15px;
             color: white;
-            background-color: blue;
+            background-color: hsl(245deg 72% 20%);
+
             border: none;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
@@ -1259,46 +1393,37 @@
 
         #contact-submit {
             border-radius: 15px;
-            height: 45px;
-            width: 200px;
-            background-color: blue;
-            font-size: 32px;
+            height: 60px;
+            width: 300px;
+            background-color: hsl(245deg 72% 20%);
+
+            font-size: 2rem;
             color: white;
             text-align: center;
             margin-bottom: 40px;
         }
 
-        #heading {
-            font-size: 32px;
-            color: white;
-            margin: 40px;
-            margin-bottom: 40px;
-            margin-left: 40px;
-        }
-
-
 
         #contact-site {
-            margin-top: %;
-            padding: 10%;
+            margin-left: 80px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             color: white;
-            margin-bottom: 0;
+
         }
 
         #contact-site h1 {
-            font-size: 40px;
+            font-size: 3rem;
         }
 
         #contact-site p {
-            font-size: 22px;
-            margin-top: 10%;
+            font-size: 2rem;
+
         }
 
         #all-site {
-            font-size: 20px;
+            font-size: 2rem;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, 1fr);
@@ -1315,62 +1440,35 @@
         .lower-site {
             display: flex;
             justify-content: space-between;
-            margin-top: 40px;
+            margin-top: 80px;
 
         }
 
 
         .lower-site>div {
+            height: 100px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin: 5px;
             border: 1px solid;
             border-radius: 50%;
             background-color: white;
         }
 
-        .site-links {
-            margin-left: 47%;
-        }
+
 
         .lower-site img {
+
+            height: 100%;
+            width: 100%;
             display: flex;
             align-items: center;
             text-align: center;
             border-radius: 50%;
             object-fit: cover;
-            padding: 5px 5px;
-        }
 
-        /* form  */
-        .input input {
-            margin: 20px;
-            border-radius: 12px;
-            width: 500px;
-            height: 40px;
-            border: none;
-            background-color: blue;
-            padding: 10px;
-        }
-
-        ::placeholder {
-
-            color: white;
-            background-color: blue;
-            font-size: 21px;
-            align-items: center;
-
-        }
-
-        .submit {
-            font-size: 21px;
-            color: white;
-            margin-left: -88px;
-        }
-
-        .sub-submit {
-            font-size: 21px;
-            color: white;
-            margin-left: 75px;
-            margin-bottom: 50px;
         }
 
         button {
@@ -1384,11 +1482,14 @@
 </head>
 
 <body>
+    <!-- hero-sectin  -->
     <section id="hero-section">
         <img id="background-image" src="img/hearnic-background.jpeg" alt="">
         <nav>
-            <div>
-
+            <div id="ear-logo">
+                <div>
+                    <img src="img/ear_1.png" alt="" height="80px" width="auto">
+                </div>
                 <div> HEARNIC</div>
             </div>
             <div id="links">
@@ -1410,15 +1511,16 @@
                     aids and speach therapy
                     services.</h3>
                 <!-- bottom -->
-                <div id="left-hr">
-                    <h3>Facts</h3>
-                    <p>Premium equipment that meets state-of-the-art in the hearing industry</p>
-                    <hr />
-                    <p>Professionals in their field,who can be trusted and get the best results</p>
-                </div>
+
             </div>
             <!-- right -->
             <div id="right-content">
+                <div id="left-hr">
+                    <h1>Facts</h1>
+                    <p>Premium equipment that meets state-of-the-art in the hearing industry.</p>
+                    <hr style="width: 88%; margin-right: 10px;" />
+                    <p>Professionals in their field,who can be trusted and get the best results.</p>
+                </div>
                 <div id="user-card">
                     <!-- upper  -->
                     <div id="upper">
@@ -1439,8 +1541,9 @@
                     </div>
                     <!-- lower -->
                     <div id="lower">
-                        <div style="font-size: 24px;">20%</div>
-                        <div><button style="border: none; font-weight: bold; font-size: 10px;">Make an
+                        <div style="font-size: 2.5rem;">20%</div>
+                        <div><button>Make
+                                an
                                 appointment</button> </div>
                     </div>
                 </div>
@@ -1451,84 +1554,78 @@
 
     </section>
 
-
-    <!-- about-section  -->
-
-
+    <!-- about-us  -->
 
     <section id="section-about">
-        <!-- about-left  -->
-        <div class="about-main">
-            <!-- upper  -->
-            <div id="upper-part">
-                <!-- left  -->
-                <div id="about">About Us</div>
-                <!-- middle  -->
-                <div id="about-more">
-                    <h1>Audiologist Hearnic clinic Dhanbad</h1>
-                    <p style="font-size: 22px;color: grey;">The Modern Hearnic Clinic is one of the best modern hearing
-                        aid and
-                        speech therapy clinic in
-                        Dhanbad.</p>
-                    <div><button class="learn">Learn More</button></div>
-                </div>
-                <!-- right  -->
-                <div id="my-image"><img src="img/me.jpeg" alt=""></div>
+        <!-- up -->
+        <div class="about-right">
+            <div id="about">About Us</div>
+            <div id="about-arrow">&rarr;</div>
+        </div>
+        <!-- mid  -->
+        <div class="about-right">
+            <!-- mid-up -->
+            <div id="about-more">
+                <div> Audiologist Hearnic clinic Dhanbad</div>
+                <p style="font-size: 1.5rem;">The Modern Hearnic Clinic is one of the best modern hearing
+                    aid and
+                    speech therapy clinic in
+                    Dhanbad.</p>
+                <div><button class="learn">Learn More</button></div>
             </div>
-            <!-- lower  -->
-            <div id="lower-part">
-                <!-- left  -->
-                <div id="left"> <img src="img/arrow.png" alt=""></div>
-                <!-- middle  -->
-                <div>
-                    <h3>Hearing problem resolving of an complexity at a fixed price</h3>
-                </div>
-                <!-- right -->
-                <div>
-                    <div id="right">
-                        <!-- up  -->
-                        <div id="up">
-                            <div class="horiz">
-                                <h1>01</h1>
-                                <hr />
-                                <p>We use modern equipments</p>
-                            </div>
-                            <div>
-                                <h1>02</h1>
-
-                                <hr />
-                                <p>The result meets all expectations</p>
-                            </div>
+            <!-- mid-low -->
+            <div>
+                <h3>Hearing problem resolving of an complexity at a fixed price</h3>
+            </div>
+        </div>
+        <!-- low  -->
+        <div class="about-right">
+            <div id="my-image"><img src="img/me.jpeg" alt=""></div>
+            <!-- low  -->
+            <div>
+                <div id="right">
+                    <!-- up  -->
+                    <div class="up">
+                        <div class="horiz">
+                            <h1>01</h1>
+                            <hr style="width: 200%;" />
+                            <p>We use modern equipments</p>
                         </div>
-                        <!-- mid  -->
-                        <div id="mid">
-                            <div class="horiz">
-                                <h1>03</h1>
+                        <div>
+                            <h1>02</h1>
 
-                                <hr />
-                                <p>We have the best Professionals working</p>
-                            </div>
-                            <div>
-                                <h1>04</h1>
-
-                                <hr />
-                                <p>We train our own specialists</p>
-                            </div>
+                            <hr />
+                            <p>The result meets all expectations</p>
                         </div>
-                        <!-- low  -->
-                        <div id="low">
-                            <div class="horiz">
-                                <h1>05</h1>
+                    </div>
+                    <!-- mid  -->
+                    <div class="up">
+                        <div class="horiz">
+                            <h1>03</h1>
 
-                                <hr />
-                                <p>Individuals contract with the client</p>
-                            </div>
-                            <div>
-                                <h1>06</h1>
+                            <hr style="width: 200%;" />
+                            <p>We have the best Professionals working</p>
+                        </div>
+                        <div>
+                            <h1>04</h1>
 
-                                <hr />
-                                <p>We have Indian certifications</p>
-                            </div>
+                            <hr />
+                            <p>We train our own specialists</p>
+                        </div>
+                    </div>
+                    <!-- low  -->
+                    <div class="up">
+                        <div class="horiz">
+                            <h1>05</h1>
+
+                            <hr style="width: 200%;" />
+                            <p>Individuals contract with the client</p>
+                        </div>
+                        <div>
+                            <h1>06</h1>
+
+                            <hr />
+                            <p>We have Indian certifications</p>
                         </div>
                     </div>
                 </div>
@@ -1537,7 +1634,9 @@
 
     </section>
 
+
     <!-- gallery -->
+
 
     <section id="section-gallery">
         <div class="gallery">
@@ -1557,10 +1656,10 @@
             </div>
             <!-- right  -->
             <div id="right-gallery">
-                <div><img src="img/tele.png" alt=""></div>
-                <div><img src="img/twiitter.png" alt=""></div>
-                <div><img src="img/facebook.png" alt=""></div>
-                <div><img src="img/whats.png" alt=""></div>
+                <div><a href="/"><img src="img/tele.png" alt=""></a></div>
+                <div><a href="https://twitter.com/mr_mehrab1"><img src="img/twiitter.png" alt=""></a></div>
+                <div><a href="https://www.facebook.com/mehrab.alam.568"><img src="img/facebook.png" alt=""></a></div>
+                <div><a href="/"><img src="img/whats.png" alt=""></a></div>
 
             </div>
         </div>
@@ -1589,125 +1688,151 @@
         </div>
     </section>
 
-    <!-- services  -->
 
-    <section id="section-services">
-        <!-- upper -->
-        <div id="upper-service">
-            <div id="serv"><b>Service</b></div>
-            <div id="about-service">
-                <div>Excellent services of our clinic</div>
-                <div class="service-option">
-                    <div class="option all">All</div>
-                    <div class="option">For adults</div>
-                    <div class="option">For children</div>
+    <!-- service  -->
+
+
+    <section id="section-service">
+
+        <div id="main-service">
+            <div id="service-head">Service</div>
+            <div id="main-serv">
+
+                <div id="about-service">
+                    <div id="excellent">Excellent services of our clinic</div>
+                    <div class="service-option">
+                        <div class="option">All</div>
+                        <div class="option">For adults</div>
+                        <div class="option">For children</div>
+
+                    </div>
+                </div>
+
+
+                <!-- therapy  -->
+
+
+                <div id="mid-service">
+                    <div class="therapies">
+                        <div>Diagonistic examination with consultation of an audiologist</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+                    <div class="therapies">
+                        <div>children's audiologist</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>consultation with a specialized therapist</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>consultation with a audiologist specialist</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Therapy for speech and hearing problem</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Hearing problem resolution</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Treatment of Presbyterians</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Therapy Treatment of dysarthia</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Therapy treatment of high level Amyotrophic lateral sclerosis</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Treatment for sensorineual</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Outpatient course of conservation treatment</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Hardware treatment(stuttering, apraxia, ANSD, sensorineual)</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
+                    <div class="therapies">
+                        <div>Therapy and Aid</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr />
+
 
                 </div>
-            </div>
-            <div></div>
-        </div>
-        <!-- mid  -->
-        <div id="mid-service">
-            <div class="therapies">
-                <div>Diagonistic examination with consultation of an audiologist</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-            <div class="therapies">
-                <div>children's audiologist</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
 
-            <div class="therapies">
-                <div>consultation with a specialized therapist</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
 
-            <div class="therapies">
-                <div>consultation with a audiologist specialist</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
 
-            <div class="therapies">
-                <div>Therapy for speech and hearing problem</div>
-                <div class="sign"><button class="sign">+</button></div>
             </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Hearing problem resolution</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Treatment of Presbyterians</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Therapy Treatment of dysarthia</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Therapy treatment of high level Amyotrophic lateral sclerosis</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Treatment for sensorineual</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Outpatient course of conservation treatment</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Hardware treatment(stuttering, apraxia, ANSD, sensorineual)</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
-            <div class="therapies">
-                <div>Therapy and Aid</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-
 
         </div>
-        <!-- lower -->
-        <div id="lower-service">
-            <div id="left-serv">
-                <div>Take a discount for a child under 5 years of age, for the first examination</div>
-                <div id="lowerleft--serv">
-                    <div>50%</div>
-                    <div><button><img src="img/phone.jpg" alt=""></button> </div>
-                </div>
-            </div>
-            <div id="right-serv">
-                <div> <img src="img/doc1.png" alt=""></div>
-                <div id="low-right-serv">
-                    <div>"</div>
-                    <div>
-                        <h1>"Stand up to the sick you world have them stand up to you in the hour of illness.</h1>
-                        <p>Dr. Arti Sukhla</p>
+
+
+        <!-- lower  -->
+
+        <div id="low-service">
+            <!-- left  -->
+            <div id="left-low-service">
+                <div id="left-serv">
+                    <div style="padding: 30px;">Take a discount for a child under 5 years of age, for the first
+                        examination</div>
+                    <div id="lowerleft-serv">
+                        <div>50%</div>
+                        <div><button><img src="img/phone.jpg" alt=""></button> </div>
                     </div>
                 </div>
             </div>
+
+            <!-- right  -->
+            <div id="low-right-service">
+                <div id="right-serv">
+                    <div> <img src="img/doc-arti.png" alt="" height="300px"></div>
+                    <div id="low-right-serv">
+                        <div>"</div>
+                        <div>
+                            <h1>"Stand up to the sick you world have them stand up to you in the hour of illness.</h1>
+                            <p>Dr. Arti Sukhla</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+
     </section>
+
 
     <!-- doctors  -->
     <section id="section-doctor">
@@ -1718,99 +1843,107 @@
             <!-- mid  -->
             <div>
                 <h1>Aid specialists and Audiologists</h1>
-                <p>Our clinic employs only Professionals specialist and audiologist.We select the best doctors on a
+                <p>Our clinic employs only Professionals specialist and audiologist.We select
+                    the best doctors on a
                     regular basis.</p>
             </div>
             <!-- right  -->
             <div>All Doctors &rarr;</div>
         </div>
         <!-- lower  -->
-
-        <!-- up -->
-        <div id="doctor">
-            <!-- left  -->
+        <div id="main-doc">
             <div>
-                <div><img src="img/doc2.jpg" alt=""></div>
-                <div>
-                    <h1>Dr. Shyam Khurana</h1>
-                    <p>Work Experience- 8 Years</p>
-                    <div class="skill">
-                        <div>Therapist</div>
-                        <div>Ankyologist</div>
-                        <div>Head of the Department</div>
+
+                <!-- up -->
+                <div class="doctor">
+                    <!-- left  -->
+                    <div>
+                        <div class="upper-doc"><img src="img/shyam.png" alt=""></div>
+                        <div class="doc-about">
+                            <h1>Dr. Shyam Khurana</h1>
+                            <p>Work Experience- 8 Years</p>
+                            <div class="skill">
+                                <div>Therapist</div>
+                                <div>Ankyologist</div>
+                                <div>Head of the Department</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div>
+                        <div class="upper-doc"><img src="img/girl-doc.png" alt=""></div>
+                        <div class="doc-about">
+                            <h1>Dr. Arti Shukhla</h1>
+                            <p>Work Experience- 14 Years</p>
+                            <div class="skill">
+                                <div>Therapist</div>
+                                <div>Otolaryngologist</div>
+                                <div>Chief Doctor</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- right -->
-            <div>
-                <div><img src="img/doc1.png" alt="" height="235px" width="200"></div>
 
-                <h1>Dr. Arti Shukhla</h1>
-                <p>Work Experience- 14 Years</p>
-                <div class="skill">
-                    <div>Therapist</div>
-                    <div>Otolaryngologist</div>
-                    <div>Chief Doctor</div>
-                </div>
-            </div>
-        </div>
+                <!-- mid  -->
 
-        <!-- mid  -->
-
-        <div id="doctor">
-            <!-- left  -->
-            <div>
-                <div><img src="img/doc3.jpg" alt=""></div>
-                <div>
-                    <h1>Dr. Nikhil Nanda</h1>
-                    <p>Work Experience- 10 Years</p>
-                    <div class="skill">
-                        <div>Therapist</div>
-                        <div>Ankyologist</div>
-                        <div>Head of the Department</div>
+                <div class="doctor">
+                    <!-- left  -->
+                    <div>
+                        <div class="upper-doc"><img src="img/nikjil.png" alt=""></div>
+                        <div class="doc-about">
+                            <h1>Dr. Nikhil Nanda</h1>
+                            <p>Work Experience- 10 Years</p>
+                            <div class="skill">
+                                <div>Therapist</div>
+                                <div>Ankyologist</div>
+                                <div>Head of the Department</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div>
+                        <div class="upper-doc"><img src="img/doc4.jpg" alt=""></div>
+                        <div class="doc-about">
+                            <h1>Dr. Rani Kohli</h1>
+                            <p>Work Experience- 2 Years</p>
+                            <div class="skill">
+                                <div>Therapist</div>
+                                <div>Otolaryngologist</div>
+                                <div>Chief Doctor</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- right -->
-            <div>
-                <div><img src="img/doc4.jpg" alt=""></div>
 
-                <h1>Dr. Rani Kohli</h1>
-                <p>Work Experience- 2 Years</p>
-                <div class="skill">
-                    <div>Therapist</div>
-                    <div>Otolaryngologist</div>
-                    <div>Chief Doctor</div>
-                </div>
-            </div>
-        </div>
+                <!-- low  -->
 
-        <!-- low  -->
-
-        <div id="doctor">
-            <!-- left  -->
-            <div>
-                <div><img src="img/doc5.jpg" alt=""></div>
-                <div>
-                    <h1>Dr. Radhika Sharma</h1>
-                    <p>Work Experience- 3 Years</p>
-                    <div class="skill">
-                        <div>Therapist</div>
-                        <div>Ankyologist</div>
-                        <div>Head of the Department</div>
+                <div class="doctor">
+                    <!-- left  -->
+                    <div>
+                        <div class="upper-doc"><img src="img/doc5.jpg" alt=""></div>
+                        <div class="doc-about">
+                            <h1>Dr. Radhika Sharma</h1>
+                            <p>Work Experience- 3 Years</p>
+                            <div class="skill">
+                                <div>Therapist</div>
+                                <div>Ankyologist</div>
+                                <div>Head of the Department</div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- right -->
-            <div>
-                <div><img src="img/doc6.jpg" alt=""></div>
-
-                <h1>Dr. Rashmi Thakur</h1>
-                <p>Work Experience- 3 Years</p>
-                <div class="skill">
-                    <div>Therapist</div>
-                    <div>Otolaryngologist</div>
-                    <div>Chief Doctor</div>
+                    <!-- right -->
+                    <div>
+                        <div class="upper-doc"><img src="img/doc6.jpg" alt=""></div>
+                        <div class="doc-about">
+                            <h1>Dr. Rashmi Thakur</h1>
+                            <p>Work Experience- 3 Years</p>
+                            <div class="skill">
+                                <div>Therapist</div>
+                                <div>Otolaryngologist</div>
+                                <div>Chief Doctor</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1836,7 +1969,7 @@
             <div id="review-image"><img src="img/doc1.png" alt="" height="100px" width="100px"></div>
             <!-- left -->
             <div id="review-about">
-                <div id="coma">"</div>
+                <div id="coma"><img src="img/coma.png" alt=""></div>
                 <div>"I had the therapy consultation on october 24th and was pleasantly surprised that I did not have
                     astigmatism,which had been diagnosed for 8 years by luxuary opticians.I really enjoyed the attitude
                     of the clients, everyone is smiling,the staff is young and humorous,they are helpful,drunk and
@@ -1848,108 +1981,120 @@
     </section>
 
     <!-- form  -->
+
+
     <section id="section-form">
         <section id="section-form">
-            <div id="header-form">
-                <div>
-                    <img src="img/logo.webp" alt="" height="100px" width="100px">
+            <div id="logo-img">
+                <img src="img/logo-input-rem.png" alt="" height="100px" width="100px">
 
-                </div>
+            </div>
+            <div id="header-form">
+
                 <div>
                     <h1 style="color: white;">Make an Appointment with a doctor</h1>
 
                 </div>
+
+                <!-- form  -->
+                <form action="">
+                    <!-- upper-form  -->
+                    <h2>About yourself</h2>
+
+                    <div class="upper-form">
+                        <!-- left  -->
+                        <div class="input-field">
+                            <span><img src="img/pro-image.svg" alt=""></span>
+                            <input type="text" placeholder="Enter you name">
+                        </div>
+                        <!-- right -->
+                        <div id="left-upper-form">
+                            <div class="input-field">
+                                <span>+91</span>
+                                <input type="number" placeholder="Enter your number">
+                            </div>
+                            <div class="input-field">
+                                <span><img src="img/gmail-icon.svg" alt=""></span>
+                                <input type="email" placeholder="Enter your email">
+                            </div>
+
+                        </div>
+                    </div>
+                    <h2>Admission Date</h2>
+                    <!-- lower-form -->
+                    <div class="lower-form">
+                        <div class="upper-form">
+                            <div class="input-low-field">
+
+                                <input type="email" placeholder="Over view of specialization">
+                                <span><button>+</button></span>
+                            </div>
+                            <div class="input-low-field">
+
+                                <input type="email" placeholder="Check out the expert">
+                                <span><button>+</button></span>
+                            </div>
+                        </div>
+                        <!-- down -->
+                        <div class="date-input">
+                            <span id="date">Date-Time</span>
+                            <input type="datetime-local" placeholder="none">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
             </div>
 
-            <!-- form  -->
-            <form action="">
-                <!-- upper-form  -->
-                <h2>About yourself</h2>
-
-                <div class="upper-form">
-                    <!-- left  -->
-                    <div class="input-field">
-                        <span><img src="img/pro-image.svg" alt=""></span>
-                        <input type="text" placeholder="Enter you name">
-                    </div>
-                    <!-- right -->
-                    <div id="left-upper-form">
-                        <div class="input-field">
-                            <span>+91</span>
-                            <input type="number" placeholder="Enter your number">
-                        </div>
-                        <div class="input-field">
-                            <span><img src="img/gmail-icon.svg" alt=""></span>
-                            <input type="email" placeholder="Enter your email">
-                        </div>
-
-                    </div>
-                </div>
-                <h2>Admission Date</h2>
-                <!-- lower-form -->
-                <div class="lower-form">
-                    <div class="upper-form">
-                        <div class="input-low-field">
-
-                            <input type="email" placeholder="Over view of specialization">
-                            <span><button>+</button></span>
-                        </div>
-                        <div class="input-low-field">
-
-                            <input type="email" placeholder="Check out the expert">
-                            <span><button>+</button></span>
-                        </div>
-                    </div>
-                    <!-- down -->
-                    <div class="date-input">
-                        <span id="date">Date-Time</span>
-                        <input type="datetime-local" placeholder="">
-                    </div>
-                </div>
-
-                <button type="submit" class="submit-button">Submit</button>
-            </form>
         </section>
     </section>
+
 
     <!-- question  -->
     <section id="section-question">
         <!-- upper  -->
+        <div id="faq">FAQ</div>
         <div id="up-question">
-            <div>FAQ</div>
+
             <div>
                 <h1>Questions from our clients</h1>
             </div>
-        </div>
-        <!-- mid  -->
-        <div id="mid-question">
-            <div class="therapies question">
-                <div class="para-ques">It is possible to pay for clinic services at the expense of the organization
+
+            <!-- mid  -->
+            <div id="mid-question">
+                <div class="therapies question">
+                    <div class="para-ques">It is possible to pay for clinic services at the expense of the organization
+                    </div>
+                    <div class="sign"><button class="sign">+</button></div>
                 </div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
-            <div class="therapies question">
-                <div class="para-ques">Where can I find the information about the licenses of the clinic</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
+                <hr style="max-width: 95%;" />
+                <div class="therapies question">
+                    <div class="para-ques">Where can I find the information about the licenses of the clinic</div>
+                    <div class="sign"><button class="sign">+</button></div>
+                </div>
+                <hr style="max-width: 95%;" />
 
-            <div class="therapies question">
-                <div class="para-ques">Are there any discounts available?</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
 
-            <div class="therapies question">
-                <div class="para-ques">Does "Hearnic" clinic provide treatment on credit</div>
-                <div class="sign"><button class="sign">+</button></div>
-            </div>
-            <hr />
+                <div class="therapies question">
+                    <div class="para-ques">Are there any discounts available?</div>
+                    <div class="sign"><button class="sign">+</button></div>
+                </div>
+                <hr style="max-width: 95%;" />
 
+
+                <div class="therapies question">
+                    <div class="para-ques">Does "Hearnic" clinic provide treatment on credit</div>
+                    <div class="sign"><button class="sign">+</button></div>
+                </div>
+                <hr style="max-width: 95%;" />
+
+
+            </div>
         </div>
     </section>
-    <!-- partners  -->
+
+    <!-- partner  -->
+
     <section id="section-partner">
         <div id="up-partner">
             <div>Partner</div>
@@ -1960,7 +2105,7 @@
 
         <!-- low  -->
         <div id="partner-image">
-            <div><img src="img/sunpharma.png" alt=""></div>
+            <div><img src="img/sun_2.png" alt="" style="border-radius: 50%; height: 100%; width: 100%;"></div>
             <div><img src="img/reddy.jpg" alt=""></div>
             <div><img src="img/alkem.jpg" alt=""></div>
             <div><img src="img/cipla2.png" alt=""></div>
@@ -1968,13 +2113,14 @@
 
         </div>
     </section>
+
     <!-- blog  -->
     <section id="section-blog">
         <div id="up-blog">
             <!-- left  -->
             <div id="blog">Blog</div>
             <!-- mif  -->
-            <div>
+            <div id="blog-header">
                 <h1>You may be interested to know</h1>
             </div>
             <!-- right  -->
@@ -1991,10 +2137,10 @@
         <div id="blog-image">
             <!-- left  -->
             <div>
-                <div><img src="img/earimg.jpg" alt="" height="200px"></div>
+                <div><img src="img/earimg.jpg" alt="" height="300px" width="500px" style="margin-right: 20px;"></div>
                 <div>
 
-                    <div class="skill">
+                    <div class="blog-option">
                         <div>Therapist</div>
                         <div>Audiologist</div>
                         <div>Hearing aid</div>
@@ -2005,10 +2151,10 @@
             </div>
             <!-- right -->
             <div>
-                <div><img src="img/lab.jpg" alt="" height="200px" width="400"></div>
+                <div><img src="img/lab.jpg" alt="" height="300px" width="650"></div>
 
 
-                <div class="skill">
+                <div class="blog-option">
                     <div>Equipment</div>
                     <div>Speach therapy</div>
                     <div>What is ANSD?</div>
@@ -2023,12 +2169,14 @@
         </div>
     </section>
 
-    <!-- footer  -->
+
+    <!-- contact  -->
+
     <section id="section-contact">
         <nav>
             <div id="nav-logo">
-                <div><img src="img/ear2.png" alt="" height="100px" width="100px"></div>
-                <div style="margin-left: 30px;">
+                <div><img src="img/ear_1.png" alt="" height="150px" width="150px"></div>
+                <div>
                     <h1>Hearnic</h1>
                     <p>Medical clinic</p>
                 </div>
@@ -2065,13 +2213,7 @@
 
                 <button type="submit" id="contact-submit">Submit</button>
             </form>
-
-
-
-
         </div>
-
-        <!-- lower  -->
 
         <div id="contact-site">
             <div id="left-site">
@@ -2089,18 +2231,19 @@
 
                 </div>
 
-                <p>&copy; Hearnic: ALl rights reserved</p>
+                <p><span style="color: black; font-size: 3rem;">&copy; </span> Hearnic: ALl rights reserved</p>
 
             </div>
+
             <div id="right-site">
                 <h1>We are on social media</h1>
                 <div class="lower-site site-links">
-                    <div><a href="/"><img src="img/telegram.png" alt="" height="40px" width="40px"></a></div>
-                    <div><a href="https://twitter.com/mr_mehrab1/"> <img src="img/twiitter.png" alt="" height="40px"
-                                width="40px"></a></div>
-                    <div><a href="https://www.facebook.com/mehrab.alam.568/"> <img src="img/facebook.png" alt=""
-                                height="40px" width="40px"></a></div>
-                    <div><a href="/"><img src="img/whatsapp.png" alt="" height="40px" width="40px"></a></div>
+                    <div><a href="/"><img src="img/telegram_1.png" alt=""></a></div>
+                    <div><a href="https://twitter.com/mr_mehrab1/"> <img src="img/twiitter.png" alt=""></a></div>
+                    <div style="background-color: white;"><a href="https://www.facebook.com/mehrab.alam.568/"> <img
+                                src="img/fb_1.png" alt=""></a>
+                    </div>
+                    <div><a href="/"><img src="img/whatsapp.png" alt=""></a></div>
 
                 </div>
                 <div class="lower-site">
@@ -2110,8 +2253,9 @@
             </div>
         </div>
 
-    </section>
 
+
+    </section>
 </body>
 
 </html>
