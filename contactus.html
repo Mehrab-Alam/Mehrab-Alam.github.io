@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            max-width: 1200px;
+            margin: 40px auto;
+            border: 2px solid;
+            background-color: #0e0e0e;
+
+        }
+
+        #contact-us {
+            padding: 40px 20px;
+
+            background-color: #010449;
+            border-radius: 20px;
+            display: flex;
+        }
+
+        #left-contact {
+            width: 50%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+
+        #contact-header {
+            margin-left: 20px;
+        }
+
+        #contact-header div:nth-child(1) {
+
+            margin-left: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+
+        #contact-header div:nth-child(2) {
+            margin-left: 10px;
+            margin-top: 10px;
+
+            font-size: 1.5rem;
+            color: #9599d9;
+            max-width: 450px;
+        }
+
+        #contact-detail {
+            margin-right: 50px;
+            margin-top: 80px;
+        }
+
+        .mid-cont {
+
+            margin: 20px 0;
+            font-size: 1.2rem;
+            color: white;
+            display: flex;
+            font-weight: normal;
+            align-items: center;
+
+
+        }
+
+        .mid-cont div:nth-child(1) {
+
+            margin: 20px;
+
+        }
+
+        .mid-cont img {
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .mail div:nth-child(2) {
+            margin-left: 10px;
+        }
+
+        .loco {
+
+            display: flex;
+        }
+
+        .loco div:nth-child(2) {
+            margin-left: 20px;
+            flex-wrap: wrap;
+            max-width: 220px;
+        }
+
+        .loco div:nth-child(1) {
+            margin-bottom: 40px;
+            align-self: flex-start;
+        }
+
+        #contact-links {
+            margin-left: 80px;
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        #contact-links>div {
+            height: 40px;
+            width: 40px;
+
+            border-radius: 50%;
+            margin: 25px;
+
+        }
+
+        /* right  */
+
+        #right-contact {
+            width: 50%;
+
+
+        }
+
+        #right-contact h3 {
+            font-weight: normal;
+            font-size: 2rem;
+        }
+
+        #detail-form {
+            padding: 20px;
+            margin-left: 20px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            border: 2px solid;
+            height: 700px;
+            width: 500px;
+        }
+
+        #message-inp {
+            margin-left: 40px;
+            font-size: 1rem;
+            padding: 5px;
+            width: 400px;
+
+            background-color: #f9f9fb;
+            border: none;
+            outline: none;
+
+        }
+
+        #message-inp::placeholder {
+            font-size: 1.5rem;
+        }
+
+
+
+
+        .input-detail {
+
+            background-color: #f9f9fb;
+            display: flex;
+            align-items: center;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            height: 40px;
+            width: 400px;
+            background-color: #f9f9fb;
+
+        }
+
+        #submit-btn {
+            display: flex;
+            justify-content: right;
+        }
+
+        button {
+            color: white;
+            font-weight: bold;
+            background-color: #0b75ff;
+            font-size: 1.5rem;
+            border-radius: 15px;
+            margin-top: 10px;
+            margin-right: 40px;
+            cursor: pointer;
+            height: 60px;
+            width: 300px;
+            border: none;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        ::placeholder {
+            color: #cacacb;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="contact-us">
+
+        <!-- left  -->
+
+        <div id="left-contact">
+            <!-- up  -->
+            <div id="contact-header">
+                <div> Get a quote </div>
+                <div>Fill up the form and our team will get back to you within 24 hours</div>
+
+            </div>
+
+            <!-- mid  -->
+
+            <div id="contact-detail">
+                <!-- up-mid  -->
+                <div class="mid-cont mail" style="margin-left: 20px;">
+                    <div><img src="img/phone.png" alt=""></div>
+                    <div>+91 7463811090</div>
+                </div>
+                <!-- middle - mid  -->
+
+                <div class="mid-cont mail">
+                    <div><img src="img/email.png" alt=""></div>
+                    <div>train@torqbit.com</div>
+                </div>
+
+                <!-- low-mid  -->
+
+                <div class="mid-cont loco" style="margin-left: 15px;">
+                    <div><img src="img/location.png" alt=""></div>
+                    <div>3rd floor,Above 99 Builder Group Office,Near Memco More,Dhanbad - 826004</div>
+                </div>
+            </div>
+
+            <!-- low  -->
+
+            <div id="contact-links">
+                <div><a href=""><img src="img/Twitter.svg" alt=""></a></div>
+                <div><a href=""><img src="img/vimeo.svg" alt=""></a></div>
+                <div><a href=""><img src="img/fb.svg" alt=""></a></div>
+            </div>
+
+
+        </div>
+
+        <!-- right  -->
+
+        <divi id="right-contact">
+
+            <!-- border  -->
+            <div id="detail-form">
+
+                <form action="">
+                    <!-- profile  -->
+                    <div class="input-bg">
+                        <h3 style="margin-top: 0;">Your Name</h3>
+                        <div class="input-detail">
+                            <div><img src="img/person.png" alt=""></div>
+                            <div><input type="text"></div>
+                        </div>
+                    </div>
+                    <!-- mail  -->
+                    <div class="input-bg">
+                        <h3>Mail</h3>
+                        <div class="input-detail">
+                            <div><img src="img/email_outlined.png" alt=""></div>
+                            <div> <input type="email" placeholder="XYZ@mail.com"></div>
+                        </div>
+                    </div>
+
+                    <!-- message  -->
+
+                    <div class="">
+                        <h3>Message</h3>
+
+                        <textarea rows="10" id="message-inp" placeholder="Write your message"></textarea>
+                    </div>
+                    <div id="submit-btn">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+
+            </div>
+
+
+            </div>
+
+    </section>
+</body>
+
+</html>
