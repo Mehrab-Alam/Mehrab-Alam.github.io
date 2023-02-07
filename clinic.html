@@ -19,7 +19,9 @@
     <style>
         body {
 
-            margin: 0;
+            border: 2px solid;
+            max-width: 1200px;
+            margin: 0 auto;
             font-family: sans-serif;
             overflow-x: hidden;
         }
@@ -27,6 +29,7 @@
         #hero-section {
             background-color: rgba(58, 10, 10, .6);
             height: 100vh;
+
             overflow: hidden;
 
 
@@ -35,7 +38,7 @@
         #background-image {
 
             height: 100vh;
-            width: 100vw;
+            width: 62.5vw;
             position: absolute;
             object-fit: cover;
             z-index: -10;
@@ -47,18 +50,19 @@
             justify-content: space-between;
             align-items: center;
             margin-top: 10px;
+            font-weight: bold;
         }
 
         #ear-logo {
             display: flex;
             align-items: center;
-            gap: 10px;
+
         }
 
         nav div:nth-child(1) {
             margin-top: 0;
-            font-size: 2rem;
-            margin-left: 15px;
+            font-size: 1.5rem;
+            margin-right: 10px;
 
         }
 
@@ -70,7 +74,7 @@
             align-items: center;
             color: white;
             text-decoration: none;
-            font-size: 1.5rem;
+            font-size: 1rem;
             margin: 20px;
 
         }
@@ -84,7 +88,7 @@
         #contact {
             border-radius: 8px;
             background-color: #E02350;
-            padding: 5px 20px;
+            padding: 5px 10px;
             box-shadow: 0 3px 0 3px rgba(0, 0, 0, 25%);
         }
 
@@ -98,20 +102,20 @@
         .left-content {
             color: white;
             flex-basis: 50%;
-            padding: 35px 80px;
+            padding: 35px 60px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             /* height: 100%; */
             /* margin: 40px; */
             /* margin-left: 40px; */
-            /* margin-bottom: 60px; */
+            margin-bottom: 80px;
 
         }
 
         .left-content h3 {
-            max-width: 700px;
-            font-size: 3rem;
+            max-width: 600px;
+            font-size: 2.5rem;
             font-weight: normal;
 
 
@@ -120,11 +124,6 @@
 
 
 
-        .left-content p {
-            color: white;
-            font-size: 26px;
-            max-width: 400px;
-        }
 
 
 
@@ -139,16 +138,17 @@
 
 
         #left-hr p {
-            font-size: 1.8rem;
+            font-size: 1.3rem;
             color: hsl(0deg 0% 83%);
-            /* margin: 40px; */
-            margin-left: 80px;
-            max-width: 650px;
+            margin: 40px 0;
+            margin-left: 60px;
+            max-width: 450px;
         }
 
         #left-hr h1 {
+            margin-top: 80px;
             font-size: 2.5rem;
-            margin-left: 80px;
+            margin-left: 60px;
 
 
         }
@@ -160,8 +160,8 @@
             margin-right: 40px;
             border: 2px;
             border-radius: 8px;
-            height: auto;
-            width: 450px;
+            height: 400px;
+            width: 400px;
             background-color: rgba(46, 34, 38, 80%);
         }
 
@@ -182,13 +182,13 @@
         #upper p {
 
 
-            font-size: 1.5rem;
+            font-size: 1rem;
 
         }
 
         #upper h2 {
             margin-bottom: 0;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
 
         #image {
@@ -197,8 +197,8 @@
         }
 
         #upper img {
-            height: 60px;
-            width: 60px;
+            height: 50px;
+            width: 50px;
             border-radius: 100%;
             border: 2px solid white;
         }
@@ -211,9 +211,9 @@
             color: white;
             padding: 35px 20px;
             margin-top: 0;
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: hsl(0deg 0% 83%);
-
+            min-width: 300px;
 
         }
 
@@ -227,12 +227,12 @@
         }
 
         #lower button {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             font-weight: bold;
             color: black;
             border-radius: 8px;
             background-color: white;
-            padding: 8px 20px;
+            padding: 10px 20px;
             margin-bottom: 0;
             text-align: center;
         }
@@ -243,7 +243,7 @@
 
         #section-about {
 
-            margin: 80px;
+            margin: 60px;
             display: flex;
             justify-content: space-between;
         }
@@ -255,7 +255,8 @@
         }
 
         #about {
-            font-size: 2rem;
+            font-size: 1.5rem;
+            width: 200px;
             font-weight: bold;
         }
 
@@ -267,40 +268,46 @@
             height: 80px;
             width: 80px;
             border-radius: 50%;
-            border: 2px solid;
+            border: 1px solid gray;
             margin-bottom: 40px;
+            background-color: #fafafa;
         }
 
+
+
+
         #about-more div:nth-child(1) {
-            font-size: 4rem;
+            font-size: 2.5rem;
             font-weight: bold;
             max-width: 800px;
+            margin: 0 10px;
 
         }
 
         #about-more p {
-            font-size: 2rem;
+            font-size: 1rem;
             color: gray;
-            max-width: 500px;
+            max-width: 300px;
         }
 
         .learn {
             font-size: 1rem;
-            height: 40px;
-            width: 150px;
+            height: 30px;
+            width: 100px;
             border-radius: 25px;
             background-color: black;
             color: white;
         }
 
         #section-about h3 {
-            font-size: 2.5rem;
-            max-width: 850px;
+            margin-right: 40px;
+            font-size: 1.5rem;
+            max-width: 550px;
         }
 
         #my-image {
-            height: 350px;
-            width: 550px;
+            height: 250px;
+            width: 450px;
         }
 
         #my-image img {
@@ -315,7 +322,7 @@
         }
 
         #right p {
-            max-width: 200px;
+            max-width: 220px;
             font-size: 1.5rem;
             color: gray;
         }
@@ -329,7 +336,7 @@
         /* gallery */
 
         #section-gallery {
-            margin: 80px 40px;
+            margin: 80px 0px;
 
         }
 
@@ -344,17 +351,17 @@
         #left-gallery {
             text-align: center;
             min-width: 150px;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             /* justify-self: left; */
         }
 
         #mid-gallery {
 
-            margin-right: 370px;
+
             font-weight: bold;
-            font-size: 3.5rem;
-            max-width: 600px;
+            font-size: 2.5rem;
+            max-width: 450px;
         }
 
         #about-us {
@@ -362,17 +369,18 @@
             font-size: 1rem;
             display: flex;
             flex-wrap: wrap;
-            max-width: 600px;
+            max-width: 400px;
             margin-top: 20px;
 
         }
 
         #about-us>div {
             text-align: center;
-            border: 1px solid grey;
+            border: 1px solid #cac8c8;
             border-radius: 15px;
             padding: 5px 20px;
-            margin: 20px;
+            margin: 10px;
+            background-color: #f3f3f3;
         }
 
         #right-gallery {
@@ -383,9 +391,9 @@
         }
 
         #right-gallery>div {
-            height: 70px;
-            width: 70px;
-            border: 2px solid;
+            height: 60px;
+            width: 60px;
+            border: 1px solid #cac8c8;
             border-radius: 50%;
             padding: 5px;
             margin: 5px;
@@ -411,10 +419,11 @@
         #therapy-border {
             background-color: rgba(128, 128, 128, 0.327);
             height: 750px;
-            width: 550px;
-            border: 1px solid;
+            width: 450px;
+            border: 1px solid #7A7878;
+
             border-radius: 4px;
-            margin: 40px;
+            margin: 20px;
         }
 
         #therapy-border img {
@@ -424,25 +433,27 @@
         }
 
         #therapy-about {
-            margin-top: 20px;
+            margin-right: 80px;
+            justify-content: space-evenly;
+            display: flex;
+            font-size: 1.8rem;
+            margin-top: 15px;
             text-align: center;
         }
 
-        span {
-            font-size: 2rem;
-        }
+
 
         #therapy-about p {
             font-size: 1.5rem;
-            color: grey;
+            color: #7A7878;
         }
 
         /* mid */
 
         #drag {
             border: 2px solid;
-            height: 100px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -464,14 +475,14 @@
 
 
         #equip-border {
-            height: 600px;
-            width: 550px;
-            border: 1px solid;
+            height: 550px;
+            width: 450px;
+            border: 1px solid #7A7878;
             border-radius: 4px;
             align-self: flex-start;
 
             background-color: rgba(128, 128, 128, 0.327);
-            margin: 40px;
+            margin: 20px;
 
         }
 
@@ -482,10 +493,18 @@
         }
 
         #equip-about {
-            font-size: 2rem;
+            margin-right: 20px;
+            justify-content: space-between;
+            display: flex;
+            font-size: 1.8rem;
             margin-top: 15px;
             text-align: center;
 
+        }
+
+        #equip-about div:nth-child(1) {
+            font-size: 2rem;
+            margin-left: 30px;
         }
 
         #equip-about p {
@@ -498,7 +517,7 @@
         /* services */
 
         #section-service {
-            margin: 40px;
+            margin: 20px;
         }
 
         #main-service {
@@ -514,16 +533,22 @@
         }
 
         #service-head {
-            font-size: 2rem;
+            font-size: 1.5rem;
             justify-self: center;
             font-weight: bold;
         }
 
+        #mid-services hr {
+            color: #d4d4d4;
+        }
+
         #excellent {
 
-            font-size: 3rem;
+            font-size: 2.5rem;
             font-weight: bold;
-            margin: 40px 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            margin-left: 40px;
             max-width: 450px;
         }
 
@@ -539,19 +564,22 @@
         }
 
         .service-option {
+            margin-left: 28px;
+
             display: flex;
             font-size: 1.5rem;
         }
 
         .option {
+            background-color: #f3f3f3;
             margin: 20px 0;
             display: flex;
             justify-content: center;
             font-weight: bold;
             border: 1px solid;
-            border-radius: 15px;
+            border-radius: 25px;
             margin: 15px;
-            padding: 10px 10px;
+            padding: 10px 20px;
 
         }
 
@@ -566,34 +594,41 @@
 
         } */
         #mid-service hr {
-            max-width: 95%;
+            max-width: 93%;
+            height: 2px;
+            background-color: #D4D4D4;
+            border: none;
         }
 
         .therapies {
             display: flex;
             justify-content: space-between;
-            padding: 30px 30px;
+            padding: 30px 50px;
         }
 
         .therapies div:nth-child(1) {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
 
             font-weight: bold;
         }
 
         .sign {
-            color: gray;
-            font-size: 3rem;
-            height: 80px;
-            width: 80px;
-            border: 1px solid;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: rgba(37, 37, 37, 0.799);
+            font-size: 4rem;
+            height: 70px;
+            width: 70px;
+            border: 1px solid #c8c8c8;
             border-radius: 50%;
         }
 
         #low-service {
-            margin: 10px;
+            margin: 40px;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
         }
 
         #low-service button {
@@ -610,8 +645,8 @@
         }
 
         #left-serv div:nth-child(1) {
-            font-size: 2rem;
-            color: white;
+            font-size: 1.5rem;
+            color: #f3f3f3;
             padding: 10px;
         }
 
@@ -625,6 +660,10 @@
             padding: 30px;
         }
 
+        #lowerleft-serv div:nth-child(1) {
+            font-size: 2.5rem;
+        }
+
         #left-serv {
             display: flex;
             flex-direction: column;
@@ -635,16 +674,16 @@
             display: flex;
             justify-content: space-between;
             margin-right: 20px;
-            height: 320px;
-            width: 750px;
+            height: 250px;
+            width: auto;
             background-color: #594e51;
         }
 
         #low-right-service {
-            font-size: 1.5rem;
-            margin-left: 20px;
+            font-size: 1rem;
+
             padding: 0 10px;
-            height: 320px;
+            height: 250px;
             width: 900px;
             background-color: #f8f8f8;
         }
@@ -659,18 +698,31 @@
         }
 
         #low-right-serv div:nth-child(1) {
-            margin: 35px 20px;
+            margin: 20px 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            height: 40px;
-            width: 40px;
+            height: 30px;
+            width: 30px;
             border: 1px solid;
             border-radius: 50%;
         }
 
+        #low-right-serv img {
+            height: 30px;
+            width: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        #low-right-serv p {
+            font-size: 1.2rem;
+            color: gray;
+        }
+
         #right-serv {
+
             display: flex;
             justify-content: space-between;
         }
@@ -679,7 +731,7 @@
 
 
         #section-doctor {
-            margin: 60px;
+            margin: 20px;
 
         }
 
@@ -692,28 +744,36 @@
         #up-doc p {
             font-size: 1.5rem;
             max-width: 600px;
-            color: gray;
+            color: #7A7878;
         }
 
-        #up-doc div:nth-child(1) {
-            font-size: 2rem;
+        #middle-doc div:nth-child(1) {
+            width: 250px;
+            font-size: 1.8rem;
             font-weight: bold;
             margin-top: 60px;
         }
 
-        #up-doc div:nth-child(2) {
+        #middle-doc div:nth-child(2) {
             font-size: 2.5rem;
             flex-wrap: wrap;
-            max-width: 800px;
+            max-width: 700px;
         }
 
-        #up-doc div:nth-child(3) {
+        #middle-doc {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        #doc-circle {
+            background-color: #fafafa;
             margin-top: 40px;
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: bold;
-            height: 250px;
-            width: 250px;
-            border: 1px solid;
+            height: 200px;
+            width: 200px;
+            border: 2px solid #c8c8c8;
             text-align: center;
             border-radius: 50%;
             display: flex;
@@ -724,24 +784,26 @@
 
         #main-doc {
             display: flex;
-            justify-content: center;
+            justify-content: right;
+
         }
 
         .doctor {
 
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             margin: 40px;
         }
 
         .upper-doc {
-            border: 1px;
+
+
             margin: 30px;
             height: 400px;
-            width: 420px;
+            width: 410px;
             display: flex;
             justify-content: center;
-            background-color: rgba(215, 210, 210, 0.719);
+            background-color: #fafafa;
         }
 
 
@@ -749,7 +811,7 @@
 
 
         .doctor img {
-
+            background-color: #fafafa;
             border: 1px;
 
         }
@@ -763,6 +825,7 @@
         }
 
         .doctor p {
+            color: #7A7878;
 
             font-size: 1.5rem;
             margin-left: 40px;
@@ -771,26 +834,28 @@
 
         .skill {
 
-            text-align: center;
-            justify-content: center;
+            text-align: left;
+            margin-left: 20px;
             display: flex;
             flex-wrap: wrap;
             max-width: 400px;
         }
 
         .skill>div {
-            text-align: center;
-            border: 1px solid;
+            font-weight: bold;
+            text-align: left;
+            border: 1px solid #c8c8c8;
+            background-color: #fafafa;
             border-radius: 25px;
             margin: 10px;
             font-size: 1rem;
-            padding: 5px 15px;
+            padding: 10px 20px;
         }
 
         /* reviews  */
 
         #section-review {
-            margin: 40px;
+            margin: 20px;
         }
 
         #up-review {
@@ -799,24 +864,30 @@
             margin: 40px;
         }
 
-        #up-review div:nth-child(1) {
-            font-size: 2rem;
+        #mid-reviews {
+            display: flex;
+        }
+
+        #mid-reviews div:nth-child(1) {
+            width: 250px;
+            font-size: 1.8rem;
             font-weight: bold;
             margin-top: 40px;
         }
 
-        #up-review div:nth-child(2) {
-            font-size: 2.5rem;
+        #mid-reviews div:nth-child(2) {
+            font-size: 2.2rem;
             flex-wrap: wrap;
-            max-width: 800px;
+            max-width: 700px;
         }
 
-        #up-review div:nth-child(3) {
-            font-size: 1.5rem;
+        #all-reviews {
+            background-color: #fafafa;
+            font-size: 1.2rem;
             max-width: 400px;
-            height: 200px;
-            width: 200px;
-            border: 1px solid;
+            height: 180px;
+            width: 180px;
+            border: 2px solid #c8c8c8;
             text-align: bottom;
             border-radius: 50%;
             display: flex;
@@ -827,24 +898,26 @@
         }
 
         #up-review p {
-            max-width: 700px;
+            max-width: 500px;
             color: gray;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
 
 
         #low-review {
-            margin: 80px 40px;
+            padding-left: 150px;
+            margin: 80px;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
         }
 
         #review-image {
-            border: 1px;
+
+            border: 1px #c8c8c8;
             border-radius: 50%;
-            height: 100px;
-            width: 100px;
-            margin: 0 150px;
+            height: 120px;
+            width: 120px;
+            /* margin: 0 150px; */
         }
 
         #review-image img {
@@ -861,10 +934,10 @@
             justify-content: center;
             text-align: center;
             align-items: center;
-
+            background-color: #fafafa;
             height: 50px;
             width: 50px;
-            border: 1px solid;
+            border: 1px solid #c8c8c8;
             border-radius: 50%;
         }
 
@@ -875,16 +948,19 @@
         }
 
         #review-about div:nth-child(2) {
+
             padding-top: 45px;
             font-style: italic;
-            font-size: 3rem;
+            font-size: 2.2rem;
             font-weight: normal;
             flex-wrap: wrap;
-            max-width: 1000px;
+            max-width: 650px;
         }
 
         #review-about {
             margin-top: 40px;
+
+            justify-self: right;
         }
 
         #review-about h1 {
@@ -903,17 +979,20 @@
         /* form  */
 
         #section-form {
-
-            padding: 80px;
+            max-width: 1200px;
+            margin: 0 40px;
             background-color: hsl(227deg 36% 35%);
             display: flex;
+            justify-content: center;
             align-items: center;
 
         }
 
         #logo-img {
             align-self: flex-start;
-            margin-top: 50px;
+            margin-top: 30px;
+            margin-left: 40px;
+            width: 190px;
         }
 
         #header-form {
@@ -924,7 +1003,7 @@
         }
 
         #section-form h2 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: white;
             padding: 20px;
 
@@ -932,16 +1011,18 @@
         }
 
         #header-form h1 {
+            display: flex;
+            justify-content: center;
             margin-bottom: 40px;
-            font-size: 3rem;
+            font-size: 2.2rem;
             flex-wrap: wrap;
             max-width: 550px;
-            padding: 20px;
+
 
         }
 
         .upper-form {
-
+            /* justify-content: space-between; */
             display: flex;
         }
 
@@ -952,11 +1033,17 @@
 
         }
 
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
 
 
         .input-field {
             border-radius: 15px;
-            width: 550px;
+            width: 400px;
             height: 80px;
             border: none;
             display: flex;
@@ -1003,7 +1090,7 @@
         .input-low-field input {
             padding: 0px 5px;
             height: 80px;
-            width: 500px;
+            width: 300px;
             border-top-left-radius: 15px;
             border-bottom-left-radius: 15px;
             background-color: hsl(245deg 72% 20%);
@@ -1013,7 +1100,8 @@
         }
 
         .input-low-field {
-            width: 550px;
+
+            width: 250px;
             height: 80px;
             border-radius: 15px;
 
@@ -1032,7 +1120,7 @@
 
             font-size: 40px;
             height: 80px;
-            width: 70px;
+            width: 80px;
 
             border: none;
 
@@ -1079,7 +1167,7 @@
 
         .date-input input {
             height: 80px;
-            width: 970px;
+            width: 670px;
             border-top-right-radius: 15px;
             border-bottom-right-radius: 15px;
             background-color: hsl(245deg 72% 20%);
@@ -1112,18 +1200,35 @@
         }
 
         #faq {
+            width: 200px;
+            font-weight: bold;
             margin-top: 20px;
-            font-size: 2rem;
+            font-size: 1.5rem;
 
         }
 
         #up-question {
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: space-between;
             font-weight: bold;
 
 
+        }
+
+        .question {
+
+            margin: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+
+        #mid-question hr {
+            height: 3px;
+            background-color: #D4D4D4;
+            border: none;
         }
 
         #up-question h1 {
@@ -1135,50 +1240,52 @@
         }
 
         .para-ques {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         /* partner  */
 
         #section-partner {
-            margin: 80px 40px;
+            margin: 80px px;
         }
 
         #up-partner {
-            margin: 40px;
+            margin: 90px;
 
 
             font-weight: bold;
             display: flex;
-            /* justify-content: center; */
+
         }
 
         #up-partner div:nth-child(1) {
-            font-size: 2rem;
+            font-size: 1.5rem;
+            width: 220px;
         }
 
         #section-partner h1 {
             font-size: 3rem;
             flex-wrap: wrap;
-            max-width: 700px;
-            margin-left: 20%;
+            max-width: 400px;
+
         }
 
         #partner-image {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             /* margin-left: -5%; */
 
         }
 
         #partner-image>div {
             /* text-align: center; */
-            margin: 0 40px;
-            height: 250px;
-            width: 250px;
-            border: 1px solid black;
+            margin: 0 20px;
+            height: 150px;
+            width: 150px;
+            border: 2px solid #c8c8c8;
             border-radius: 50%;
             padding: 10px;
+            background-color: #fafafa;
         }
 
         #partner-image img {
@@ -1197,11 +1304,15 @@
             margin: 150px 80px;
         }
 
+        #bolg-main-head {
+            display: flex;
+        }
+
         #up-blog {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: bold;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
         }
 
         #blog-header h1 {
@@ -1214,15 +1325,18 @@
 
         #blog {
             font-size: 2rem;
-            margin: 40px;
+            width: 220px;
         }
 
         .blog-arrow {
+
+            background-color: #fafafa;
+            margin: 10px;
             font-size: 50px;
-            border: 1px solid;
+            border: 2px solid #c8c8c8;
             border-radius: 50%;
-            height: 100px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1232,13 +1346,12 @@
         #blog-sign {
             display: flex;
             justify-content: center;
-            margin-right: 20px;
+
 
         }
 
         #blog-image {
 
-            margin: 20px;
             margin-top: 30px;
             display: flex;
             justify-content: right;
@@ -1249,22 +1362,25 @@
             margin: 20px 0;
             display: flex;
             flex-wrap: wrap;
-            max-width: 500px;
+            max-width: 400px;
 
         }
 
         .blog-option>div {
-
-            margin: 15px;
-            padding: 5px 15px;
-            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
             text-align: center;
-            border: 1px solid;
+            border: 1px solid #c8c8c8;
             border-radius: 20px;
+            background-color: #fafafa;
 
         }
 
         #blog-image h1 {
+            font-weight: bold;
+            margin-left: 10px;
             font-size: 1.5rem;
             max-width: 400px;
         }
@@ -1276,16 +1392,24 @@
             background-color: wheat;
         }
 
+        #second-img {
+            margin-right: 50px;
+        }
+
+        #first-img {
+            padding-left: 250px;
+        }
+
         /* contact  */
 
         #section-contact {
-            padding: 40px;
+            padding: 0 40px;
             background-color: hsl(227deg 36% 35%);
 
         }
 
         #nav-logo {
-            margin: 40px;
+
             align-items: center;
             display: flex;
         }
@@ -1297,32 +1421,32 @@
             font-size: 3.5rem;
             color: white;
             background-color: hsl(245deg 72% 20%);
-            height: 100px;
-            width: 100px;
+            height: 80px;
+            width: 80px;
             border: 1px solid;
             border-radius: 50%;
-            margin-right: 35px;
+            /* margin-right: 35px; */
         }
 
         #heading {
 
-            margin-left: 80px;
+            margin-left: 40px;
             font-size: 2.5rem;
             color: white;
         }
 
         #contact-form {
-            margin: 80px 0;
+            margin: 80px 40px;
             display: flex;
-            justify-content: center;
+            /* justify-content: center; */
         }
 
         #contact-form-detail {
 
-            column-gap: 150px;
+            column-gap: 80px;
             row-gap: 45px;
             text-align: center;
-            place-items: center;
+
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
@@ -1333,7 +1457,7 @@
             align-items: center;
             border-radius: 15px;
             height: 70px;
-            width: 550px;
+            width: 500px;
             background-color: hsl(245deg 72% 20%);
 
 
@@ -1344,7 +1468,7 @@
             align-items: center;
             border-radius: 15px;
             height: 70px;
-            width: 550px;
+            width: 500px;
             background-color: hsl(245deg 72% 20%);
 
 
@@ -1409,16 +1533,21 @@
             height: 60px;
             width: 300px;
             background-color: hsl(245deg 72% 20%);
-
+            border: none;
             font-size: 2rem;
             color: white;
             text-align: center;
             margin-bottom: 40px;
         }
 
+        ::placeholder {
+            font-size: 1.5rem;
+        }
+
 
         #contact-site {
-            margin-left: 80px;
+            margin-left: 40px;
+            margin-right: 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -1427,16 +1556,16 @@
         }
 
         #contact-site h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
         }
 
         #contact-site p {
-            font-size: 2rem;
+            font-size: 1.5rem;
 
         }
 
         #all-site {
-            font-size: 2rem;
+            font-size: 1.5rem;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(4, 1fr);
@@ -1452,22 +1581,22 @@
 
         .lower-site {
             display: flex;
-            justify-content: space-between;
-            margin-top: 80px;
-
+            justify-content: right;
+            margin-bottom: 80px;
         }
 
 
         .lower-site>div {
-            height: 100px;
-            width: 100px;
+            height: 70px;
+            width: 70px;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 5px;
+            margin: 10px;
+
             border: 1px solid;
             border-radius: 50%;
-            background-color: white;
+            background-color: #c8c8c8;
         }
 
 
@@ -1484,9 +1613,13 @@
 
         }
 
-        #right-site {
-            margin-right: 35px;
+        .lower-p {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
         }
+
+
 
         button {
             cursor: pointer;
@@ -1510,7 +1643,7 @@
         <nav>
             <div id="ear-logo">
                 <div>
-                    <img src="img/ear_1.png" alt="" height="80px" width="auto">
+                    <img src="img/ear_1.png" alt="" height="60px" width="auto">
                 </div>
                 <div> HEARNIC</div>
             </div>
@@ -1540,7 +1673,7 @@
                 <div id="left-hr">
                     <h1>Facts</h1>
                     <p>Premium equipment that meets state-of-the-art in the hearing industry.</p>
-                    <hr style="width: 88%; margin-right: 10px;" />
+                    <hr style="width: 86%; margin-right: 10px; height: 2px; background-color: #D4D4D4; border: none;" />
                     <p>Professionals in their field,who can be trusted and get the best results.</p>
                 </div>
                 <div id="user-card">
@@ -1689,10 +1822,14 @@
         <div class="lower">
             <!-- left  -->
             <div id="therapy">
-                <div id="therapy-border"><img src="img/collection.jpg" alt=""></div>
-                <div id="therapy-about"><span>01 /
+                <div id="therapy-border"></div>
+                <div id="therapy-about">
+                    <div> 01 </div>
+                    <div> / </div>
+                    <div>
                         <strong>Collection of therapy</strong> </span>
-                    <p>The boy got a 50% discount</p>
+                        <p>The boy got a 50% discount</p>
+                    </div>
                 </div>
             </div>
             <!-- mid  -->
@@ -1701,10 +1838,15 @@
             </div>
             <!-- right  -->
             <div id="equip">
-                <div id="equip-border"><img src="img/therapy.jpg" alt=""></div>
+                <div id="equip-border"></div>
                 <div id="equip-about">
-                    <span>02 / <strong>Therapy equipment</strong> </span>
-                    <p>Best equipment for therapy</p>
+                    <div>02</div>
+                    <div>/</div>
+                    <div>
+                        <strong> Therapy equipment</strong>
+                        <p>Best equipment for therapy</p>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -1840,9 +1982,9 @@
             <!-- right  -->
             <div id="low-right-service">
                 <div id="right-serv">
-                    <div> <img src="img/doc-arti.png" alt="" height="300px"></div>
+                    <div> <img src="img/doc-arti.png" alt="" height="250px"></div>
                     <div id="low-right-serv">
-                        <div>"</div>
+                        <div><img src="img/coma.png" alt=""></div>
                         <div>
                             <h1>"Stand up to the sick you world have them stand up to you in the hour of illness.</h1>
                             <p>Dr. Arti Sukhla</p>
@@ -1861,16 +2003,19 @@
         <!-- upper  -->
         <div id="up-doc">
             <!-- left  -->
-            <div>Doctors</div>
+
             <!-- mid  -->
-            <div>
-                <h1>Aid specialists and Audiologists</h1>
-                <p>Our clinic employs only Professionals specialist and audiologist.We select
-                    the best doctors on a
-                    regular basis.</p>
+            <div id="middle-doc">
+                <div>Doctors</div>
+                <div>
+                    <h1>Aid specialists and Audiologists</h1>
+                    <p>Our clinic employs only Professionals specialist and audiologist.We select
+                        the best doctors on a
+                        regular basis.</p>
+                </div>
             </div>
             <!-- right  -->
-            <div>All Doctors &rarr;</div>
+            <div id="doc-circle">All Doctors &rarr;</div>
         </div>
         <!-- lower  -->
         <div id="main-doc">
@@ -1975,15 +2120,18 @@
     <section id="section-review">
         <!-- up -->
         <div id="up-review">
-            <!-- left  -->
-            <div>Reviews </div>
-            <!-- mid  -->
-            <div>
-                <h1>Feedback from our favourite customers</h1>
-                <p>We treat our customer better than any other clinic.Thnak you for being with us!</p>
+            <div id="mid-reviews">
+                <!-- left  -->
+                <div>Reviews </div>
+                <!-- mid  -->
+                <div>
+                    <h1>Feedback from our favourite customers</h1>
+                    <p>We treat our customer better than any other clinic.Thnak you for being with us!</p>
+                </div>
+
             </div>
             <!-- right  -->
-            <div>All reviews &rarr;</div>
+            <div id="all-reviews">All reviews &rarr;</div>
         </div>
         <!-- low  -->
         <div id="low-review">
@@ -2051,7 +2199,7 @@
                                 <input type="email" placeholder="Over view of specialization">
                                 <span><button>+</button></span>
                             </div>
-                            <div class="input-low-field">
+                            <div class="input-low-field" style="margin-left: 150px;">
 
                                 <input type="email" placeholder="Check out the expert">
                                 <span><button>+</button></span>
@@ -2084,31 +2232,31 @@
 
             <!-- mid  -->
             <div id="mid-question">
-                <div class="therapies question">
+                <div class="question">
                     <div class="para-ques">It is possible to pay for clinic services at the expense of the organization
                     </div>
                     <div class="sign"><button class="sign">+</button></div>
                 </div>
-                <hr style="max-width: 95%;" />
-                <div class="therapies question">
+                <hr style="max-width: 96%;" />
+                <div class=" question">
                     <div class="para-ques">Where can I find the information about the licenses of the clinic</div>
                     <div class="sign"><button class="sign">+</button></div>
                 </div>
-                <hr style="max-width: 95%;" />
+                <hr style="max-width: 96%;" />
 
 
-                <div class="therapies question">
+                <div class=" question">
                     <div class="para-ques">Are there any discounts available?</div>
                     <div class="sign"><button class="sign">+</button></div>
                 </div>
-                <hr style="max-width: 95%;" />
+                <hr style="max-width: 96%;" />
 
 
-                <div class="therapies question">
+                <div class=" question">
                     <div class="para-ques">Does "Hearnic" clinic provide treatment on credit</div>
                     <div class="sign"><button class="sign">+</button></div>
                 </div>
-                <hr style="max-width: 95%;" />
+                <hr style="max-width: 96%;" />
 
 
             </div>
@@ -2139,11 +2287,14 @@
     <!-- blog  -->
     <section id="section-blog">
         <div id="up-blog">
-            <!-- left  -->
-            <div id="blog">Blog</div>
-            <!-- mif  -->
-            <div id="blog-header">
-                <h1>You may be interested to know</h1>
+            <div id="bolg-main-head">
+                <!-- left  -->
+                <div id="blog">Blog</div>
+                <!-- mif  -->
+                <div id="blog-header">
+                    <h1>You may be interested to know</h1>
+                </div>
+
             </div>
             <!-- right  -->
             <div id="blog-sign">
@@ -2158,8 +2309,8 @@
 
         <div id="blog-image">
             <!-- left  -->
-            <div>
-                <div><img src="img/earimg.jpg" alt="" height="300px" width="500px" style="margin-right: 20px;"></div>
+            <div id="first-img">
+                <div><img src="img/earimg.jpg" alt="" height="200px" width="300px" style="margin-right: 20px;"></div>
                 <div>
 
                     <div class="blog-option">
@@ -2172,8 +2323,8 @@
                 </div>
             </div>
             <!-- right -->
-            <div>
-                <div><img src="img/lab.jpg" alt="" height="300px" width="650"></div>
+            <div id="second-img">
+                <div><img src="img/lab.jpg" alt="" height="200px" width="400px"></div>
 
 
                 <div class="blog-option">
@@ -2253,22 +2404,23 @@
 
                 </div>
 
-                <p><span style="color: black; font-size: 3rem;">&copy; </span> Hearnic: ALl rights reserved</p>
+                <p><span style="color: black; font-size: 3rem; background-color:  hsl(227deg 36% 35%);">&copy; </span>
+                    Hearnic: ALl rights reserved</p>
 
             </div>
 
             <div id="right-site">
                 <h1>We are on social media</h1>
-                <div class="lower-site site-links">
+                <div class="lower-site ">
                     <div><a href="/"><img src="img/telegram_1.png" alt=""></a></div>
                     <div><a href="https://twitter.com/mr_mehrab1/"> <img src="img/twiitter.png" alt=""></a></div>
-                    <div style="background-color: white;"><a href="https://www.facebook.com/mehrab.alam.568/"> <img
+                    <div style="background-color: #c8c8c8;"><a href="https://www.facebook.com/mehrab.alam.568/"> <img
                                 src="img/fb_1.png" alt=""></a>
                     </div>
                     <div><a href="/"><img src="img/whatsapp.png" alt=""></a></div>
 
                 </div>
-                <div class="lower-site">
+                <div class="lower-p">
                     <p>Privacy Policy</p>
                     <p>Terms & Conditions</p>
                 </div>
