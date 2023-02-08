@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: hsl(0deg 0% 5%);
+
+        }
+
+        #section-appointment {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: hsl(0deg 0% 100%);
+            ;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: normal;
+        }
+
+        nav {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #torq-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #nav-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .link {
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .link div:nth-child(1) {
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px;
+        }
+
+        .dash {
+            margin: 0 20px;
+            height: 2px;
+
+            width: 20px;
+            background-color: black;
+
+        }
+
+        h1 {
+            font-size: 2rem;
+            padding: 20px 40px;
+
+        }
+
+        #low-first {
+            padding: 20px 40px;
+
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+        }
+
+        .left-low {
+            margin: 40px 0;
+            align-self: flex-start;
+            font-size: 1.5rem;
+
+        }
+
+        .left-low div:nth-child(2) {
+            color: hsl(0deg 0% 50%);
+        }
+
+        .left-low div:nth-child(1) {
+            font-weight: bold;
+        }
+
+        ::placeholder {
+            color: black;
+        }
+
+        #up-right {
+            /* margin-left: 40px; */
+        }
+
+        #low-right {
+            margin-left: 120px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #low-right>div {
+            background-color: hsl(0deg 0% 97%);
+            ;
+            padding: 10px;
+
+            border-radius: 15px;
+        }
+
+        #first-name {
+            margin-left: 40px;
+            width: 250px;
+        }
+
+        #last-name {
+            margin-left: 20px;
+            width: 200px;
+        }
+
+        #select {
+            margin-left: 20px;
+        }
+
+        #oraganization {
+            background-color: #f3f3f3;
+            width: 620px;
+            padding: 10px;
+            border-radius: 15px;
+
+            margin-top: 40px;
+            margin-bottom: 20px;
+            margin-left: 145px;
+        }
+
+        #oraganization input {
+            background-color: #f3f3f3;
+
+            border: none;
+            outline: none;
+
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+
+
+        #select select {
+            font-size: 1.5rem;
+
+            background-color: hsl(0deg 0% 97%);
+
+            border: none;
+            align-self: center;
+            height: 40px;
+            width: 70px;
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: hsl(0deg 0% 97%);
+
+            font-size: 1.5rem;
+            height: 40px;
+        }
+
+        #lower {
+            padding: 20px 40px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .low-option {
+            background-color: hsl(0deg 0% 97%);
+
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 15px;
+            width: 620px;
+
+        }
+
+        select {
+            background-color: hsl(0deg 0% 97%);
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+
+        .low-option select {
+            background-color: hsl(0deg 0% 97%);
+
+
+            border: none;
+            font-size: 1.5rem;
+            height: 40px;
+            width: 100%;
+        }
+
+        #bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #bottom div:nth-child(1) {
+            font-size: 1rem;
+            color: hsl(0deg 0% 75%);
+
+
+        }
+
+        #skip {
+            cursor: pointer;
+
+            background-color: hsl(0deg 0% 100%);
+            font-size: 1.5rem;
+            border-radius: 15px;
+            height: 60px;
+            width: 150px;
+            border: 1px solid;
+        }
+
+        #save-cont {
+            cursor: pointer;
+            background-color: hsl(256deg 86% 54%);
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 15px;
+            height: 60px;
+            width: 250px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="section-appointment">
+        <!-- upper  -->
+        <nav>
+            <!-- left logo -->
+            <div id="torq-logo">
+                <div><a href=""><img src="img/form/torqbit-logo.png" alt=""></a></div>
+                <div><a href=""><img src="img/form/torqbit-name.png" alt=""></a></div>
+
+            </div>
+            <hr />
+            <!-- right  -->
+            <div id="nav-links">
+                <!-- left link  -->
+                <div class="link">
+                    <div style="background-color:hsl(256deg 86% 54%);">&uarr;</div>
+                    <div><a href="">About you</a> </div>
+                </div>
+
+                <div class="dash"></div>
+
+                <!-- mid link -->
+                <di class="link">
+                    <div style="background-color: hsl(0deg 0% 85%); color: white;">2</div>
+                    <div><a href="">Billing information</a></div>
+            </div>
+
+            <div class="dash"></div>
+
+            <!-- right-link  -->
+            <div class="link">
+                <div style="background-color: hsl(0deg 0% 85%); color: white;">3</div>
+                <div><a href="">Get Started</a></div>
+            </div>
+
+            </div>
+
+        </nav>
+        <hr />
+        <!-- lower -->
+        <form action="">
+            <div>
+                <!-- up  -->
+
+                <div>
+                    <h1>About you</h1>
+
+                    <!-- low-first  -->
+                    <div id="low-first">
+                        <!-- left  -->
+                        <div class="left-low">
+                            <div> Personal Info</div>
+                            <div> provide your personal info</div>
+                        </div>
+                        <!-- right  -->
+                        <div id="up-right">
+                            <!-- up  -->
+                            <div id="oraganization">
+                                <label for="organ">organization</label>
+                                <br />
+                                <input type="text" id="organ" placeholder="Torqbit">
+                            </div>
+                            <!-- low  -->
+                            <div id="low-right">
+                                <div id="select">
+
+                                    <label for="mr">Title</label>
+                                    <br />
+                                    <select name="" id="mr">
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                    </select>
+
+
+                                </div>
+                                <div id="first-name">
+                                    <label for="name">First Name*</label>
+                                    <br />
+                                    <input type="text" placeholder="Rahul" id="name">
+                                </div>
+                                <div id="last-name">
+                                    <label for="last">Last Name*</label>
+                                    <br />
+                                    <input type="text" placeholder="Kumar" id="last">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr style="max-width: 1000px;" />
+                <!-- low  -->
+                <div id="lower">
+
+                    <div class="left-low" style="margin: 0px 0;">
+                        <div>Professional Info</div>
+                        <div>Provide your professional info</div>
+                    </div>
+                    <!-- right  -->
+                    <div>
+                        <div class="low-option">
+                            <label for="lang">Languages(s)*</label>
+                            <br />
+                            <select name="" id="lang">
+                                <option value="Hindi,English">Hindi,English</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="English">English</option>
+                            </select>
+                        </div>
+                        <div class="low-option">
+                            <label for="employe">Type of employment*</label>
+                            <br />
+                            <select name="" id="employe">
+                                <option value="Full Time Job">Full Time Job</option>
+                                <option value="Part Time Job">Part Time Job</option>
+                            </select>
+                        </div>
+                        <div class="low-option">
+                            <label for="profess">Type of employment*</label>
+                            <br />
+
+                            <select name="" id="profess">
+                                <option value="Web Development">Web Development</option>
+                                <option value="Full Stack Developer">Full Stack Developer</option>
+                            </select>
+                        </div>
+                        <div class="low-option">
+                            <select name="" id="">
+                                <option value="Proficiency level" selected disabled>Proficiency level</option>
+                                <option value="level 1">level 1</option>
+                                <option value="level 2">level 2</option>
+
+                            </select>
+                        </div>
+                        <!-- bottom  -->
+                        <div id="bottom">
+                            <div>*This field is mandatory</div>
+                            <button type="" id="skip">Skip</button>
+                            <button type="submit" id="save-cont">Save & Continue</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
