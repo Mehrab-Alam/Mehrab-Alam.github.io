@@ -19,8 +19,8 @@
     <style>
         body {
 
-            border: 2px solid;
-            max-width: 1200px;
+
+
             margin: 0 auto;
             font-family: sans-serif;
             overflow-x: hidden;
@@ -30,19 +30,28 @@
             background-color: rgba(58, 10, 10, .6);
             height: 100vh;
 
+
+            /* max-width: 1200px; */
             overflow: hidden;
 
+
+        }
+
+        #whole-hero {
+            max-width: 1200px;
+            margin: 0 auto;
 
         }
 
         #background-image {
 
             height: 100vh;
-            width: 62.5vw;
+            width: 100vw;
             position: absolute;
             object-fit: cover;
             z-index: -10;
         }
+
 
         nav {
             color: white;
@@ -242,6 +251,15 @@
         /* about  */
 
         #section-about {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #whole-about {
+            max-width: 1200px;
+
+            margin: 0 auto;
+
 
             margin: 60px;
             display: flex;
@@ -336,8 +354,13 @@
         /* gallery */
 
         #section-gallery {
-            margin: 80px 0px;
 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #whole-gallery {
+            margin: 80px 0px;
         }
 
         .gallery {
@@ -517,8 +540,11 @@
         /* services */
 
         #section-service {
-            margin: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
+
+
 
         #main-service {
             display: flex;
@@ -731,8 +757,13 @@
 
 
         #section-doctor {
-            margin: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
 
+        }
+
+        #whole-doc {
+            margin: 20px;
         }
 
         #up-doc {
@@ -855,6 +886,11 @@
         /* reviews  */
 
         #section-review {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #whole-review {
             margin: 20px;
         }
 
@@ -979,9 +1015,15 @@
         /* form  */
 
         #section-form {
-            max-width: 1200px;
-            margin: 0 40px;
+
             background-color: hsl(227deg 36% 35%);
+
+        }
+
+        #whole-form {
+
+            max-width: 1200px;
+            margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -1194,7 +1236,12 @@
         /* question  */
 
         #section-question {
-            margin: 40px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #whole-que {
+            margin: 40px 60px;
             display: flex;
             justify-content: space-between;
         }
@@ -1246,11 +1293,16 @@
         /* partner  */
 
         #section-partner {
-            margin: 80px px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        #whole-partner {
+            margin: 40px;
         }
 
         #up-partner {
-            margin: 90px;
+            margin: 20px;
 
 
             font-weight: bold;
@@ -1301,26 +1353,32 @@
 
 
         #section-blog {
-            margin: 150px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #whole-blog {
+            margin: 150px 60px;
+
         }
 
         #bolg-main-head {
             display: flex;
+            justify-content: space-between;
         }
 
         #up-blog {
             font-size: 1.5rem;
             font-weight: bold;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
         }
 
         #blog-header h1 {
             font-size: 3rem;
             flex-wrap: wrap;
             max-width: 550px;
-            /* margin-right: 30%; */
-            /* margin-bottom: 20%;   */
+            /* margin-right: 40px; */
         }
 
         #blog {
@@ -1331,8 +1389,8 @@
         .blog-arrow {
 
             background-color: #fafafa;
-            margin: 10px;
-            font-size: 50px;
+            margin: 5px;
+            font-size: 3rem;
             border: 2px solid #c8c8c8;
             border-radius: 50%;
             height: 80px;
@@ -1392,19 +1450,29 @@
             background-color: wheat;
         }
 
-        #second-img {
-            margin-right: 50px;
+        #second-img img {
+            width: 440px;
+            /* margin-right: 50px; */
         }
 
-        #first-img {
-            padding-left: 250px;
+        #first-img img {
+            width: 400px;
+
+            /* padding-left: 250px; */
         }
 
         /* contact  */
 
         #section-contact {
-            padding: 0 40px;
+
             background-color: hsl(227deg 36% 35%);
+
+        }
+
+        #whole-contact {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
 
         }
 
@@ -1425,7 +1493,7 @@
             width: 80px;
             border: 1px solid;
             border-radius: 50%;
-            /* margin-right: 35px; */
+            margin-right: 40px;
         }
 
         #heading {
@@ -1596,7 +1664,7 @@
 
             border: 1px solid;
             border-radius: 50%;
-            background-color: #c8c8c8;
+            background-color: #f3f3f3;
         }
 
 
@@ -1639,154 +1707,161 @@
 <body>
     <!-- hero-sectin  -->
     <section id="hero-section">
+
+
         <img id="background-image" src="img/hearnic-background.jpeg" alt="">
-        <nav>
-            <div id="ear-logo">
-                <div>
-                    <img src="img/ear_1.png" alt="" height="60px" width="auto">
-                </div>
-                <div> HEARNIC</div>
-            </div>
-            <div id="links">
-                <a href="" id="home" style="color: black;">Home</a>
-                <a href="">About us</a>
-                <a href="">Specialists</a>
-                <a href="">Doctors</a>
-                <a href="">Contact</a>
-                <a href="" id="contact">+91-9090090090</a>
-            </div>
-        </nav>
-        <!-- main container -->
-        <div class="main-content">
-            <!-- left  -->
-            <div class="left-content">
-                <!-- top  -->
-                <h3 id="title">Over past decade,
-                    we have provided hundreds of hearing
-                    aids and speach therapy
-                    services.</h3>
-                <!-- bottom -->
 
-            </div>
-            <!-- right -->
-            <div id="right-content">
-                <div id="left-hr">
-                    <h1>Facts</h1>
-                    <p>Premium equipment that meets state-of-the-art in the hearing industry.</p>
-                    <hr style="width: 86%; margin-right: 10px; height: 2px; background-color: #D4D4D4; border: none;" />
-                    <p>Professionals in their field,who can be trusted and get the best results.</p>
+        <div id="whole-hero">
+            <nav>
+                <div id="ear-logo">
+                    <div>
+                        <img src="img/ear_1.png" alt="" height="60px" width="auto">
+                    </div>
+                    <div> HEARNIC</div>
                 </div>
-                <div id="user-card">
-                    <!-- upper  -->
-                    <div id="upper">
-                        <div id="image">
-                            <div><img src="img/old-man-1.jpeg" alt=""></div>
-                            <div class="old-img"><img src="img/old-man-2.jpeg" alt=""></div>
-                            <div class="old-img"><img src="img/old-man-3.jpeg" alt=""></div>
-                            <div class="old-img"><img src="img/old-man-4.jpeg" alt=""></div>
+                <div id="links">
+                    <a href="" id="home" style="color: black;">Home</a>
+                    <a href="">About us</a>
+                    <a href="">Specialists</a>
+                    <a href="">Doctors</a>
+                    <a href="">Contact</a>
+                    <a href="" id="contact">+91-9090090090</a>
+                </div>
+            </nav>
+            <!-- main container -->
+            <div class="main-content">
+                <!-- left  -->
+                <div class="left-content">
+                    <!-- top  -->
+                    <h3 id="title">Over past decade,
+                        we have provided hundreds of hearing
+                        aids and speach therapy
+                        services.</h3>
+                    <!-- bottom -->
+
+                </div>
+                <!-- right -->
+                <div id="right-content">
+                    <div id="left-hr">
+                        <h1>Facts</h1>
+                        <p>Premium equipment that meets state-of-the-art in the hearing industry.</p>
+                        <hr
+                            style="width: 86%; margin-right: 10px; height: 2px; background-color: #D4D4D4; border: none;" />
+                        <p>Professionals in their field,who can be trusted and get the best results.</p>
+                    </div>
+                    <div id="user-card">
+                        <!-- upper  -->
+                        <div id="upper">
+                            <div id="image">
+                                <div><img src="img/old-man-1.jpeg" alt=""></div>
+                                <div class="old-img"><img src="img/old-man-2.jpeg" alt=""></div>
+                                <div class="old-img"><img src="img/old-man-3.jpeg" alt=""></div>
+                                <div class="old-img"><img src="img/old-man-4.jpeg" alt=""></div>
+                            </div>
+                            <h2>1000+</h2>
+                            <p>Satisfied patients</p>
+
                         </div>
-                        <h2>1000+</h2>
-                        <p>Satisfied patients</p>
-
-                    </div>
-                    <!-- middle -->
-                    <div id="middle">
-                        <div>Take the discount for the first</div>
-                        <div> visit of an audiologist</div>
-                    </div>
-                    <!-- lower -->
-                    <div id="lower">
-                        <div style="font-size: 2.5rem;">20%</div>
-                        <div><button>Make
-                                an
-                                appointment</button> </div>
+                        <!-- middle -->
+                        <div id="middle">
+                            <div>Take the discount for the first</div>
+                            <div> visit of an audiologist</div>
+                        </div>
+                        <!-- lower -->
+                        <div id="lower">
+                            <div style="font-size: 2.5rem;">20%</div>
+                            <div><button>Make
+                                    an
+                                    appointment</button> </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-
-
 
     </section>
 
     <!-- about-us  -->
 
     <section id="section-about">
-        <!-- up -->
-        <div class="about-right">
-            <div id="about">About Us</div>
-            <div id="about-arrow">&rarr;</div>
-        </div>
-        <!-- mid  -->
-        <div class="about-right">
-            <!-- mid-up -->
-            <div id="about-more">
-                <div> Audiologist Hearnic clinic Dhanbad</div>
-                <p style="font-size: 1.5rem;">The Modern Hearnic Clinic is one of the best modern hearing
-                    aid and
-                    speech therapy clinic in
-                    Dhanbad.</p>
-                <div><button class="learn">Learn More</button></div>
+        <div id="whole-about">
+            <!-- up -->
+            <div class="about-right">
+                <div id="about">About Us</div>
+                <div id="about-arrow">&rarr;</div>
             </div>
-            <!-- mid-low -->
-            <div>
-                <h3>Hearing problem resolving of an complexity at a fixed price</h3>
+            <!-- mid  -->
+            <div class="about-right">
+                <!-- mid-up -->
+                <div id="about-more">
+                    <div> Audiologist Hearnic clinic Dhanbad</div>
+                    <p style="font-size: 1.5rem;">The Modern Hearnic Clinic is one of the best modern hearing
+                        aid and
+                        speech therapy clinic in
+                        Dhanbad.</p>
+                    <div><button class="learn">Learn More</button></div>
+                </div>
+                <!-- mid-low -->
+                <div>
+                    <h3>Hearing problem resolving of an complexity at a fixed price</h3>
+                </div>
             </div>
-        </div>
-        <!-- low  -->
-        <div class="about-right">
-            <div id="my-image"><img src="img/me.jpeg" alt=""></div>
             <!-- low  -->
-            <div>
-                <div id="right">
-                    <!-- up  -->
-                    <div class="up">
-                        <div class="horiz">
-                            <h1>01</h1>
-                            <hr style="width: 200%;" />
-                            <p>We use modern equipments</p>
-                        </div>
-                        <div>
-                            <h1>02</h1>
+            <div class="about-right">
+                <div id="my-image"><img src="img/me.jpeg" alt=""></div>
+                <!-- low  -->
+                <div>
+                    <div id="right">
+                        <!-- up  -->
+                        <div class="up">
+                            <div class="horiz">
+                                <h1>01</h1>
+                                <hr style="width: 200%;" />
+                                <p>We use modern equipments</p>
+                            </div>
+                            <div>
+                                <h1>02</h1>
 
-                            <hr />
-                            <p>The result meets all expectations</p>
+                                <hr />
+                                <p>The result meets all expectations</p>
+                            </div>
                         </div>
-                    </div>
-                    <!-- mid  -->
-                    <div class="up">
-                        <div class="horiz">
-                            <h1>03</h1>
+                        <!-- mid  -->
+                        <div class="up">
+                            <div class="horiz">
+                                <h1>03</h1>
 
-                            <hr style="width: 200%;" />
-                            <p>We have the best Professionals working</p>
+                                <hr style="width: 200%;" />
+                                <p>We have the best Professionals working</p>
+                            </div>
+                            <div>
+                                <h1>04</h1>
+
+                                <hr />
+                                <p>We train our own specialists</p>
+                            </div>
                         </div>
-                        <div>
-                            <h1>04</h1>
+                        <!-- low  -->
+                        <div class="up">
+                            <div class="horiz">
+                                <h1>05</h1>
 
-                            <hr />
-                            <p>We train our own specialists</p>
-                        </div>
-                    </div>
-                    <!-- low  -->
-                    <div class="up">
-                        <div class="horiz">
-                            <h1>05</h1>
+                                <hr style="width: 200%;" />
+                                <p>Individuals contract with the client</p>
+                            </div>
+                            <div>
+                                <h1>06</h1>
 
-                            <hr style="width: 200%;" />
-                            <p>Individuals contract with the client</p>
-                        </div>
-                        <div>
-                            <h1>06</h1>
-
-                            <hr />
-                            <p>We have Indian certifications</p>
+                                <hr />
+                                <p>We have Indian certifications</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </section>
 
 
@@ -1794,59 +1869,63 @@
 
 
     <section id="section-gallery">
-        <div class="gallery">
-            <!-- left  -->
-            <div id="left-gallery">Gallery</div>
-            <!-- middle  -->
-            <div>
-                <div id="mid-gallery"><b>Check out our clinic great gallery</b></div>
-                <div id="about-us">
-                    <div>#Clinic</div>
-                    <div>#Audiology</div>
-                    <div>#Therapy</div>
-                    <div>#Truthfulness</div>
-                    <div>#Trust</div>
+
+        <div id="whole-gallery">
+            <div class="gallery">
+                <!-- left  -->
+                <div id="left-gallery">Gallery</div>
+                <!-- middle  -->
+                <div>
+                    <div id="mid-gallery"><b>Check out our clinic great gallery</b></div>
+                    <div id="about-us">
+                        <div>#Clinic</div>
+                        <div>#Audiology</div>
+                        <div>#Therapy</div>
+                        <div>#Truthfulness</div>
+                        <div>#Trust</div>
+
+                    </div>
+                </div>
+                <!-- right  -->
+                <div id="right-gallery">
+                    <div><a href="/"><img src="img/tele.png" alt=""></a></div>
+                    <div><a href="https://twitter.com/mr_mehrab1"><img src="img/twiitter.png" alt=""></a></div>
+                    <div><a href="https://www.facebook.com/mehrab.alam.568"><img src="img/facebook.png" alt=""></a>
+                    </div>
+                    <div><a href="/"><img src="img/whats.png" alt=""></a></div>
 
                 </div>
             </div>
-            <!-- right  -->
-            <div id="right-gallery">
-                <div><a href="/"><img src="img/tele.png" alt=""></a></div>
-                <div><a href="https://twitter.com/mr_mehrab1"><img src="img/twiitter.png" alt=""></a></div>
-                <div><a href="https://www.facebook.com/mehrab.alam.568"><img src="img/facebook.png" alt=""></a></div>
-                <div><a href="/"><img src="img/whats.png" alt=""></a></div>
-
-            </div>
-        </div>
-        <!-- lower  -->
-        <div class="lower">
-            <!-- left  -->
-            <div id="therapy">
-                <div id="therapy-border"></div>
-                <div id="therapy-about">
-                    <div> 01 </div>
-                    <div> / </div>
-                    <div>
-                        <strong>Collection of therapy</strong> </span>
-                        <p>The boy got a 50% discount</p>
+            <!-- lower  -->
+            <div class="lower">
+                <!-- left  -->
+                <div id="therapy">
+                    <div id="therapy-border"></div>
+                    <div id="therapy-about">
+                        <div> 01 </div>
+                        <div> / </div>
+                        <div>
+                            <strong>Collection of therapy</strong> </span>
+                            <p>The boy got a 50% discount</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- mid  -->
-            <div id="drag">
-                <h1>Drag</h1>
-            </div>
-            <!-- right  -->
-            <div id="equip">
-                <div id="equip-border"></div>
-                <div id="equip-about">
-                    <div>02</div>
-                    <div>/</div>
-                    <div>
-                        <strong> Therapy equipment</strong>
-                        <p>Best equipment for therapy</p>
-                    </div>
+                <!-- mid  -->
+                <div id="drag">
+                    <h1>Drag</h1>
+                </div>
+                <!-- right  -->
+                <div id="equip">
+                    <div id="equip-border"></div>
+                    <div id="equip-about">
+                        <div>02</div>
+                        <div>/</div>
+                        <div>
+                            <strong> Therapy equipment</strong>
+                            <p>Best equipment for therapy</p>
+                        </div>
 
+                    </div>
                 </div>
             </div>
         </div>
@@ -1857,295 +1936,305 @@
 
 
     <section id="section-service">
+        <div id="whole-service">
+            <div id="main-service">
+                <div id="service-head">Service</div>
+                <div id="main-serv">
 
-        <div id="main-service">
-            <div id="service-head">Service</div>
-            <div id="main-serv">
+                    <div id="about-service">
+                        <div id="excellent">Excellent services of our clinic</div>
+                        <div class="service-option">
+                            <div class="option">All</div>
+                            <div class="option">For adults</div>
+                            <div class="option">For children</div>
 
-                <div id="about-service">
-                    <div id="excellent">Excellent services of our clinic</div>
-                    <div class="service-option">
-                        <div class="option">All</div>
-                        <div class="option">For adults</div>
-                        <div class="option">For children</div>
+                        </div>
+                    </div>
+
+
+                    <!-- therapy  -->
+
+
+                    <div id="mid-service">
+                        <div class="therapies">
+                            <div>Diagonistic examination with consultation of an audiologist</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+                        <div class="therapies">
+                            <div>children's audiologist</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>consultation with a specialized therapist</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>consultation with a audiologist specialist</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>Therapy for speech and hearing problem</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>Hearing problem resolution</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>Treatment of Presbyterians</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>Therapy Treatment of dysarthia</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>Therapy treatment of high level Amyotrophic lateral sclerosis</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>Treatment for sensorineual</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>Outpatient course of conservation treatment</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>Hardware treatment(stuttering, apraxia, ANSD, sensorineual)</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
+                        <div class="therapies">
+                            <div>Therapy and Aid</div>
+                            <div class="sign"><button class="sign">+</button></div>
+                        </div>
+                        <hr />
+
 
                     </div>
+
+
+
                 </div>
-
-
-                <!-- therapy  -->
-
-
-                <div id="mid-service">
-                    <div class="therapies">
-                        <div>Diagonistic examination with consultation of an audiologist</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-                    <div class="therapies">
-                        <div>children's audiologist</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>consultation with a specialized therapist</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>consultation with a audiologist specialist</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>Therapy for speech and hearing problem</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>Hearing problem resolution</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>Treatment of Presbyterians</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>Therapy Treatment of dysarthia</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>Therapy treatment of high level Amyotrophic lateral sclerosis</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>Treatment for sensorineual</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>Outpatient course of conservation treatment</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>Hardware treatment(stuttering, apraxia, ANSD, sensorineual)</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-                    <div class="therapies">
-                        <div>Therapy and Aid</div>
-                        <div class="sign"><button class="sign">+</button></div>
-                    </div>
-                    <hr />
-
-
-                </div>
-
-
 
             </div>
 
-        </div>
 
+            <!-- lower  -->
 
-        <!-- lower  -->
-
-        <div id="low-service">
-            <!-- left  -->
-            <div id="left-low-service">
-                <div id="left-serv">
-                    <div style="padding: 30px;">Take a discount for a child under 5 years of age, for the first
-                        examination</div>
-                    <div id="lowerleft-serv">
-                        <div>50%</div>
-                        <div><button><img src="img/phone.jpg" alt=""></button> </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- right  -->
-            <div id="low-right-service">
-                <div id="right-serv">
-                    <div> <img src="img/doc-arti.png" alt="" height="250px"></div>
-                    <div id="low-right-serv">
-                        <div><img src="img/coma.png" alt=""></div>
-                        <div>
-                            <h1>"Stand up to the sick you world have them stand up to you in the hour of illness.</h1>
-                            <p>Dr. Arti Sukhla</p>
+            <div id="low-service">
+                <!-- left  -->
+                <div id="left-low-service">
+                    <div id="left-serv">
+                        <div style="padding: 30px;">Take a discount for a child under 5 years of age, for the first
+                            examination</div>
+                        <div id="lowerleft-serv">
+                            <div>50%</div>
+                            <div><button><img src="img/phone.jpg" alt=""></button> </div>
                         </div>
                     </div>
                 </div>
 
-            </div>
-        </div>
+                <!-- right  -->
+                <div id="low-right-service">
+                    <div id="right-serv">
+                        <div> <img src="img/doc-arti.png" alt="" height="250px"></div>
+                        <div id="low-right-serv">
+                            <div><img src="img/coma.png" alt=""></div>
+                            <div>
+                                <h1>"Stand up to the sick you world have them stand up to you in the hour of illness.
+                                </h1>
+                                <p>Dr. Arti Sukhla</p>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+
+        </div>
     </section>
 
 
     <!-- doctors  -->
     <section id="section-doctor">
-        <!-- upper  -->
-        <div id="up-doc">
-            <!-- left  -->
 
-            <!-- mid  -->
-            <div id="middle-doc">
-                <div>Doctors</div>
-                <div>
-                    <h1>Aid specialists and Audiologists</h1>
-                    <p>Our clinic employs only Professionals specialist and audiologist.We select
-                        the best doctors on a
-                        regular basis.</p>
-                </div>
-            </div>
-            <!-- right  -->
-            <div id="doc-circle">All Doctors &rarr;</div>
-        </div>
-        <!-- lower  -->
-        <div id="main-doc">
-            <div>
-
-                <!-- up -->
-                <div class="doctor">
-                    <!-- left  -->
-                    <div>
-                        <div class="upper-doc"><img src="img/shyam.png" alt=""></div>
-                        <div class="doc-about">
-                            <h1>Dr. Shyam Khurana</h1>
-                            <p>Work Experience- 8 Years</p>
-                            <div class="skill">
-                                <div>Therapist</div>
-                                <div>Ankyologist</div>
-                                <div>Head of the Department</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- right -->
-                    <div>
-                        <div class="upper-doc"><img src="img/girl-doc.png" alt=""></div>
-                        <div class="doc-about">
-                            <h1>Dr. Arti Shukhla</h1>
-                            <p>Work Experience- 14 Years</p>
-                            <div class="skill">
-                                <div>Therapist</div>
-                                <div>Otolaryngologist</div>
-                                <div>Chief Doctor</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div id="whole-doc">
+            <!-- upper  -->
+            <div id="up-doc">
+                <!-- left  -->
 
                 <!-- mid  -->
-
-                <div class="doctor">
-                    <!-- left  -->
+                <div id="middle-doc">
+                    <div>Doctors</div>
                     <div>
-                        <div class="upper-doc"><img src="img/nikjil.png" alt=""></div>
-                        <div class="doc-about">
-                            <h1>Dr. Nikhil Nanda</h1>
-                            <p>Work Experience- 10 Years</p>
-                            <div class="skill">
-                                <div>Therapist</div>
-                                <div>Ankyologist</div>
-                                <div>Head of the Department</div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- right -->
-                    <div>
-                        <div class="upper-doc"><img src="img/doc4.jpg" alt=""></div>
-                        <div class="doc-about">
-                            <h1>Dr. Rani Kohli</h1>
-                            <p>Work Experience- 2 Years</p>
-                            <div class="skill">
-                                <div>Therapist</div>
-                                <div>Otolaryngologist</div>
-                                <div>Chief Doctor</div>
-                            </div>
-                        </div>
+                        <h1>Aid specialists and Audiologists</h1>
+                        <p>Our clinic employs only Professionals specialist and audiologist.We select
+                            the best doctors on a
+                            regular basis.</p>
                     </div>
                 </div>
+                <!-- right  -->
+                <div id="doc-circle">All Doctors &rarr;</div>
+            </div>
+            <!-- lower  -->
+            <div id="main-doc">
+                <div>
 
-                <!-- low  -->
-
-                <div class="doctor">
-                    <!-- left  -->
-                    <div>
-                        <div class="upper-doc"><img src="img/doc5.jpg" alt=""></div>
-                        <div class="doc-about">
-                            <h1>Dr. Radhika Sharma</h1>
-                            <p>Work Experience- 3 Years</p>
-                            <div class="skill">
-                                <div>Therapist</div>
-                                <div>Ankyologist</div>
-                                <div>Head of the Department</div>
+                    <!-- up -->
+                    <div class="doctor">
+                        <!-- left  -->
+                        <div>
+                            <div class="upper-doc"><img src="img/shyam.png" alt=""></div>
+                            <div class="doc-about">
+                                <h1>Dr. Shyam Khurana</h1>
+                                <p>Work Experience- 8 Years</p>
+                                <div class="skill">
+                                    <div>Therapist</div>
+                                    <div>Ankyologist</div>
+                                    <div>Head of the Department</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- right -->
+                        <div>
+                            <div class="upper-doc"><img src="img/girl-doc.png" alt=""></div>
+                            <div class="doc-about">
+                                <h1>Dr. Arti Shukhla</h1>
+                                <p>Work Experience- 14 Years</p>
+                                <div class="skill">
+                                    <div>Therapist</div>
+                                    <div>Otolaryngologist</div>
+                                    <div>Chief Doctor</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <!-- right -->
-                    <div>
-                        <div class="upper-doc"><img src="img/doc6.jpg" alt=""></div>
-                        <div class="doc-about">
-                            <h1>Dr. Rashmi Thakur</h1>
-                            <p>Work Experience- 3 Years</p>
-                            <div class="skill">
-                                <div>Therapist</div>
-                                <div>Otolaryngologist</div>
-                                <div>Chief Doctor</div>
+
+                    <!-- mid  -->
+
+                    <div class="doctor">
+                        <!-- left  -->
+                        <div>
+                            <div class="upper-doc"><img src="img/nikjil.png" alt=""></div>
+                            <div class="doc-about">
+                                <h1>Dr. Nikhil Nanda</h1>
+                                <p>Work Experience- 10 Years</p>
+                                <div class="skill">
+                                    <div>Therapist</div>
+                                    <div>Ankyologist</div>
+                                    <div>Head of the Department</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- right -->
+                        <div>
+                            <div class="upper-doc"><img src="img/doc4.jpg" alt=""></div>
+                            <div class="doc-about">
+                                <h1>Dr. Rani Kohli</h1>
+                                <p>Work Experience- 2 Years</p>
+                                <div class="skill">
+                                    <div>Therapist</div>
+                                    <div>Otolaryngologist</div>
+                                    <div>Chief Doctor</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- low  -->
+
+                    <div class="doctor">
+                        <!-- left  -->
+                        <div>
+                            <div class="upper-doc"><img src="img/doc5.jpg" alt=""></div>
+                            <div class="doc-about">
+                                <h1>Dr. Radhika Sharma</h1>
+                                <p>Work Experience- 3 Years</p>
+                                <div class="skill">
+                                    <div>Therapist</div>
+                                    <div>Ankyologist</div>
+                                    <div>Head of the Department</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- right -->
+                        <div>
+                            <div class="upper-doc"><img src="img/doc6.jpg" alt=""></div>
+                            <div class="doc-about">
+                                <h1>Dr. Rashmi Thakur</h1>
+                                <p>Work Experience- 3 Years</p>
+                                <div class="skill">
+                                    <div>Therapist</div>
+                                    <div>Otolaryngologist</div>
+                                    <div>Chief Doctor</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
     <!-- review  -->
     <section id="section-review">
-        <!-- up -->
-        <div id="up-review">
-            <div id="mid-reviews">
-                <!-- left  -->
-                <div>Reviews </div>
-                <!-- mid  -->
-                <div>
-                    <h1>Feedback from our favourite customers</h1>
-                    <p>We treat our customer better than any other clinic.Thnak you for being with us!</p>
-                </div>
+        <div id="whole-review">
+            <!-- up -->
+            <div id="up-review">
+                <div id="mid-reviews">
+                    <!-- left  -->
+                    <div>Reviews </div>
+                    <!-- mid  -->
+                    <div>
+                        <h1>Feedback from our favourite customers</h1>
+                        <p>We treat our customer better than any other clinic.Thnak you for being with us!</p>
+                    </div>
 
+                </div>
+                <!-- right  -->
+                <div id="all-reviews">All reviews &rarr;</div>
             </div>
-            <!-- right  -->
-            <div id="all-reviews">All reviews &rarr;</div>
-        </div>
-        <!-- low  -->
-        <div id="low-review">
-            <!-- right  -->
-            <div id="review-image"><img src="img/doc1.png" alt="" height="100px" width="100px"></div>
-            <!-- left -->
-            <div id="review-about">
-                <div id="coma"><img src="img/coma.png" alt=""></div>
-                <div>"I had the therapy consultation on october 24th and was pleasantly surprised that I did not have
-                    astigmatism,which had been diagnosed for 8 years by luxuary opticians.I really enjoyed the attitude
-                    of the clients, everyone is smiling,the staff is young and humorous,they are helpful,drunk and
-                    reassuring."</div>
-                <h1>Tannu Jha</h1>
-                <p>5 days old</p>
+            <!-- low  -->
+            <div id="low-review">
+                <!-- right  -->
+                <div id="review-image"><img src="img/doc1.png" alt="" height="100px" width="100px"></div>
+                <!-- left -->
+                <div id="review-about">
+                    <div id="coma"><img src="img/coma.png" alt=""></div>
+                    <div>"I had the therapy consultation on october 24th and was pleasantly surprised that I did not
+                        have
+                        astigmatism,which had been diagnosed for 8 years by luxuary opticians.I really enjoyed the
+                        attitude
+                        of the clients, everyone is smiling,the staff is young and humorous,they are helpful,drunk and
+                        reassuring."</div>
+                    <h1>Tannu Jha</h1>
+                    <p>5 days old</p>
+                </div>
             </div>
         </div>
     </section>
@@ -2153,8 +2242,10 @@
     <!-- form  -->
 
 
+
     <section id="section-form">
-        <section id="section-form">
+
+        <div id="whole-form">
             <div id="logo-img">
                 <img src="img/logo-input-rem.png" alt="" height="100px" width="100px">
 
@@ -2215,50 +2306,54 @@
                     <button type="submit" class="submit-button">Submit</button>
                 </form>
             </div>
-
-        </section>
+        </div>
     </section>
+
 
 
     <!-- question  -->
     <section id="section-question">
-        <!-- upper  -->
-        <div id="faq">FAQ</div>
-        <div id="up-question">
 
-            <div>
-                <h1>Questions from our clients</h1>
-            </div>
+        <div id="whole-que">
+            <!-- upper  -->
+            <div id="faq">FAQ</div>
+            <div id="up-question">
 
-            <!-- mid  -->
-            <div id="mid-question">
-                <div class="question">
-                    <div class="para-ques">It is possible to pay for clinic services at the expense of the organization
+                <div>
+                    <h1>Questions from our clients</h1>
+                </div>
+
+                <!-- mid  -->
+                <div id="mid-question">
+                    <div class="question">
+                        <div class="para-ques">It is possible to pay for clinic services at the expense of the
+                            organization
+                        </div>
+                        <div class="sign"><button class="sign">+</button></div>
                     </div>
-                    <div class="sign"><button class="sign">+</button></div>
+                    <hr style="max-width: 96%;" />
+                    <div class=" question">
+                        <div class="para-ques">Where can I find the information about the licenses of the clinic</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr style="max-width: 96%;" />
+
+
+                    <div class=" question">
+                        <div class="para-ques">Are there any discounts available?</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr style="max-width: 96%;" />
+
+
+                    <div class=" question">
+                        <div class="para-ques">Does "Hearnic" clinic provide treatment on credit</div>
+                        <div class="sign"><button class="sign">+</button></div>
+                    </div>
+                    <hr style="max-width: 96%;" />
+
+
                 </div>
-                <hr style="max-width: 96%;" />
-                <div class=" question">
-                    <div class="para-ques">Where can I find the information about the licenses of the clinic</div>
-                    <div class="sign"><button class="sign">+</button></div>
-                </div>
-                <hr style="max-width: 96%;" />
-
-
-                <div class=" question">
-                    <div class="para-ques">Are there any discounts available?</div>
-                    <div class="sign"><button class="sign">+</button></div>
-                </div>
-                <hr style="max-width: 96%;" />
-
-
-                <div class=" question">
-                    <div class="para-ques">Does "Hearnic" clinic provide treatment on credit</div>
-                    <div class="sign"><button class="sign">+</button></div>
-                </div>
-                <hr style="max-width: 96%;" />
-
-
             </div>
         </div>
     </section>
@@ -2266,79 +2361,84 @@
     <!-- partner  -->
 
     <section id="section-partner">
-        <div id="up-partner">
-            <div>Partner</div>
-            <div>
-                <h1>We work with these partners</h1>
+        <div id="whole-partner">
+            <div id="up-partner">
+                <div>Partner</div>
+                <div>
+                    <h1>We work with these partners</h1>
+                </div>
             </div>
-        </div>
 
-        <!-- low  -->
-        <div id="partner-image">
-            <div><img src="img/sun_2.png" alt="" style="border-radius: 50%; height: 100%; width: 100%;"></div>
-            <div><img src="img/reddy.jpg" alt=""></div>
-            <div><img src="img/alkem.jpg" alt=""></div>
-            <div><img src="img/cipla2.png" alt=""></div>
-            <div><img src="img/biocon.png" alt=""></div>
+            <!-- low  -->
+            <div id="partner-image">
+                <div><img src="img/sun_2.png" alt="" style="border-radius: 50%; height: 100%; width: 100%;"></div>
+                <div><img src="img/reddy.jpg" alt=""></div>
+                <div><img src="img/alkem.jpg" alt=""></div>
+                <div><img src="img/cipla2.png" alt=""></div>
+                <div><img src="img/biocon.png" alt=""></div>
 
+            </div>
         </div>
     </section>
 
     <!-- blog  -->
     <section id="section-blog">
-        <div id="up-blog">
-            <div id="bolg-main-head">
-                <!-- left  -->
-                <div id="blog">Blog</div>
-                <!-- mif  -->
-                <div id="blog-header">
-                    <h1>You may be interested to know</h1>
+        <div id="whole-blog">
+            <div id="up-blog">
+                <div id="bolg-main-head">
+                    <!-- left  -->
+                    <div id="blog">Blog</div>
+                    <!-- mif  -->
+                    <div id="blog-header">
+                        <h1>You may be interested to know</h1>
+                    </div>
+
                 </div>
+                <!-- right  -->
+                <div id="blog-sign">
+                    <div class="blog-arrow">&rarr;</div>
+                    <div class="blog-arrow">&larr;</div>
 
+                </div>
             </div>
-            <!-- right  -->
-            <div id="blog-sign">
-                <div class="blog-arrow">&rarr;</div>
-                <div class="blog-arrow">&larr;</div>
 
-            </div>
-        </div>
-
-        <!-- mid  -->
+            <!-- mid  -->
 
 
-        <div id="blog-image">
-            <!-- left  -->
-            <div id="first-img">
-                <div><img src="img/earimg.jpg" alt="" height="200px" width="300px" style="margin-right: 20px;"></div>
-                <div>
+            <div id="blog-image">
+                <!-- left  -->
+                <div id="first-img">
+                    <div><img src="img/earimg.jpg" alt="" height="200px" width="300px" style="margin-right: 20px;">
+                    </div>
+                    <div>
+
+                        <div class="blog-option">
+                            <div>Therapist</div>
+                            <div>Audiologist</div>
+                            <div>Hearing aid</div>
+                        </div>
+                        <h1>The modern benchmark for therapy in 2023</h1>
+
+                    </div>
+                </div>
+                <!-- right -->
+                <div id="second-img">
+                    <div><img src="img/lab.jpg" alt="" height="200px" width="400px"></div>
+
 
                     <div class="blog-option">
-                        <div>Therapist</div>
-                        <div>Audiologist</div>
-                        <div>Hearing aid</div>
+                        <div>Equipment</div>
+                        <div>Speach therapy</div>
+                        <div>What is ANSD?</div>
                     </div>
-                    <h1>The modern benchmark for therapy in 2023</h1>
+                    <h1>What is better to choose in the opinion of a practitioner: Audio therapy?</h1>
 
                 </div>
-            </div>
-            <!-- right -->
-            <div id="second-img">
-                <div><img src="img/lab.jpg" alt="" height="200px" width="400px"></div>
 
 
-                <div class="blog-option">
-                    <div>Equipment</div>
-                    <div>Speach therapy</div>
-                    <div>What is ANSD?</div>
-                </div>
-                <h1>What is better to choose in the opinion of a practitioner: Audio therapy?</h1>
+
 
             </div>
-
-
-
-
         </div>
     </section>
 
@@ -2346,88 +2446,90 @@
     <!-- contact  -->
 
     <section id="section-contact">
-        <nav>
-            <div id="nav-logo">
-                <div><img src="img/ear_1.png" alt="" height="150px" width="150px"></div>
-                <div>
-                    <h1>Hearnic</h1>
-                    <p>Medical clinic</p>
-                </div>
-            </div>
-            <div id="nav-left"> &uarr;</div>
-        </nav>
-
-        <!-- middle  -->
-
-
-        <h1 id="heading">We'll call you back</h1>
-        <div id="contact-form">
-
-
-            <form action="" id="contact-form-detail">
-                <div class="input-detail">
-                    <span><img src="img/pro-image.svg" alt=""></span>
-                    <input type="text" placeholder="Enter the name">
-                </div>
-                <div class="input-select">
-                    <input type="text" placeholder="What do you want to be called">
-                    <span><button class="plus">+</button></span>
-
-                </div>
-                <div class="input-select">
-
-                    <input type="text" placeholder="Cover the topic of the article">
-                    <span><button class="plus">+</button></span>
-                </div>
-                <div class="input-detail">
-                    <span id="number">+91</span>
-                    <input type="number" placeholder="Enter the number">
-                </div>
-
-                <button type="submit" id="contact-submit">Submit</button>
-            </form>
-        </div>
-
-        <div id="contact-site">
-            <div id="left-site">
-                <h1>Site Map</h1>
-                <div id="all-site">
-                    <div><a href="hero-section">Home</a> </div>
-                    <div><a href="section-services">Services</a></div>
-                    <div><a href="section-contact">Contact</a></div>
-                    <div><a href="section-gallery">Gallery</a></div>
-                    <div><a href="section-about">About us</a></div>
-                    <div><a href="section-doctor">Doctors</a></div>
-                    <div><a href="section-blog">Blog</a></div>
-                    <div><a href="section-partner">Partners</a></div>
-
-
-                </div>
-
-                <p><span style="color: black; font-size: 3rem; background-color:  hsl(227deg 36% 35%);">&copy; </span>
-                    Hearnic: ALl rights reserved</p>
-
-            </div>
-
-            <div id="right-site">
-                <h1>We are on social media</h1>
-                <div class="lower-site ">
-                    <div><a href="/"><img src="img/telegram_1.png" alt=""></a></div>
-                    <div><a href="https://twitter.com/mr_mehrab1/"> <img src="img/twiitter.png" alt=""></a></div>
-                    <div style="background-color: #c8c8c8;"><a href="https://www.facebook.com/mehrab.alam.568/"> <img
-                                src="img/fb_1.png" alt=""></a>
+        <div id="whole-contact">
+            <nav>
+                <div id="nav-logo">
+                    <div><img src="img/ear_1.png" alt="" height="150px" width="150px"></div>
+                    <div>
+                        <h1>Hearnic</h1>
+                        <p>Medical clinic</p>
                     </div>
-                    <div><a href="/"><img src="img/whatsapp.png" alt=""></a></div>
+                </div>
+                <div id="nav-left"> &uarr;</div>
+            </nav>
+
+            <!-- middle  -->
+
+
+            <h1 id="heading">We'll call you back</h1>
+            <div id="contact-form">
+
+
+                <form action="" id="contact-form-detail">
+                    <div class="input-detail">
+                        <span><img src="img/pro-image.svg" alt=""></span>
+                        <input type="text" placeholder="Enter the name">
+                    </div>
+                    <div class="input-select">
+                        <input type="text" placeholder="What do you want to be called">
+                        <span><button class="plus">+</button></span>
+
+                    </div>
+                    <div class="input-select">
+
+                        <input type="text" placeholder="Cover the topic of the article">
+                        <span><button class="plus">+</button></span>
+                    </div>
+                    <div class="input-detail">
+                        <span id="number">+91</span>
+                        <input type="number" placeholder="Enter the number">
+                    </div>
+
+                    <button type="submit" id="contact-submit">Submit</button>
+                </form>
+            </div>
+
+            <div id="contact-site">
+                <div id="left-site">
+                    <h1>Site Map</h1>
+                    <div id="all-site">
+                        <div><a href="hero-section">Home</a> </div>
+                        <div><a href="section-services">Services</a></div>
+                        <div><a href="section-contact">Contact</a></div>
+                        <div><a href="section-gallery">Gallery</a></div>
+                        <div><a href="section-about">About us</a></div>
+                        <div><a href="section-doctor">Doctors</a></div>
+                        <div><a href="section-blog">Blog</a></div>
+                        <div><a href="section-partner">Partners</a></div>
+
+
+                    </div>
+
+                    <p><span style="color: black; font-size: 3rem; background-color:  hsl(227deg 36% 35%);">&copy;
+                        </span>
+                        Hearnic: ALl rights reserved</p>
 
                 </div>
-                <div class="lower-p">
-                    <p>Privacy Policy</p>
-                    <p>Terms & Conditions</p>
+
+                <div id="right-site">
+                    <h1>We are on social media</h1>
+                    <div class="lower-site ">
+                        <div><a href="/"><img src="img/telegram_1.png" alt=""></a></div>
+                        <div><a href="https://twitter.com/mr_mehrab1/"> <img src="img/twiitter.png" alt=""></a></div>
+                        <div style="background-color: #c8c8c8;"><a href="https://www.facebook.com/mehrab.alam.568/">
+                                <img src="img/fb_1.png" alt=""></a>
+                        </div>
+                        <div><a href="/"><img src="img/whatsapp.png" alt=""></a></div>
+
+                    </div>
+                    <div class="lower-p">
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </div>
                 </div>
             </div>
+
         </div>
-
-
 
     </section>
 </body>
